@@ -7,4 +7,18 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <string-array name="times">
+        <item>30 mins</item>
+        <item>1 hour</item>
+        <item>1 hour 30 mins</item>
+        <item>2 hours</item>
+    </string-array>
+
+    <string-array name="theme">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+
+    </string-array>
+
 </resources>
