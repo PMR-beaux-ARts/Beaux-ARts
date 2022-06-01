@@ -8,11 +8,17 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.fragment_home.*
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView.VERTICAL
+import com.example.beaux_arts.donnees.Itineraire
+import fr.ec.sequence1.ui.adapter.ItemAdapter
 
 
 class HomeFragment : Fragment() {
-// test push
+
+
 
     val CAT : String = "homepage"
 
@@ -21,11 +27,35 @@ class HomeFragment : Fragment() {
         Log.i(CAT,"onCreate")
 
 
+
+
+
     }
+    fun provideDataSet(): List<Itineraire> {
+        val result = mutableListOf<Itineraire>()
+        repeat(1_000) { intex ->
+            val item = Itineraire(
+                imageRes = R.mipmap.ic_launcher,
+                title = "Titre $intex",
+                subTitle = "Sous-Titre $intex",
+            )
+
+            result.add(item)
+        }
+        return result
+    }
+
+
 
     override fun onStart() {
         super.onStart()
         Log.i(CAT,"onStart")
+
+        val list = view?.findViewById<RecyclerView>(R.id.list)
+        list?.adapter = ItemAdapter(dataSet = provideDataSet())
+        list?.layoutManager = LinearLayoutManager(activity, VERTICAL, false)
+
+
         spinner1.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
             override fun onItemSelected(
                 parent: AdapterView<*>?,
@@ -58,6 +88,9 @@ class HomeFragment : Fragment() {
 
             }
         }
+
+
+
 
         //Todo next recyclerview
 
