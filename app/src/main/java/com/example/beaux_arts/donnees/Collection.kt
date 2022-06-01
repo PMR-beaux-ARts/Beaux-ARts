@@ -10,7 +10,7 @@ data class Collection(
     val salle: Int = 1,
     val mesproduits: MutableList<Produit> = arrayListOf(),
     val position: Array<Double> = arrayOf(0.00,0.00),
-    val image: String = "image1"
+    val image: String = "image1.jpg"
 
 ){
     override fun toString(): String {
