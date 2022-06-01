@@ -2,7 +2,7 @@ package com.example.beaux_arts.donnees
 
 data class Itineraire(
 
-    val numero : Int,
+    val id : Int,
     val nom : String,
     val type : String,
     val decription : String,
@@ -12,6 +12,6 @@ data class Itineraire(
 
 ){
     override fun toString(): String {
-        return "Itineraires(numero=$numero, nom='$nom', type='$type', decription='$decription', duree=$duree, mescollections=$mescollections, carte='$carte')"
+        return "Itineraires(id=$id, nom='$nom', type='$type', decription='$decription', duree=$duree, mescollections=$mescollections, carte='$carte')"
     }
 }

@@ -2,7 +2,7 @@ package com.example.beaux_arts.donnees
 
 data class Produit (
 
-    val numero : Int,
+    val id : Int,
     val nom : String,
     val type : String,
     val prix : Float,
@@ -11,6 +11,6 @@ data class Produit (
 
     ) {
     override fun toString(): String {
-        return "Produit(numero=$numero, nom='$nom', type='$type', prix=$prix, image='$image', mescollections=$mescollections)"
+        return "Produit(id=$id, nom='$nom', type='$type', prix=$prix, image='$image', mescollections=$mescollections)"
     }
 }
