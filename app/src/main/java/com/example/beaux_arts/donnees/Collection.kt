@@ -12,15 +12,18 @@ data class Collection(
 //    val position: Array<Double> = arrayOf(0.00,0.00),
 //    val image: String = "image1.jpg"
 
-    var title : String,
-
-    var imageRes: Int,
+    val title : String,
+    val auteur: String = "unknown",
+    val imageRes: Int,
+    val description: String = "un tableau",
+    val produits: MutableList<Produit>? = null
 
 ){
+    constructor(title : String,imageRes : Int) : this(title, "unknown", imageRes, "Un tableau")
 //    override fun toString(): String {
 //        return "Collection(id=$id, nom='$nom', auteur='$auteur', type='$type', desciption='$desciption', salle=$salle, mesproduits=$mesproduits, position=${position.contentToString()}, image='$image')"
 //    }
-
+    constructor(title : String, imageRes : Int, produits: MutableList<Produit>?) : this(title, "unknown", imageRes, "Un tableau", produits)
 }
 
 

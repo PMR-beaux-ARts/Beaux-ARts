@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.beaux_arts.donnees.Collection
+import com.example.beaux_arts.donnees.Produit
 import com.example.recyclerviewusinggridlayoutmanager.CollectionAdapter
 
 
@@ -31,7 +32,8 @@ class ListFragment : Fragment() {
         recyclerDataArrayList = ArrayList()
 
         // added data to array list
-        recyclerDataArrayList!!.add(Collection("Saint Rémy", R.drawable.img1))
+        val produitsPiece1 = mutableListOf<Produit>(Produit("Copie", R.drawable.img1))
+        recyclerDataArrayList!!.add(Collection("Saint Rémy", R.drawable.img1, produitsPiece1))
         recyclerDataArrayList!!.add(Collection("Eglise d'Auvers-sur-Oise", R.drawable.img2))
         recyclerDataArrayList!!.add(Collection("La Nuit étoilée", R.drawable.img3))
         recyclerDataArrayList!!.add(Collection("Les Tournesols", R.drawable.img4))
