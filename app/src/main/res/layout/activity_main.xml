@@ -25,22 +25,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/ic_baseline_home_24"
-            android:text="Home"/>
+            android:text="Itineraries"/>
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:icon="@drawable/ic_baseline_location_on_24"
             android:layout_height="wrap_content"
-            android:text="List"/>
+            android:text="Collections"/>
         <com.google.android.material.tabs.TabItem
             android:icon="@drawable/ic_baseline_star_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chart"/>
+            android:text="Info"/>
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/ic_baseline_more_vert_24"
-            android:text="Settings"/>
+            android:text="shop"/>
 
 
 

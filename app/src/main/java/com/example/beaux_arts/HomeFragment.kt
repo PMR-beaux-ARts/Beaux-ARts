@@ -65,7 +65,7 @@ class HomeFragment : Fragment() {
             ) {
                 Toast.makeText(activity,
                     "you selected ${parent?.getItemAtPosition(position).toString()}",
-                    Toast.LENGTH_LONG).show()
+                    Toast.LENGTH_SHORT).show()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -81,7 +81,7 @@ class HomeFragment : Fragment() {
             ) {
                 Toast.makeText(activity,
                     "you selected ${parent?.getItemAtPosition(position).toString()}",
-                    Toast.LENGTH_LONG).show()
+                    Toast.LENGTH_SHORT).show()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
