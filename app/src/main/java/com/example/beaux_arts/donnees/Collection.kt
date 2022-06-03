@@ -12,11 +12,11 @@ data class Collection(
 //    val position: Array<Double> = arrayOf(0.00,0.00),
 //    val image: String = "image1.jpg"
 
-    val title : String,
-    val auteur: String = "unknown",
-    val imageRes: Int,
-    val description: String = "un tableau",
-    val produits: MutableList<Produit>? = null
+    var title : String,
+    var author: String = "unknown",
+    var imageRes: Int,
+    var description: String = "un tableau",
+    var produits: MutableList<Produit>? = null
 
 ){
     constructor(title : String,imageRes : Int) : this(title, "unknown", imageRes, "Un tableau")
@@ -24,6 +24,8 @@ data class Collection(
 //        return "Collection(id=$id, nom='$nom', auteur='$auteur', type='$type', desciption='$desciption', salle=$salle, mesproduits=$mesproduits, position=${position.contentToString()}, image='$image')"
 //    }
     constructor(title : String, imageRes : Int, produits: MutableList<Produit>?) : this(title, "unknown", imageRes, "Un tableau", produits)
+
+    constructor(title : String, imageRes : Int, description: String, produits: MutableList<Produit>?) : this(title, "unknown", imageRes, description, produits)
 }
 
 

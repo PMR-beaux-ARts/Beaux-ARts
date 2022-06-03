@@ -1,6 +1,5 @@
 package com.example.recyclerviewusinggridlayoutmanager
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,9 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.beaux_arts.R
 import com.example.beaux_arts.donnees.Collection
 
-
 class CollectionAdapter(
     private val courseDataArrayList: List<Collection>,
+    val clickListener:(Collection) -> Unit
 //    private val mcontext: Context
 ) :
     RecyclerView.Adapter<CollectionAdapter.RecyclerViewHolder>() {
@@ -27,6 +26,7 @@ class CollectionAdapter(
         val recyclerData = courseDataArrayList[position]
         holder.courseTV.text = recyclerData.title
         holder.courseIV.setImageResource(recyclerData.imageRes)
+        holder.bind(courseDataArrayList[position], clickListener)
     }
 
     override fun getItemCount(): Int {
@@ -42,6 +42,11 @@ class CollectionAdapter(
         init {
             courseTV = itemView.findViewById(R.id.idTVCourse)
             courseIV = itemView.findViewById(R.id.idIVcourseIV)
+        }
+
+        fun bind(collection : Collection, clickListener: (Collection) -> Unit){
+            courseTV.text = collection.title
+            courseIV.setOnClickListener {clickListener(collection)}
         }
     }
 }

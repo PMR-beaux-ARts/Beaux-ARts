@@ -6,6 +6,9 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="glassesOption">Glasses</string>
+    <string name="audioOption">Audio</string>
+    <string name="mapOption">Map</string>
 
     <string-array name="times">
         <item>30 mins</item>

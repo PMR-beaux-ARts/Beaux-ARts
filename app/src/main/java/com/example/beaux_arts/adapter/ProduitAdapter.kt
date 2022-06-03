@@ -1,6 +1,6 @@
 package com.example.beaux_arts.adapter
 
-import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.beaux_arts.R
 import com.example.beaux_arts.donnees.Produit
 
-
 class ProduitAdapter(
     private val courseDataArrayList: List<Produit>,
+    val clickListener:(Produit) -> Unit
 //    private val mcontext: Context
 ) :
     RecyclerView.Adapter<ProduitAdapter.RecyclerViewHolder>() {
@@ -27,10 +27,12 @@ class ProduitAdapter(
         val recyclerData = courseDataArrayList[position]
         holder.courseTV.text = recyclerData.nom
         holder.courseIV.setImageResource(recyclerData.image)
+        holder.bind(courseDataArrayList[position], clickListener)
     }
 
     override fun getItemCount(): Int {
         // this method returns the size of recyclerview
+        Log.i("test","courseDataArrayList?.size = $courseDataArrayList?.size")
         return courseDataArrayList.size
     }
 
@@ -43,5 +45,11 @@ class ProduitAdapter(
             courseTV = itemView.findViewById(R.id.idTVCourse)
             courseIV = itemView.findViewById(R.id.idIVcourseIV)
         }
+        fun bind(produit : Produit, clickListener: (Produit) -> Unit){
+            courseTV.text = produit.nom
+            courseIV.setOnClickListener {clickListener(produit)}
+        }
     }
+
+
 }
