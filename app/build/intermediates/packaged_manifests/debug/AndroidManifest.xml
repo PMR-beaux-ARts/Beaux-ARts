@@ -22,6 +22,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Beaux_ARts" >
         <activity
+            android:name="com.example.beaux_arts.ProduitActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.beaux_arts.PieceActivity"
             android:exported="false" />
         <activity

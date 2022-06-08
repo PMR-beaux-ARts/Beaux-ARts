@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".PieceActivity">
 
@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="center"
+        android:background="#1ACCA2"
         android:gravity="center"
         android:text="TextView"
         android:textSize="20sp" />
@@ -33,6 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#E8E8E8"
             android:contentDescription="@string/glassesOption"
             android:minHeight="48dp"
             app:srcCompat="@drawable/ic_glasses" />
@@ -42,6 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#E8E8E8"
             android:contentDescription="@string/audioOption"
             android:minHeight="48dp"
             app:srcCompat="@drawable/ic_baseline_hearing_24" />
@@ -51,6 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#E8E8E8"
             android:contentDescription="@string/mapOption"
             android:minHeight="48dp"
             app:srcCompat="@drawable/ic_baseline_map_24" />
@@ -60,10 +64,11 @@
         android:id="@+id/pieceDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:maxHeight="200dp"
         android:text="TextView"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"/>
+        android:textColor="#000000" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/pieceRecyclerview"

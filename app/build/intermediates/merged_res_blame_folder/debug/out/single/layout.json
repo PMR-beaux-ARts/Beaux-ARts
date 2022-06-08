@@ -24,6 +24,10 @@
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\fragment_list.xml"
     },
     {
+        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-36:\\layout\\activity_produit.xml",
+        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\activity_produit.xml"
+    },
+    {
         "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-36:\\layout\\activity_main.xml",
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\activity_main.xml"
     },

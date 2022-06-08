@@ -21,6 +21,7 @@ class PieceActivity() : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_piece)
+        supportActionBar?.hide()
         /*
         val prods: MutableList<Produit> = mutableListOf<Produit>( Produit("Poster", intent.getIntExtra("produits.imageRes", 0)))
         var title: String? = intent.getStringExtra("title")
@@ -92,9 +93,12 @@ class PieceActivity() : AppCompatActivity() {
 
     private fun produitClicked(produit: Produit) {
         Toast.makeText(this, "Clicked: ${produit.nom}", Toast.LENGTH_SHORT).show()
-        //val activiteVisee = Intent(this, PieceActivity::class.java)
+        val activiteVisee = Intent(this, ProduitActivity::class.java)
+        activiteVisee.putExtra("nom", produit.nom)
+        activiteVisee.putExtra("prix", produit.prix)
+        activiteVisee.putExtra("imageRes", produit.image)
 
-        //startActivity(activiteVisee)
+        startActivity(activiteVisee)
 
     }
 }
