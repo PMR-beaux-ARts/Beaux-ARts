@@ -20,6 +20,7 @@ drawable ic_baseline_info_24
 drawable ic_baseline_location_on_24
 drawable ic_baseline_map_24
 drawable ic_baseline_more_vert_24
+drawable ic_baseline_qr_code_scanner_24
 drawable ic_baseline_shopping_basket_24
 drawable ic_baseline_star_24
 drawable ic_glasses
@@ -32,6 +33,7 @@ drawable img3_1
 drawable img3_2
 drawable img4
 id FirstFragment
+id QRCodeButton
 id SecondFragment
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
