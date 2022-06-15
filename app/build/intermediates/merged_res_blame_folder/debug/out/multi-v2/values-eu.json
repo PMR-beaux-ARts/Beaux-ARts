@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-35:/values-eu/values-eu.xml",
+            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-37:/values-eu/values-eu.xml",
             "map": [
                 {
                     "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\bd6d0e44f2aa57426d64e02a13067df9\\transformed\\material-1.6.0\\res\\values-eu\\values-eu.xml",
@@ -20,6 +20,23 @@
                         "endLines": "5,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,88",
                         "endColumns": "12,79,97,114,82,66,98,67,60,87,65,63,70,62,53,108,58,62,53,73,124,89,79,114,82,81,90,66,65,70,79,85,77,77,72,74,86,86,90,92,71,75,91,50,65,83,85,61,63,62,106,104,95,105,82",
                         "endOffsets": "275,3100,3198,3313,3396,3463,3562,3630,3691,3779,3845,3909,3980,4043,4097,4206,4265,4328,4382,4456,4581,4671,4751,4866,4949,5031,5122,5189,5255,5326,5406,5492,5570,5648,5721,5796,5883,5970,6061,6154,6226,6302,6394,6445,6511,6595,6681,6743,6807,6870,6977,7082,7178,7284,7598"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\d0726cc55495dc81526e8f4eb9bb9f03\\transformed\\zxing-android-embedded-4.1.0\\res\\values-eu\\values-eu.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,119,168,316",
+                        "endColumns": "63,48,147,111",
+                        "endOffsets": "114,163,311,423"
+                    },
+                    "to": {
+                        "startLines": "91,92,93,94",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "7787,7851,7900,8048",
+                        "endColumns": "63,48,147,111",
+                        "endOffsets": "7846,7895,8043,8155"
                     }
                 },
                 {

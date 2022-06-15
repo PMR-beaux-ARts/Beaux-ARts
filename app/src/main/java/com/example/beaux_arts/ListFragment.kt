@@ -106,7 +106,6 @@ class ListFragment : Fragment() {
         startActivity(activiteVisee)
 
     }
-// title, "unknown", imageRes, "Un tableau", produits, nom: String, image: Int
 
 
     override fun onCreateView(

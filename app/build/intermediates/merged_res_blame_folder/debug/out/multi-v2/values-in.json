@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-35:/values-in/values-in.xml",
+            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-37:/values-in/values-in.xml",
             "map": [
                 {
                     "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\0f5a5398614b825cb9dc24264211c6ef\\transformed\\navigation-ui-2.4.2\\res\\values-in\\values-in.xml",

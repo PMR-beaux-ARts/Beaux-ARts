@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-35:/values-ko/values-ko.xml",
+            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-37:/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\bd6d0e44f2aa57426d64e02a13067df9\\transformed\\material-1.6.0\\res\\values-ko\\values-ko.xml",
@@ -20,6 +20,23 @@
                         "endLines": "5,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,88",
                         "endColumns": "12,68,82,105,74,61,80,61,56,86,57,57,58,56,53,94,55,56,53,65,103,74,76,90,64,64,78,66,65,63,69,76,67,70,66,69,79,76,79,81,71,64,71,47,63,74,76,61,63,62,83,78,79,79,71",
                         "endOffsets": "249,2898,2981,3087,3162,3224,3305,3367,3424,3511,3569,3627,3686,3743,3797,3892,3948,4005,4059,4125,4229,4304,4381,4472,4537,4602,4681,4748,4814,4878,4948,5025,5093,5164,5231,5301,5381,5458,5538,5620,5692,5757,5829,5877,5941,6016,6093,6155,6219,6282,6366,6445,6525,6605,6879"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\d0726cc55495dc81526e8f4eb9bb9f03\\transformed\\zxing-android-embedded-4.1.0\\res\\values-ko\\values-ko.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,106,153,260",
+                        "endColumns": "50,46,106,71",
+                        "endOffsets": "101,148,255,327"
+                    },
+                    "to": {
+                        "startLines": "91,92,93,94",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "7064,7115,7162,7269",
+                        "endColumns": "50,46,106,71",
+                        "endOffsets": "7110,7157,7264,7336"
                     }
                 },
                 {

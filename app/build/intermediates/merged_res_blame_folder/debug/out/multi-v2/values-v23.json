@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-35:/values-v23/values-v23.xml",
+            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-37:/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\0279c2dfa08538b6397b7c452f23f153\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",

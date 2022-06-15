@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-35:/values-sk/values-sk.xml",
+            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-37:/values-sk/values-sk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\bd6d0e44f2aa57426d64e02a13067df9\\transformed\\material-1.6.0\\res\\values-sk\\values-sk.xml",
@@ -71,6 +71,23 @@
                         "startOffsets": "7715",
                         "endColumns": "100",
                         "endOffsets": "7811"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\d0726cc55495dc81526e8f4eb9bb9f03\\transformed\\zxing-android-embedded-4.1.0\\res\\values-sk\\values-sk.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,315",
+                        "endColumns": "58,46,153,120",
+                        "endOffsets": "109,156,310,431"
+                    },
+                    "to": {
+                        "startLines": "93,94,95,96",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "7816,7875,7922,8076",
+                        "endColumns": "58,46,153,120",
+                        "endOffsets": "7870,7917,8071,8192"
                     }
                 }
             ]

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-35:/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-37:/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\4825226d7bdc18dc642f18a8a048b277\\transformed\\core-1.7.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
@@ -71,6 +71,23 @@
                         "startOffsets": "6531,6630",
                         "endColumns": "98,99",
                         "endOffsets": "6625,6725"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\d0726cc55495dc81526e8f4eb9bb9f03\\transformed\\zxing-android-embedded-4.1.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,104,151,244",
+                        "endColumns": "48,46,92,69",
+                        "endOffsets": "99,146,239,309"
+                    },
+                    "to": {
+                        "startLines": "91,92,93,94",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "6979,7028,7075,7168",
+                        "endColumns": "48,46,92,69",
+                        "endOffsets": "7023,7070,7163,7233"
                     }
                 }
             ]

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-35:/values-zh-rCN/values-zh-rCN.xml",
+            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-37:/values-zh-rCN/values-zh-rCN.xml",
             "map": [
                 {
                     "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\0f5a5398614b825cb9dc24264211c6ef\\transformed\\navigation-ui-2.4.2\\res\\values-zh-rCN\\values-zh-rCN.xml",
@@ -71,6 +71,23 @@
                         "startOffsets": "252,347,442,542,624,721,827,904,979,1070,1163,1260,1356,1450,1543,1638,1730,1821,1912,1990,2086,2181,2276,2373,2469,2567,2715,6794",
                         "endColumns": "94,94,99,81,96,105,76,74,90,92,96,95,93,92,94,91,90,90,77,95,94,94,96,95,97,147,93,78",
                         "endOffsets": "342,437,537,619,716,822,899,974,1065,1158,1255,1351,1445,1538,1633,1725,1816,1907,1985,2081,2176,2271,2368,2464,2562,2710,2804,6868"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\d0726cc55495dc81526e8f4eb9bb9f03\\transformed\\zxing-android-embedded-4.1.0\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,104,151,238",
+                        "endColumns": "48,46,86,68",
+                        "endOffsets": "99,146,233,302"
+                    },
+                    "to": {
+                        "startLines": "91,92,93,94",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "6974,7023,7070,7157",
+                        "endColumns": "48,46,86,68",
+                        "endOffsets": "7018,7065,7152,7221"
                     }
                 }
             ]

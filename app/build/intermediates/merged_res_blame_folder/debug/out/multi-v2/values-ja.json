@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-35:/values-ja/values-ja.xml",
+            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-37:/values-ja/values-ja.xml",
             "map": [
                 {
                     "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\5f7c3c923349d42ca313e04370c06a8c\\transformed\\appcompat-1.4.1\\res\\values-ja\\values-ja.xml",
@@ -71,6 +71,23 @@
                         "startOffsets": "6619,6718",
                         "endColumns": "98,109",
                         "endOffsets": "6713,6823"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\d0726cc55495dc81526e8f4eb9bb9f03\\transformed\\zxing-android-embedded-4.1.0\\res\\values-ja\\values-ja.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,109,156,256",
+                        "endColumns": "53,46,99,81",
+                        "endOffsets": "104,151,251,333"
+                    },
+                    "to": {
+                        "startLines": "91,92,93,94",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "7081,7135,7182,7282",
+                        "endColumns": "53,46,99,81",
+                        "endOffsets": "7130,7177,7277,7359"
                     }
                 }
             ]
