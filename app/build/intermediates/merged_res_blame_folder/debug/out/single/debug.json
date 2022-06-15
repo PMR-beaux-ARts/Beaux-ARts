@@ -1,226 +1,194 @@
 [
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_fragment_list.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\fragment_list.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\menu_menu_main.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\menu\\menu_main.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_star_24.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_star_24.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_glasses.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_glasses.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable-v24_img1.jpg.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable-v24\\img1.jpg"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_img4_4.png.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\img4_4.png"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\navigation_nav_graph.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\navigation\\nav_graph.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_collections_24.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_collections_24.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_info_24.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_info_24.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_map_24.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_map_24.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_item_layout.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\item_layout.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\menu_menu_main.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\menu\\menu_main.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_collections_24.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_collections_24.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable-v24_img4.jpg.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable-v24\\img4.jpg"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_more_vert_24.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_more_vert_24.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_fragment_chart.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\fragment_chart.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_img3_1.jpg.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\img3_1.jpg"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_star_24.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_star_24.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_img2_1.jpg.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\img2_1.jpg"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-pngs-32:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_activity_produit.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\activity_produit.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable-v24_img4.jpg.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable-v24\\img4.jpg"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_img4_1.jpg.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\img4_1.jpg"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_activity_produit.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\activity_produit.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable-v24_img1.jpg.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable-v24\\img1.jpg"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\fragment_settings.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_card_layout.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\card_layout.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable-v24_img3.jpg.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable-v24\\img3.jpg"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_img4_5.jpg.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\img4_5.jpg"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_home_24.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_home_24.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_shopping_basket_24.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_shopping_basket_24.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_img3_7.webp.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\img3_7.webp"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_fragment_itin.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\fragment_itin.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_hearing_24.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_hearing_24.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_activity_piece.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\activity_piece.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_img3_2.jpg.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\img3_2.jpg"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_hearing_24.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_hearing_24.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_img3_2.jpg.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\img3_2.jpg"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_location_on_24.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_location_on_24.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_img1_1.png.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\img1_1.png"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_fragment_list.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\fragment_list.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable-v24_img2.jpg.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable-v24\\img2.jpg"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_img4_2.jpg.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\img4_2.jpg"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_item_layout.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_img3_6.jpg.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\img3_6.jpg"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_img3_1.jpg.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\img3_1.jpg"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_glasses.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_glasses.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_fragment_info.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\fragment_info.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-37:/layout_activity_main.xml.flat",
+        "source": "com.example.beaux_arts.app-main-39:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_activity_piece.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\activity_piece.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_fragment_shop.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\fragment_shop.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-pngs-32:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable-v24_img2.jpg.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable-v24\\img2.jpg"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\navigation\\nav_graph.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_img4_6.jpg.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\img4_6.jpg"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_card_layout.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\card_layout.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_more_vert_24.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_more_vert_24.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_fragment_colle.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\fragment_colle.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_img4_7.jpg.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\img4_7.jpg"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_map_24.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_map_24.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_location_on_24.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_location_on_24.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_info_24.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_info_24.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-merged_res-37:/layout_activity_piece.xml.flat",
-        "source": "com.example.beaux_arts.app-main-39:/layout/activity_piece.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_img4_3.jpg.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\img4_3.jpg"
-    },
-    {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_fragment_settings.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\fragment_settings.xml"
-    },
-    {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-hdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\xml\\backup_rules.xml"
-    },
-    {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_description_layout.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\description_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable-v24_img3.jpg.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable-v24\\img3.jpg"
-    },
-    {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_shopping_basket_24.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_shopping_basket_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\drawable_ic_baseline_home_24.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\drawable\\ic_baseline_home_24.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-37:\\layout_fragment_chart.xml.flat",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-39:\\layout\\fragment_chart.xml"
     }
 ]

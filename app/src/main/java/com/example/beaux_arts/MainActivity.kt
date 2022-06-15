@@ -16,8 +16,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setUpTabBar()
 
-
-
     }
 
     private fun setUpTabBar(){
