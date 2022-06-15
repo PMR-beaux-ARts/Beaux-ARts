@@ -18,17 +18,11 @@ import fr.ec.sequence1.ui.adapter.ItemAdapter
 
 class ItineraireFragment : Fragment() {
 
-
-
     val CAT : String = "homepage"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.i(CAT,"onCreate")
-
-
-
-
 
     }
     fun provideDataSet(): List<Itineraire> {

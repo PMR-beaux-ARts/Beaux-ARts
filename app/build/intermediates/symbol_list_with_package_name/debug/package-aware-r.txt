@@ -3041,7 +3041,6 @@ id spacer
 id special_effects_controller_view_tag
 id spinner1
 id spinner2
-id spinner3
 id spline
 id split_action_bar
 id spread
@@ -3265,6 +3264,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_chart
 layout fragment_colle
 layout fragment_info
 layout fragment_itin
@@ -3362,6 +3362,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
 plurals mtrl_badge_content_description
+raw beauxarts
 raw zxing_beep
 string abc_action_bar_home_description
 string abc_action_bar_up_description
