@@ -26,7 +26,7 @@ class ProduitAdapter(
         // Set the data to textview and imageview.
         val recyclerData = courseDataArrayList[position]
         holder.courseTV.text = recyclerData.nom
-        holder.courseIV.setImageResource(recyclerData.image)
+        holder.courseIV.setImageDrawable(recyclerData.image)
         holder.bind(courseDataArrayList[position], clickListener)
     }
 

@@ -1,5 +1,7 @@
 package com.example.beaux_arts.donnees
 
+import android.graphics.drawable.Drawable
+
 data class Collection(
 
     val id: Int = 0,
@@ -8,10 +10,10 @@ data class Collection(
     val type: String = "Tableau",
     val description: String = "un tableau",
     val salle: Int = 1,
-    //var mesproduits: MutableList<Produit>? = null,
-    val mesproduits: MutableList<Produit> = arrayListOf(),
+    var mesproduits: MutableList<Produit>? = null,
+    //val mesproduits: MutableList<Produit> = arrayListOf(),
     //val position: Array<Double> = arrayOf(0.00,0.00),
-    val image: Int
+    val image: Drawable
     //val image: String = "image1.jpg"
 
 //    var title : String,

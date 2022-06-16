@@ -1,6 +1,10 @@
 package com.example.beaux_arts
 
 import android.content.Intent
+import android.database.sqlite.SQLiteDatabase
+import android.graphics.BitmapFactory
+import android.graphics.drawable.BitmapDrawable
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -8,9 +12,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.graphics.drawable.toBitmap
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.beaux_arts.adapter.ProduitAdapter
+import com.example.beaux_arts.donnees.Collection
+import com.example.beaux_arts.donnees.ImportDB
 import com.example.beaux_arts.donnees.Produit
 
 class ShopFragment : Fragment() {
@@ -26,26 +33,41 @@ class ShopFragment : Fragment() {
     override fun onStart() {
         super.onStart()
         Log.i(CAT,"onStart")
-        var recyclerView: RecyclerView? = view?.findViewById(R.id.souvenirList)
+        val recyclerView: RecyclerView? = view?.findViewById(R.id.souvenirList)
 
         recyclerDataArrayList = ArrayList()
 
-        recyclerDataArrayList!!.add(Produit("Poster, Saint Rémy",R.drawable.img1))
-        recyclerDataArrayList!!.add(Produit("Carnet, Saint Rémy",R.drawable.img1))
-        recyclerDataArrayList!!.add(Produit("Poster, Eglise d'Auvers-sur-Oise", R.drawable.img2))
-        recyclerDataArrayList!!.add(Produit("Marque-page, Eglise d'Auvers-sur-Oise", R.drawable.img2))
-        recyclerDataArrayList!!.add(Produit("Poster, La Nuit étoilée", R.drawable.img3))
-        recyclerDataArrayList!!.add(Produit("Mug, La Nuit étoilée", R.drawable.img3_1))
-        recyclerDataArrayList!!.add(Produit("Puzzle, La Nuit étoilée", R.drawable.img3_2))
-        recyclerDataArrayList!!.add(Produit("Boîte, La Nuit étoilée", R.drawable.img3))
-        recyclerDataArrayList!!.add(Produit("Poster, Les tournesols", R.drawable.img4))
-        recyclerDataArrayList!!.add(Produit("Magnet, Les tournesols", R.drawable.img4))
-        recyclerDataArrayList!!.add(Produit("Magnet, Les tournesols", R.drawable.img4))
-        recyclerDataArrayList!!.add(Produit("Puzzle, Les tournesols", R.drawable.img4))
-        recyclerDataArrayList!!.add(Produit("Ensemble carnet, marque-page et pins, Les tournesols", R.drawable.img4))
-        recyclerDataArrayList!!.add(Produit("Pendentif, Les tournesols", R.drawable.img4))
-        recyclerDataArrayList!!.add(Produit("Boîte, Les tournesols", R.drawable.img4))
-        recyclerDataArrayList!!.add(Produit("Savon, Les tournesols", R.drawable.img4))
+        val database = SQLiteDatabase.openOrCreateDatabase(ImportDB.DB_PATH+ "/" + ImportDB.DB_NAME, null)
+        Log.i("test","Open database")
+
+        val cursor = database.rawQuery("SELECT * FROM Produit",null)
+
+        //val produitsPiece1 = mutableListOf<Produit>(Produit("Poster", R.drawable.img1))
+        if(cursor.moveToFirst()){
+            do {
+                val Pr_id = cursor.getInt(cursor.getColumnIndex("id"))
+                val Pr_nom = cursor.getString(cursor.getColumnIndex("nom"))
+                val Pr_mescollection = null
+                val Pr_type = cursor.getString(cursor.getColumnIndex("type"))
+                val Pr_prix = cursor.getDouble(cursor.getColumnIndex("prix"))
+                val img_b = cursor.getBlob(cursor.getColumnIndex("image"))
+                val img_bitmap = BitmapFactory.decodeByteArray(img_b,0,img_b.size,null)
+                val img_bitmapDrawable = BitmapDrawable(resources,img_bitmap)
+                val Pr_image = img_bitmapDrawable
+                val newProduit = Produit(
+                    Pr_id,
+                    Pr_nom,
+                    Pr_type,
+                    Pr_prix,
+                    Pr_image,
+                    Pr_mescollection
+                )
+                // added data to array list
+                recyclerDataArrayList!!.add(newProduit)
+            } while (cursor.moveToNext())
+        }
+        cursor.close()
+        database.close()
 
         // added data from arraylist to adapter class.
         val adapter = ProduitAdapter(recyclerDataArrayList!!,{produit : Produit -> produitClicked(produit)})
@@ -58,7 +80,6 @@ class ShopFragment : Fragment() {
         recyclerView?.setLayoutManager(layoutManager)
         recyclerView?.setAdapter(adapter)
 
-
     }
 
     private fun produitClicked(produit: Produit) {
@@ -68,7 +89,7 @@ class ShopFragment : Fragment() {
         val activiteVisee = Intent(this.context, ProduitActivity::class.java)
         activiteVisee.putExtra("nom", produit.nom)
         activiteVisee.putExtra("prix", produit.prix)
-        activiteVisee.putExtra("imageRes", produit.image)
+        activiteVisee.putExtra("id", produit.id)
 
         startActivity(activiteVisee)
 

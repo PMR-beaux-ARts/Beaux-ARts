@@ -4,6 +4,7 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.util.Log
 import com.example.beaux_arts.CollectionFragment
+import com.example.beaux_arts.MainActivity
 import com.example.beaux_arts.donnees.ImportDB
 import com.example.beaux_arts.R
 import java.io.File
@@ -11,7 +12,7 @@ import java.io.FileNotFoundException
 import java.io.FileOutputStream
 import java.io.IOException
 
-class ImportDB(var context: CollectionFragment) {
+class ImportDB(var context: MainActivity) {
     private val BUFFER_SIZE = 400000
     private var database: SQLiteDatabase? = null
     fun openDatabase() {
@@ -21,15 +22,15 @@ class ImportDB(var context: CollectionFragment) {
     fun openDatabase(dbfile: String?): SQLiteDatabase? {
         try {
             if (!File(dbfile).exists()) {
-                //没有创建文件夹
+                //Vérifier si database existe. S'il n'existe pas on l'importe, sinon on l'ouvre
                 val f = File(DB_PATH)
                 if (!f.exists()) {
                     f.mkdir()
                 }
-                //判断数据库文件是否存在，若不存在则执行导入，否则直接打开数据库
+
                 val `is` = context.resources.openRawResource(
                     R.raw.beauxarts
-                ) //欲导入的数据库
+                ) //database qui va etre importe
                 val fos =
                     FileOutputStream(File(dbfile))
                 val buffer = ByteArray(BUFFER_SIZE)
@@ -60,9 +61,9 @@ class ImportDB(var context: CollectionFragment) {
     }
 
     companion object {
-        const val DB_NAME = "beauxarts.db" //保存的数据库文件名
-        const val PACKAGE_NAME = "com.example.beaux_arts" //此处改为自己应用的包名。
+        const val DB_NAME = "beauxarts.db" //database enregistre
+        const val PACKAGE_NAME = "com.example.beaux_arts"
         const val DB_PATH = ("/data/data/"
-                + PACKAGE_NAME + "/databases") //在手机里存放数据库的位置
+                + PACKAGE_NAME + "/databases")
     }
 }
