@@ -3,16 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.beaux_arts">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
+        android:name=".MainApp"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Beaux_ARts"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        >
+
+        <meta-data  android:name="com.fengmap.mapapi.appkey"
+            android:value="db73cdf03a7a46cb0dbfd6cfbc2282bd" />
+
         <activity
             android:name=".PieceActivity"
             android:exported="false" />

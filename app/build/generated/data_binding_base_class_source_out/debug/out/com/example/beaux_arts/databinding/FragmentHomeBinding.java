@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.beaux_arts.R;
+import com.fengmap.android.map.FMMapView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -24,6 +25,9 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final RecyclerView list;
 
   @NonNull
+  public final FMMapView mapView;
+
+  @NonNull
   public final Spinner spinner1;
 
   @NonNull
@@ -33,9 +37,11 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final Spinner spinner3;
 
   private FragmentHomeBinding(@NonNull FrameLayout rootView, @NonNull RecyclerView list,
-      @NonNull Spinner spinner1, @NonNull Spinner spinner2, @NonNull Spinner spinner3) {
+      @NonNull FMMapView mapView, @NonNull Spinner spinner1, @NonNull Spinner spinner2,
+      @NonNull Spinner spinner3) {
     this.rootView = rootView;
     this.list = list;
+    this.mapView = mapView;
     this.spinner1 = spinner1;
     this.spinner2 = spinner2;
     this.spinner3 = spinner3;
@@ -74,6 +80,12 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.mapView;
+      FMMapView mapView = ViewBindings.findChildViewById(rootView, id);
+      if (mapView == null) {
+        break missingId;
+      }
+
       id = R.id.spinner1;
       Spinner spinner1 = ViewBindings.findChildViewById(rootView, id);
       if (spinner1 == null) {
@@ -92,7 +104,8 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((FrameLayout) rootView, list, spinner1, spinner2, spinner3);
+      return new FragmentHomeBinding((FrameLayout) rootView, list, mapView, spinner1, spinner2,
+          spinner3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

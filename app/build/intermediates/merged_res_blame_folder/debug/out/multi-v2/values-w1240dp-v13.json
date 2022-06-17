@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-35:/values-w1240dp-v13/values-w1240dp-v13.xml",
+            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-3:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\alici\\AndroidStudioProjects\\Projet_Beaux-Art\\Beaux-ARts\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "source": "E:\\2022_S8\\PMR\\Beaux-ARts\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",

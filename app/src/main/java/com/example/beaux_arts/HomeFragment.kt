@@ -6,19 +6,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
-import android.widget.Spinner
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.fragment_home.*
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.VERTICAL
 import com.example.beaux_arts.donnees.Itineraire
+import com.fengmap.android.map.FMMap
+import com.fengmap.android.map.FMMapView
+import com.fengmap.android.widget.FMFloorControllerComponent
 import fr.ec.sequence1.ui.adapter.ItemAdapter
+import kotlinx.android.synthetic.main.fragment_home.*
 
 
 class HomeFragment : Fragment() {
 
+    var mFMMap: FMMap? = null
 
 
     val CAT : String = "homepage"
@@ -26,12 +29,16 @@ class HomeFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.i(CAT,"onCreate")
-
-
-
-
-
     }
+
+    override fun onDestroy() {
+        if (mFMMap != null) {
+            mFMMap!!.onDestroy()
+        }
+        super.onDestroy()
+    }
+
+
     fun provideDataSet(): List<Itineraire> {
         val result = mutableListOf<Itineraire>()
         repeat(1_000) { intex ->
@@ -90,9 +97,17 @@ class HomeFragment : Fragment() {
         }
 
 
+        //Todo next recyclerview with different ways
 
 
-        //Todo next recyclerview
+
+        val mapView =  view?.findViewById<FMMapView>(R.id.mapView)
+        mFMMap = mapView?.fmMap
+        var bid = "10347"
+        mFMMap?.openMapById(bid,true)
+        val angle = 60f
+        mFMMap!!.rotateAngle = angle //设置地图偏60度
+
 
 
 

@@ -8,7 +8,12 @@
         android:minSdkVersion="23"
         android:targetSdkVersion="32" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
+        android:name="com.example.beaux_arts.MainApp"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -21,6 +26,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Beaux_ARts" >
+        <meta-data
+            android:name="com.fengmap.mapapi.appkey"
+            android:value="db73cdf03a7a46cb0dbfd6cfbc2282bd" />
+
         <activity
             android:name="com.example.beaux_arts.PieceActivity"
             android:exported="false" />

@@ -2514,6 +2514,7 @@ drawable ic_baseline_home_24
 drawable ic_baseline_location_on_24
 drawable ic_baseline_map_24
 drawable ic_baseline_more_vert_24
+drawable ic_baseline_qr_code_scanner_24
 drawable ic_baseline_star_24
 drawable ic_clock_black_24dp
 drawable ic_glasses
@@ -2838,6 +2839,7 @@ id listMode
 id list_item
 id locale
 id ltr
+id mapView
 id masked
 id match_constraint
 id match_parent

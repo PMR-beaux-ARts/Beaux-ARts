@@ -18,6 +18,7 @@ drawable ic_baseline_home_24
 drawable ic_baseline_location_on_24
 drawable ic_baseline_map_24
 drawable ic_baseline_more_vert_24
+drawable ic_baseline_qr_code_scanner_24
 drawable ic_baseline_star_24
 drawable ic_glasses
 drawable ic_launcher_background
@@ -38,6 +39,7 @@ id idIVcourseIV
 id idTVCourse
 id image
 id list
+id mapView
 id nav_graph
 id pieceAudio
 id pieceDescription
