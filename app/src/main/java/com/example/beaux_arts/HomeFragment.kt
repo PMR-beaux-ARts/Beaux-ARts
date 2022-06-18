@@ -21,9 +21,6 @@ import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
 
-    var mFMMap: FMMap? = null
-
-
     val CAT : String = "homepage"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,12 +28,7 @@ class HomeFragment : Fragment() {
         Log.i(CAT,"onCreate")
     }
 
-    override fun onDestroy() {
-        if (mFMMap != null) {
-            mFMMap!!.onDestroy()
-        }
-        super.onDestroy()
-    }
+
 
 
     fun provideDataSet(): List<Itineraire> {
@@ -101,12 +93,7 @@ class HomeFragment : Fragment() {
 
 
 
-        val mapView =  view?.findViewById<FMMapView>(R.id.mapView)
-        mFMMap = mapView?.fmMap
-        var bid = "10347"
-        mFMMap?.openMapById(bid,true)
-        val angle = 60f
-        mFMMap!!.rotateAngle = angle //设置地图偏60度
+
 
 
 
