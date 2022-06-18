@@ -1,15 +1,15 @@
 [
     {
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/activity_map.xml",
+        "source": "com.example.beaux_arts.app-main-7:/layout/activity_map.xml"
+    },
+    {
         "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-4:\\layout\\item_layout.xml",
         "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\layout\\item_layout.xml"
     },
     {
         "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-4:\\layout\\fragment_home.xml",
         "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\layout\\fragment_home.xml"
-    },
-    {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/fragment_home.xml",
-        "source": "com.example.beaux_arts.app-main-7:/layout/fragment_home.xml"
     },
     {
         "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-4:\\layout\\fragment_chart.xml",

@@ -2685,6 +2685,8 @@ int id autoCompleteToEnd 0x7f09005b
 int id autoCompleteToStart 0x7f09005c
 int id barrier 0x7f09005d
 int id baseline 0x7f09005e
+int id beaconCount 0x7f09020d
+int id beaconList 0x7f09020e
 int id beginOnFirstDraw 0x7f09005f
 int id beginning 0x7f090060
 int id bestChoice 0x7f090061
@@ -2695,6 +2697,7 @@ int id bounceBoth 0x7f090065
 int id bounceEnd 0x7f090066
 int id bounceStart 0x7f090067
 int id bt_change_language 0x7f090068
+int id btn_my_location 0x7f09020c
 int id buttonPanel 0x7f090069
 int id cache_measures 0x7f09006a
 int id callMeasure 0x7f09006b
@@ -2880,6 +2883,7 @@ int id matrix 0x7f09011e
 int id message 0x7f09011f
 int id middle 0x7f090120
 int id mini 0x7f090121
+int id monitoringButton 0x7f09020f
 int id month_grid 0x7f090122
 int id month_navigation_bar 0x7f090123
 int id month_navigation_fragment_toggle 0x7f090124
@@ -2962,6 +2966,7 @@ int id postLayout 0x7f090170
 int id progress_circular 0x7f090171
 int id progress_horizontal 0x7f090172
 int id radio 0x7f090173
+int id rangingButton 0x7f090210
 int id ratio 0x7f090174
 int id rectangles 0x7f090175
 int id reverseSawtooth 0x7f090176

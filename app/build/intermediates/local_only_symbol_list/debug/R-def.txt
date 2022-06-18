@@ -46,7 +46,10 @@ id SecondFragment
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id action_settings
+id beaconCount
+id beaconList
 id bt_change_language
+id btn_my_location
 id cb_groups
 id idCourseRV
 id idIVcourseIV
@@ -55,6 +58,7 @@ id image
 id layout_mode
 id list
 id mapView
+id monitoringButton
 id nav_graph
 id pieceAudio
 id pieceDescription
@@ -63,6 +67,7 @@ id pieceImageView
 id pieceMap
 id pieceName
 id pieceRecyclerview
+id rangingButton
 id rg_groups
 id spinner1
 id spinner2

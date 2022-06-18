@@ -61,13 +61,9 @@
             android:id="@+id/list"
             android:layout_weight="1"/>
 
-        <com.fengmap.android.map.FMMapView
-            android:id="@+id/mapView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.2">
 
-        </com.fengmap.android.map.FMMapView>
+
+
     </LinearLayout>/>
 
 </FrameLayout>

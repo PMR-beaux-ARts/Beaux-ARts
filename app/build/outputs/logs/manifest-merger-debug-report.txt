@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-45:12
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-60:12
 MERGED from [androidx.databinding:viewbinding:7.2.0] E:\Android_SDK\caches\transforms-3\702c71cad9d47ac36dca86b4efe50bd3\transformed\viewbinding-7.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.2] E:\Android_SDK\caches\transforms-3\85eda578b0388e2fa02852c08c1ba0e0\transformed\navigation-fragment-ktx-2.4.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.4.2] E:\Android_SDK\caches\transforms-3\dd89adeb42328d46ab29481e08e223f0\transformed\navigation-fragment-2.4.2\AndroidManifest.xml:17:1-24:12
@@ -19,6 +19,7 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] E:\Android_SDK\ca
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] E:\Android_SDK\caches\transforms-3\540d14ba6e004aebf9ea81b1ab956684\transformed\lifecycle-runtime-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] E:\Android_SDK\caches\transforms-3\272bef0979a4706057ca999007c431b1\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:2:1-61:12
 MERGED from [com.google.android.material:material:1.6.0] E:\Android_SDK\caches\transforms-3\bd6d0e44f2aa57426d64e02a13067df9\transformed\material-1.6.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] E:\Android_SDK\caches\transforms-3\3a03f3b448d1882e2dff3b105f446f58\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] E:\Android_SDK\caches\transforms-3\5f7c3c923349d42ca313e04370c06a8c\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
@@ -61,41 +62,85 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] E:\Android_SDK\caches\tra
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] E:\Android_SDK\caches\transforms-3\da64b280e174979c60b9224c5a3d82ef\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] E:\Android_SDK\caches\transforms-3\424999a548111c4541eab4ae2b82d443\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] E:\Android_SDK\caches\transforms-3\140ec7622853f5231f651809ee8adfd0\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-60:12
 	package
 		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:4:5-37
 		INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml
 		INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-45:12
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-60:12
 		INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-45:12
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:1-60:12
 		INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.BLUETOOTH
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:10:5-12:36
+MERGED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:10:5-12:36
+	android:required
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:12:9-33
+	android:name
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:6:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:7:5-73
+MERGED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:13:5-15:36
+MERGED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:13:5-15:36
+	android:required
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:15:9-33
+	android:name
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:7:22-71
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:9:5-80
+MERGED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:17:5-81
+MERGED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.BLUETOOTH_CONNECT
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:11:5-76
+	android:name
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:11:22-73
+uses-permission#android.permission.BLUETOOTH_SCAN
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:12:5-73
+	android:name
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:12:22-70
 uses-permission#android.permission.INTERNET
-ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:6:5-66
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:13:5-66
 	android:name
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:13:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:7:5-78
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:14:5-78
 	android:name
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:7:22-76
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:14:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:8:5-76
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:15:5-76
 	android:name
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:8:22-73
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:15:22-73
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:17:5-76
+	android:name
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:17:22-74
+uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:18:5-85
+	android:name
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:18:22-82
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:19:5-79
+	android:name
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:19:22-76
 application
-ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:10:5-43:19
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:25:5-58:19
 MERGED from [androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
+MERGED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:19:5-59:19
+MERGED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:19:5-59:19
 MERGED from [com.google.android.material:material:1.6.0] E:\Android_SDK\caches\transforms-3\bd6d0e44f2aa57426d64e02a13067df9\transformed\material-1.6.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.0] E:\Android_SDK\caches\transforms-3\bd6d0e44f2aa57426d64e02a13067df9\transformed\material-1.6.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] E:\Android_SDK\caches\transforms-3\3a03f3b448d1882e2dff3b105f446f58\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -113,63 +158,63 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] E:\Android_SDK\caches\trans
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] E:\Android_SDK\caches\transforms-3\4825226d7bdc18dc642f18a8a048b277\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:33:9-35
 	android:label
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:16:9-41
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:31:9-41
 	android:fullBackupContent
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:28:9-54
 	android:roundIcon
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:17:9-54
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:32:9-54
 	tools:targetApi
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:20:9-29
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:35:9-29
 	android:icon
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:29:9-43
 	android:allowBackup
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:26:9-35
 	android:theme
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:19:9-48
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:34:9-48
 	android:dataExtractionRules
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:12:9-65
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:27:9-65
 	android:name
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:15:9-32
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:30:9-32
 meta-data#com.fengmap.mapapi.appkey
-ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:23:9-24:64
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:38:9-39:64
 	android:value
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:24:13-61
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:39:13-61
 	android:name
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:23:21-61
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:38:21-61
 activity#com.example.beaux_arts.PieceActivity
-ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:26:9-28:40
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:41:9-43:40
 	android:exported
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:28:13-37
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:27:13-42
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:42:13-42
 activity#com.example.beaux_arts.MainActivity
-ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:29:9-39:20
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:44:9-54:20
 	android:label
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:32:13-45
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:47:13-45
 	android:exported
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:31:13-36
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:46:13-36
 	android:theme
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:33:13-64
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:48:13-64
 	android:name
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:30:13-41
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:45:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:34:13-38:29
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:49:13-53:29
 action#android.intent.action.MAIN
-ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:35:17-69
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:50:17-69
 	android:name
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:35:25-66
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:50:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:37:17-77
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:52:17-77
 	android:name
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:37:27-74
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:52:27-74
 activity#com.example.beaux_arts.MapActivity
-ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:40:9-42:66
+ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:55:9-57:66
 	android:theme
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:42:13-64
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:57:13-64
 	android:name
-		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:41:13-40
+		ADDED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:56:13-40
 uses-sdk
 INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml
@@ -204,6 +249,8 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] E:\Android_SDK\
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] E:\Android_SDK\caches\transforms-3\272bef0979a4706057ca999007c431b1\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:6:5-8:41
+MERGED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.android.material:material:1.6.0] E:\Android_SDK\caches\transforms-3\bd6d0e44f2aa57426d64e02a13067df9\transformed\material-1.6.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.6.0] E:\Android_SDK\caches\transforms-3\bd6d0e44f2aa57426d64e02a13067df9\transformed\material-1.6.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] E:\Android_SDK\caches\transforms-3\3a03f3b448d1882e2dff3b105f446f58\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
@@ -310,6 +357,84 @@ ADDED from [androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4
 		ADDED from [androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
 	android:name
 		ADDED from [androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:16:5-81
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:16:22-78
+receiver#org.altbeacon.beacon.startup.StartupBroadcastReceiver
+ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:20:9-28:20
+	android:exported
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:22:13-37
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:21:13-81
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED+action:name:android.intent.action.BOOT_COMPLETED
+ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:23:13-27:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:24:17-79
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:24:25-76
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:25:17-87
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:25:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:26:17-90
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:26:25-87
+service#org.altbeacon.beacon.service.BeaconService
+ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:30:9-35:38
+	android:enabled
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:32:13-35
+	android:label
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:35:13-35
+	android:exported
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:33:13-37
+	android:isolatedProcess
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:34:13-44
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:31:13-70
+service#org.altbeacon.beacon.BeaconIntentProcessor
+ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:36:9-39:40
+	android:enabled
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:38:13-35
+	android:exported
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:37:13-70
+service#org.altbeacon.beacon.service.ScanJob
+ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:40:9-50:19
+	android:exported
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:41:13-64
+meta-data#immediateScanJobId
+ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:44:13-46:45
+	android:value
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:46:17-42
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:45:17-50
+meta-data#periodicScanJobId
+ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:47:13-49:45
+	android:value
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:49:17-42
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:48:17-49
+service#org.altbeacon.bluetooth.BluetoothTestJob
+ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:51:9-58:19
+	android:exported
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:53:13-37
+	android:permission
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:54:13-69
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:52:13-68
+meta-data#jobId
+ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:55:13-57:46
+	android:value
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:57:17-43
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.19.3] E:\Android_SDK\caches\transforms-3\f5fa82198190764d02ac4766e9b81585\transformed\android-beacon-library-2.19.3\AndroidManifest.xml:56:17-37
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.0.0] E:\Android_SDK\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] E:\Android_SDK\caches\transforms-3\c9ffce7b077fa143d431c613385b3923\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:26:9-34:20
