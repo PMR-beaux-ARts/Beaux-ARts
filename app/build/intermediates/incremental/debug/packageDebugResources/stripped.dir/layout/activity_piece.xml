@@ -58,6 +58,7 @@
             android:contentDescription="@string/mapOption"
             android:minHeight="48dp"
             app:srcCompat="@drawable/ic_baseline_map_24" />
+
     </LinearLayout>
 
     <TextView
@@ -70,10 +71,21 @@
         android:text="TextView"
         android:textColor="#000000" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#EFEEEE"
+        android:gravity="center_vertical"
+        android:text="Produits associés" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/pieceRecyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="0dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>

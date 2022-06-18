@@ -43,10 +43,13 @@ public final class ActivityPieceBinding implements ViewBinding {
   @NonNull
   public final RecyclerView pieceRecyclerview;
 
+  @NonNull
+  public final TextView textView;
+
   private ActivityPieceBinding(@NonNull LinearLayout rootView, @NonNull ImageButton pieceAudio,
       @NonNull TextView pieceDescription, @NonNull ImageButton pieceGlasses,
       @NonNull ImageView pieceImageView, @NonNull ImageButton pieceMap, @NonNull TextView pieceName,
-      @NonNull RecyclerView pieceRecyclerview) {
+      @NonNull RecyclerView pieceRecyclerview, @NonNull TextView textView) {
     this.rootView = rootView;
     this.pieceAudio = pieceAudio;
     this.pieceDescription = pieceDescription;
@@ -55,6 +58,7 @@ public final class ActivityPieceBinding implements ViewBinding {
     this.pieceMap = pieceMap;
     this.pieceName = pieceName;
     this.pieceRecyclerview = pieceRecyclerview;
+    this.textView = textView;
   }
 
   @Override
@@ -126,8 +130,14 @@ public final class ActivityPieceBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView;
+      TextView textView = ViewBindings.findChildViewById(rootView, id);
+      if (textView == null) {
+        break missingId;
+      }
+
       return new ActivityPieceBinding((LinearLayout) rootView, pieceAudio, pieceDescription,
-          pieceGlasses, pieceImageView, pieceMap, pieceName, pieceRecyclerview);
+          pieceGlasses, pieceImageView, pieceMap, pieceName, pieceRecyclerview, textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
