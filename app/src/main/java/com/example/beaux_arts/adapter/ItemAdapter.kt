@@ -1,6 +1,5 @@
-package fr.ec.sequence1.ui.adapter
+package com.example.beaux_arts.adapter
 
-import android.content.ClipData
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +10,8 @@ import com.example.beaux_arts.R
 import com.example.beaux_arts.donnees.Itineraire
 
 class ItemAdapter(
-    private val dataSet: List<Itineraire>
+    private val dataSet: List<Itineraire>,
+    private val actionListener: ActionListener
 ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
     override fun getItemCount(): Int = dataSet.size
@@ -42,7 +42,7 @@ class ItemAdapter(
         const val HEADER_ITEM_ID = 0
         const val ITEM_ID = 1
     }
-    class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         private val image = itemView.findViewById<ImageView>(R.id.image)
         private val title = itemView.findViewById<TextView>(R.id.title)
@@ -54,6 +54,22 @@ class ItemAdapter(
             image.setImageResource(item.imageRes)
         }
 
+        init {
+            itemView.setOnClickListener{
+
+                val postPosition = adapterPosition
+                if (postPosition != RecyclerView.NO_POSITION){
+                    val clickedPosition = dataSet[adapterPosition]
+                    actionListener.onItemClicked(clickedPosition,postPosition)
+                }
+
+
+            }
+        }
+
+    }
+    interface ActionListener{
+        fun onItemClicked(listItem: Itineraire, position: Int)
     }
 
 }

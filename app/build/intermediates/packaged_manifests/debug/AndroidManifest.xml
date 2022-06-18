@@ -44,6 +44,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.beaux_arts.MapActivity"
+            android:theme="@style/Theme.Beaux_ARts.NoActionBar" />
 
         <uses-library
             android:name="androidx.window.extensions"

@@ -21,7 +21,7 @@
 13-->E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:8:22-73
 14
 15    <application
-15-->E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:10:5-40:19
+15-->E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:10:5-43:19
 16        android:name="com.example.beaux_arts.MainApp"
 16-->E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:15:9-32
 17        android:allowBackup="true"
@@ -79,41 +79,47 @@
 44-->E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:37:27-74
 45            </intent-filter>
 46        </activity>
-47
-48        <uses-library
-48-->[androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-49            android:name="androidx.window.extensions"
-49-->[androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-50            android:required="false" />
-50-->[androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+47        <activity
+47-->E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:40:9-42:66
+48            android:name="com.example.beaux_arts.MapActivity"
+48-->E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:41:13-40
+49            android:theme="@style/Theme.Beaux_ARts.NoActionBar" />
+49-->E:\2022_S8\PMR\Beaux-ARts\app\src\main\AndroidManifest.xml:42:13-64
+50
 51        <uses-library
-51-->[androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-52            android:name="androidx.window.sidecar"
-52-->[androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+51-->[androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+52            android:name="androidx.window.extensions"
+52-->[androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
 53            android:required="false" />
-53-->[androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-54
-55        <provider
-55-->[androidx.emoji2:emoji2:1.0.0] E:\Android_SDK\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-56            android:name="androidx.startup.InitializationProvider"
-56-->[androidx.emoji2:emoji2:1.0.0] E:\Android_SDK\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-57            android:authorities="com.example.beaux_arts.androidx-startup"
-57-->[androidx.emoji2:emoji2:1.0.0] E:\Android_SDK\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-58            android:exported="false" >
-58-->[androidx.emoji2:emoji2:1.0.0] E:\Android_SDK\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-59            <meta-data
-59-->[androidx.emoji2:emoji2:1.0.0] E:\Android_SDK\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-60                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-60-->[androidx.emoji2:emoji2:1.0.0] E:\Android_SDK\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-61                android:value="androidx.startup" />
-61-->[androidx.emoji2:emoji2:1.0.0] E:\Android_SDK\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+53-->[androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+54        <uses-library
+54-->[androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+55            android:name="androidx.window.sidecar"
+55-->[androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+56            android:required="false" />
+56-->[androidx.window:window:1.0.0] E:\Android_SDK\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+57
+58        <provider
+58-->[androidx.emoji2:emoji2:1.0.0] E:\Android_SDK\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+59            android:name="androidx.startup.InitializationProvider"
+59-->[androidx.emoji2:emoji2:1.0.0] E:\Android_SDK\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+60            android:authorities="com.example.beaux_arts.androidx-startup"
+60-->[androidx.emoji2:emoji2:1.0.0] E:\Android_SDK\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+61            android:exported="false" >
+61-->[androidx.emoji2:emoji2:1.0.0] E:\Android_SDK\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
 62            <meta-data
-62-->[androidx.lifecycle:lifecycle-process:2.4.0] E:\Android_SDK\caches\transforms-3\c9ffce7b077fa143d431c613385b3923\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-63                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-63-->[androidx.lifecycle:lifecycle-process:2.4.0] E:\Android_SDK\caches\transforms-3\c9ffce7b077fa143d431c613385b3923\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+62-->[androidx.emoji2:emoji2:1.0.0] E:\Android_SDK\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+63                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+63-->[androidx.emoji2:emoji2:1.0.0] E:\Android_SDK\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
 64                android:value="androidx.startup" />
-64-->[androidx.lifecycle:lifecycle-process:2.4.0] E:\Android_SDK\caches\transforms-3\c9ffce7b077fa143d431c613385b3923\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-65        </provider>
-66    </application>
-67
-68</manifest>
+64-->[androidx.emoji2:emoji2:1.0.0] E:\Android_SDK\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+65            <meta-data
+65-->[androidx.lifecycle:lifecycle-process:2.4.0] E:\Android_SDK\caches\transforms-3\c9ffce7b077fa143d431c613385b3923\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+66                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+66-->[androidx.lifecycle:lifecycle-process:2.4.0] E:\Android_SDK\caches\transforms-3\c9ffce7b077fa143d431c613385b3923\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+67                android:value="androidx.startup" />
+67-->[androidx.lifecycle:lifecycle-process:2.4.0] E:\Android_SDK\caches\transforms-3\c9ffce7b077fa143d431c613385b3923\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+68        </provider>
+69    </application>
+70
+71</manifest>

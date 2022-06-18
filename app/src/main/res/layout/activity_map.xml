@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.fengmap.android.map.FMMapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"/>
+
+    <LinearLayout
+        android:id="@+id/layout_mode"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_text"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="mode_2D"
+            android:textColor="@color/inner_text1"
+            android:textSize="14sp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_text"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="mode_3D"
+            android:textColor="@color/inner_text1"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_change_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="change language" />
+
+    <include
+        layout="@layout/inner_groups_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"/>
+
+</LinearLayout>

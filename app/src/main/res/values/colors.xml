@@ -10,5 +10,9 @@
     <color name="tabBackgroundColor">#EEE</color>
     <color name="blue">#00F</color>
     <color name="grey">#D3D3D3</color>
+    <color name="gray">#5ff8f8f8</color>
+
+    <color name="driver_line">#ededed</color>
+    <color name="transparent">#00000000</color>
     
 </resources>

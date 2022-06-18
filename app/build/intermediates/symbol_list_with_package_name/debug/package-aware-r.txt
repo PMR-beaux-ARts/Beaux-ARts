@@ -1310,13 +1310,17 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color driver_line
 color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray
 color grey
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color inner_text1
+color inner_text2
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -1824,6 +1828,7 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
+color transparent
 color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
@@ -2496,6 +2501,8 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable bg_radio
+drawable bg_text
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2514,7 +2521,6 @@ drawable ic_baseline_home_24
 drawable ic_baseline_location_on_24
 drawable ic_baseline_map_24
 drawable ic_baseline_more_vert_24
-drawable ic_baseline_qr_code_scanner_24
 drawable ic_baseline_star_24
 drawable ic_clock_black_24dp
 drawable ic_glasses
@@ -2524,6 +2530,9 @@ drawable ic_launcher_foreground
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_marker_blue
+drawable ic_marker_end
+drawable ic_marker_start
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -2575,6 +2584,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable shape_bg_blue
+drawable shape_bg_rect_white
+drawable shape_bg_white
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2683,11 +2695,13 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id bt_change_language
 id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
 id carryVelocity
+id cb_groups
 id center
 id centerCrop
 id centerInside
@@ -2828,6 +2842,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layout_mode
 id left
 id leftToRight
 id legacy
@@ -2951,6 +2966,7 @@ id radio
 id ratio
 id rectangles
 id reverseSawtooth
+id rg_groups
 id right
 id rightToLeft
 id right_icon
@@ -3193,6 +3209,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_map
 layout activity_piece
 layout card_layout
 layout custom_dialog
@@ -3215,6 +3232,7 @@ layout fragment_chart
 layout fragment_home
 layout fragment_list
 layout fragment_settings
+layout inner_groups_bottom
 layout item_layout
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

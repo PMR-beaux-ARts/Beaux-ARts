@@ -32,7 +32,15 @@
         "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\layout\\fragment_list.xml"
     },
     {
+        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-4:\\layout\\inner_groups_bottom.xml",
+        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\layout\\inner_groups_bottom.xml"
+    },
+    {
         "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-4:\\layout\\activity_piece.xml",
         "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\layout\\activity_piece.xml"
+    },
+    {
+        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-4:\\layout\\activity_map.xml",
+        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\layout\\activity_map.xml"
     }
 ]

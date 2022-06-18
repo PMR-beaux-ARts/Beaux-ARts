@@ -1,5 +1,6 @@
 package com.example.beaux_arts
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -11,15 +12,15 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.VERTICAL
+import com.example.beaux_arts.adapter.ItemAdapter
 import com.example.beaux_arts.donnees.Itineraire
-import com.fengmap.android.map.FMMap
-import com.fengmap.android.map.FMMapView
-import com.fengmap.android.widget.FMFloorControllerComponent
-import fr.ec.sequence1.ui.adapter.ItemAdapter
+
 import kotlinx.android.synthetic.main.fragment_home.*
 
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(), ItemAdapter.ActionListener {
+
+
 
     val CAT : String = "homepage"
 
@@ -27,7 +28,6 @@ class HomeFragment : Fragment() {
         super.onCreate(savedInstanceState)
         Log.i(CAT,"onCreate")
     }
-
 
 
 
@@ -50,10 +50,6 @@ class HomeFragment : Fragment() {
     override fun onStart() {
         super.onStart()
         Log.i(CAT,"onStart")
-
-        val list = view?.findViewById<RecyclerView>(R.id.list)
-        list?.adapter = ItemAdapter(dataSet = provideDataSet())
-        list?.layoutManager = LinearLayoutManager(activity, VERTICAL, false)
 
         spinner1.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
             override fun onItemSelected(
@@ -88,18 +84,21 @@ class HomeFragment : Fragment() {
             }
         }
 
-
-        //Todo next recyclerview with different ways
-
-
-
-
-
-
+        val list = view?.findViewById<RecyclerView>(R.id.list)
+        list?.adapter = ItemAdapter(dataSet = provideDataSet(),actionListener = this)
+        list?.layoutManager = LinearLayoutManager(activity, VERTICAL, false)
 
 
     }
 
+
+    override fun onItemClicked(listItem: Itineraire, pos_list:Int) {
+        Log.d(CAT,"click on item ")
+
+        val iToMapActivity  = Intent(this.context, MapActivity::class.java)
+        iToMapActivity.putExtra("position",pos_list)
+        startActivity(iToMapActivity)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -108,5 +107,6 @@ class HomeFragment : Fragment() {
 
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
+
 
 }

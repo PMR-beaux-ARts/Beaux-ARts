@@ -14,6 +14,8 @@
     </string-array>
     <color name="black">#FF000000</color>
     <color name="blue">#00F</color>
+    <color name="driver_line">#ededed</color>
+    <color name="gray">#5ff8f8f8</color>
     <color name="grey">#D3D3D3</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
@@ -21,6 +23,7 @@
     <color name="tabBackgroundColor">#EEE</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+    <color name="transparent">#00000000</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="fab_margin">16dp</dimen>
     <string name="action_settings">Settings</string>
