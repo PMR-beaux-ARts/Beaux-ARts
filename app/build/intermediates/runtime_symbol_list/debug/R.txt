@@ -2856,6 +2856,9 @@ int id item2 0x7f0900f6
 int id item3 0x7f0900f7
 int id item4 0x7f0900f8
 int id item_touch_helper_previous_elevation 0x7f0900f9
+int id itineraireDescription 0x7f090220
+int id itineraireMapView 0x7f090221
+int id itineraryName 0x7f090222
 int id jumpToEnd 0x7f0900fa
 int id jumpToStart 0x7f0900fb
 int id labeled 0x7f0900fc
@@ -2950,6 +2953,7 @@ int id north 0x7f090154
 int id notification_background 0x7f090155
 int id notification_main_column 0x7f090156
 int id notification_main_column_container 0x7f090157
+int id oeuvresCollectionVIew 0x7f090223
 int id off 0x7f090158
 int id on 0x7f090159
 int id onInterceptTouchReturnSwipe 0x7f09015a
@@ -3089,6 +3093,10 @@ int id textSpacerNoButtons 0x7f0901df
 int id textSpacerNoTitle 0x7f0901e0
 int id textStart 0x7f0901e1
 int id textTop 0x7f0901e2
+int id textView 0x7f090224
+int id textView3 0x7f090225
+int id textView5 0x7f090226
+int id textView6 0x7f090227
 int id text_input_end_icon 0x7f0901e3
 int id text_input_error_icon 0x7f0901e4
 int id text_input_start_icon 0x7f0901e5
@@ -3243,6 +3251,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0c0018
 int layout abc_search_view 0x7f0c0019
 int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
+int layout activity_itinerary 0x7f0c008b
 int layout activity_main 0x7f0c001c
 int layout activity_piece 0x7f0c001d
 int layout activity_produit 0x7f0c001e

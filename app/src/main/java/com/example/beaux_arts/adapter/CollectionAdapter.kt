@@ -46,6 +46,7 @@ class CollectionAdapter(
 
         fun bind(collection : Collection, clickListener: (Collection) -> Unit){
             courseTV.text = collection.nom
+            courseTV.setOnClickListener {clickListener(collection)}
             courseIV.setOnClickListener {clickListener(collection)}
         }
     }

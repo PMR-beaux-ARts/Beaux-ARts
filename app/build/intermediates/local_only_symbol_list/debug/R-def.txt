@@ -43,8 +43,12 @@ id idCourseRV
 id idIVcourseIV
 id idTVCourse
 id image
+id itineraireDescription
+id itineraireMapView
+id itineraryName
 id list
 id nav_graph
+id oeuvresCollectionVIew
 id pieceAudio
 id pieceButton
 id pieceDescription
@@ -62,8 +66,13 @@ id spinner1
 id spinner2
 id subtitle
 id tablayout
+id textView
+id textView3
+id textView5
+id textView6
 id title
 id viewPager
+layout activity_itinerary
 layout activity_main
 layout activity_piece
 layout activity_produit

@@ -39,16 +39,19 @@
         <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
         <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/drawable/ic_sound.xml" value="0.1625" />
         <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/layout/activity_article.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/layout/activity_itinerary.xml" value="0.18125" />
         <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/layout/activity_main.xml" value="0.2210144927536232" />
-        <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/layout/activity_piece.xml" value="0.264" />
+        <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/layout/activity_piece.xml" value="0.176" />
         <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/layout/activity_piece4.xml" value="0.2210144927536232" />
         <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/layout/activity_produit.xml" value="0.2" />
         <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/layout/card_layout.xml" value="0.2210144927536232" />
         <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/layout/description_layout.xml" value="0.2210144927536232" />
         <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/layout/fragment_chart.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/layout/fragment_home.xml" value="0.2210144927536232" />
+        <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/layout/fragment_itin.xml" value="0.18125" />
         <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/layout/fragment_list.xml" value="0.2210144927536232" />
         <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/layout/fragment_settings.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/layout/item_layout.xml" value="0.18125" />
         <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/layout/produit_piece.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/menu/menu_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/alici/AndroidStudioProjects/Projet_Beaux-Art/Beaux-ARts/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2265" />

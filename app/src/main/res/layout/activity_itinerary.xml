@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ItineraryActivity">
+
+
+    <TextView
+        android:id="@+id/itineraryName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFC107"
+        android:gravity="center"
+        android:text="Itinéraire n"
+        android:textSize="20sp"  />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#EFEEEE"
+        android:gravity="center_vertical"
+        android:text="Description"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/itineraireDescription"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:text="Description de cette itinéraire" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="#EFEEEE"
+        android:gravity="center_vertical"
+        android:text="Oeuvres de cette collection"
+        android:textSize="15sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/oeuvresCollectionVIew"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="#EFEEEE"
+        android:gravity="center_vertical"
+        android:text="Carte"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/itineraireMapView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+</LinearLayout>

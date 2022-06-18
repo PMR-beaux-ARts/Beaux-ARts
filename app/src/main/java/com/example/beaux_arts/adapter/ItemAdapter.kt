@@ -8,10 +8,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.beaux_arts.R
+import com.example.beaux_arts.donnees.Collection
 import com.example.beaux_arts.donnees.Itineraire
 
 class ItemAdapter(
-    private val dataSet: List<Itineraire>
+    private val dataSet: List<Itineraire>,
+    val clickListener:(Itineraire) -> Unit
 ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
     override fun getItemCount(): Int = dataSet.size
@@ -35,7 +37,7 @@ class ItemAdapter(
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        holder.bind(item = dataSet[position])
+        holder.bind(item = dataSet[position], clickListener)
     }
 
     companion object {
@@ -48,10 +50,14 @@ class ItemAdapter(
         private val title = itemView.findViewById<TextView>(R.id.title)
         private val subtitle = itemView.findViewById<TextView>(R.id.subtitle)
 
-        fun bind(item: Itineraire) {
+        fun bind(item: Itineraire, clickListener: (Itineraire) -> Unit) {
             title.text = item.title
             subtitle.text = item.subTitle
             image.setImageResource(item.imageRes)
+
+            title.setOnClickListener { clickListener(item) }
+            subtitle.setOnClickListener { clickListener(item) }
+            image.setOnClickListener { clickListener(item) }
         }
 
     }

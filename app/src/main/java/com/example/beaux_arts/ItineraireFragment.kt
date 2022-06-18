@@ -1,5 +1,6 @@
 package com.example.beaux_arts
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.fragment_itin.*
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView.VERTICAL
+import com.example.beaux_arts.donnees.Collection
 import com.example.beaux_arts.donnees.Itineraire
 import fr.ec.sequence1.ui.adapter.ItemAdapter
 
@@ -30,8 +32,8 @@ class ItineraireFragment : Fragment() {
         repeat(1_000) { intex ->
             val item = Itineraire(
                 imageRes = R.mipmap.ic_launcher,
-                title = "Titre $intex",
-                subTitle = "Sous-Titre $intex",
+                title = "Title $intex",
+                subTitle = "Subtitle $intex",
             )
 
             result.add(item)
@@ -46,7 +48,7 @@ class ItineraireFragment : Fragment() {
         Log.i(CAT,"onStart")
 
         val list = view?.findViewById<RecyclerView>(R.id.list)
-        list?.adapter = ItemAdapter(dataSet = provideDataSet())
+        list?.adapter = ItemAdapter(dataSet = provideDataSet(), {itineraire: Itineraire -> itineraireClicked(itineraire) })
         list?.layoutManager = LinearLayoutManager(activity, VERTICAL, false)
 
         spinner1.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
@@ -81,16 +83,15 @@ class ItineraireFragment : Fragment() {
 
             }
         }
-
-
-
-
         //Todo next recyclerview
-
-
-
     }
 
+    private fun itineraireClicked(itineraire: Itineraire) {
+        Toast.makeText(this.context, "Clicked: ${itineraire.title}", Toast.LENGTH_SHORT).show()
+        val activiteVisee = Intent(this.context, ItineraryActivity::class.java)
+
+        startActivity(activiteVisee)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
