@@ -91,21 +91,6 @@ class MapActivity : AppCompatActivity(),
     protected var mNaviAnalyser: FMNaviAnalyser? = null
 
     /**
-     * 蓝牙适配器
-     */
-    protected var mBluetoothAdapter: BluetoothAdapter? = null
-
-    /**
-     * 是否正在进行扫描
-     */
-    protected var isScanning = false
-
-
-
-
-    lateinit var region: Region
-
-    /**
      * 定位按钮
      */
     var btnMyLocation: FloatingActionButton? = null
@@ -263,11 +248,7 @@ class MapActivity : AppCompatActivity(),
         btnMyLocation = findViewById(R.id.btn_my_location) as FloatingActionButton
         btnMyLocation?.setOnClickListener(View.OnClickListener { // 默认无问题
 
-            // todo
-
-
-
-
+            Toast.makeText(applicationContext,"26:$distance_26 m\n20:$distance_20 m\n55:$distance_55 m",Toast.LENGTH_SHORT).show()
 
 
         })
