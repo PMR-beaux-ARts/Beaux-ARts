@@ -2883,7 +2883,6 @@ int id matrix 0x7f09011e
 int id message 0x7f09011f
 int id middle 0x7f090120
 int id mini 0x7f090121
-int id monitoringButton 0x7f09020f
 int id month_grid 0x7f090122
 int id month_navigation_bar 0x7f090123
 int id month_navigation_fragment_toggle 0x7f090124
@@ -2966,7 +2965,6 @@ int id postLayout 0x7f090170
 int id progress_circular 0x7f090171
 int id progress_horizontal 0x7f090172
 int id radio 0x7f090173
-int id rangingButton 0x7f090210
 int id ratio 0x7f090174
 int id rectangles 0x7f090175
 int id reverseSawtooth 0x7f090176

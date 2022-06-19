@@ -58,7 +58,6 @@ id image
 id layout_mode
 id list
 id mapView
-id monitoringButton
 id nav_graph
 id pieceAudio
 id pieceDescription
@@ -67,7 +66,6 @@ id pieceImageView
 id pieceMap
 id pieceName
 id pieceRecyclerview
-id rangingButton
 id rg_groups
 id spinner1
 id spinner2

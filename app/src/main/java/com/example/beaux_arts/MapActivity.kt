@@ -51,13 +51,19 @@ class MapActivity : AppCompatActivity(),
     View.OnClickListener,
     OnFMMapClickListener{
 
+
+
     lateinit var beaconListView: ListView
     lateinit var beaconCountTextView: TextView
     lateinit var monitoringButton: Button
     lateinit var rangingButton: Button
     lateinit var beaconReferenceApplication: MainApp
-    var alertDialog: AlertDialog? = null
+
     var neverAskAgainPermissions = ArrayList<String>()
+
+    var distance_20 = 0.0
+    var distance_26 = 0.0
+    var distance_55 = 0.0
 
     val CAT : String  = "mapActivity"
     var mMap: FMMap? = null
@@ -141,84 +147,38 @@ class MapActivity : AppCompatActivity(),
         }
         super.onDestroy()
     }
-    val monitoringObserver = Observer<Int> { state ->
-        var dialogTitle = "Beacons detected"
-        var dialogMessage = "didEnterRegionEvent has fired"
-        var stateString = "inside"
-        if (state == MonitorNotifier.OUTSIDE) {
-            dialogTitle = "No beacons detected"
-            dialogMessage = "didExitRegionEvent has fired"
-            stateString == "outside"
-            beaconCountTextView.text = "Outside of the beacon region -- no beacons detected"
-            beaconListView.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayOf("--"))
-        }
-        else {
-            beaconCountTextView.text = "Inside the beacon region."
-        }
-        Log.d(TAG, "monitoring state changed to : $stateString")
-        val builder =
-            AlertDialog.Builder(this)
-        builder.setTitle(dialogTitle)
-        builder.setMessage(dialogMessage)
-        builder.setPositiveButton(android.R.string.ok, null)
-        alertDialog?.dismiss()
-        alertDialog = builder.create()
-        alertDialog?.show()
-    }
 
-    val rangingObserver = Observer<Collection<Beacon>> { beacons ->
+
+    private val rangingObserver = Observer<Collection<Beacon>> { beacons ->
         Log.d(TAG, "Ranged: ${beacons.count()} beacons")
-        if (BeaconManager.getInstanceForApplication(this).rangedRegions.size > 0) {
+        if (BeaconManager.getInstanceForApplication(this).rangedRegions.isNotEmpty()) {
+            for (item in beacons){
+                if (item.id3.toString() == "26" ) {
+                    Log.i(CAT,"distance 26 = ${item.distance}")
+                    distance_26 = item.distance
+
+                }
+                if (item.id3.toString() == "55" ) {
+                    Log.i(CAT,"distance 55 = ${item.distance}")
+                    distance_55 = item.distance
+                }
+                if (item.id3.toString() == "20" ) {
+                    Log.i(CAT,"distance 20 = ${item.distance}")
+                    distance_20 = item.distance
+                }
+            }
+
             beaconCountTextView.text = "Ranging enabled: ${beacons.count()} beacon(s) detected"
             beaconListView.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1,
                 beacons
-                    .sortedBy { it.distance }
-                    .map { "${it.id1}\nid2: ${it.id2} id3:  rssi: ${it.rssi}\nest. distance: ${it.distance} m" }.toTypedArray())
+                    .sortedBy { it.id3 }
+                    .map { "id3: ${it.id3}\ndistance: ${it.distance} m" }.toTypedArray())
         }
     }
 
-    fun rangingButtonTapped(view: View) {
-        val beaconManager = BeaconManager.getInstanceForApplication(this)
-        if (beaconManager.rangedRegions.size == 0) {
-            beaconManager.startRangingBeacons(beaconReferenceApplication.region)
-            rangingButton.text = "Stop Ranging"
-            beaconCountTextView.text = "Ranging enabled -- awaiting first callback"
-        }
-        else {
-            beaconManager.stopRangingBeacons(beaconReferenceApplication.region)
-            rangingButton.text = "Start Ranging"
-            beaconCountTextView.text = "Ranging disabled -- no beacons detected"
-            beaconListView.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayOf("--"))
-        }
-    }
 
-    fun monitoringButtonTapped(view: View) {
-        var dialogTitle = ""
-        var dialogMessage = ""
-        val beaconManager = BeaconManager.getInstanceForApplication(this)
-        if (beaconManager.monitoredRegions.size == 0) {
-            beaconManager.startMonitoring(beaconReferenceApplication.region)
-            dialogTitle = "Beacon monitoring started."
-            dialogMessage = "You will see a dialog if a beacon is detected, and another if beacons then stop being detected."
-            monitoringButton.text = "Stop Monitoring"
 
-        }
-        else {
-            beaconManager.stopMonitoring(beaconReferenceApplication.region)
-            dialogTitle = "Beacon monitoring stopped."
-            dialogMessage = "You will no longer see dialogs when becaons start/stop being detected."
-            monitoringButton.text = "Start Monitoring"
-        }
-        val builder =
-            AlertDialog.Builder(this)
-        builder.setTitle(dialogTitle)
-        builder.setMessage(dialogMessage)
-        builder.setPositiveButton(android.R.string.ok, null)
-        alertDialog?.dismiss()
-        alertDialog = builder.create()
-        alertDialog?.show()
 
-    }
 
     override fun onRequestPermissionsResult(
         requestCode: Int,
@@ -253,12 +213,8 @@ class MapActivity : AppCompatActivity(),
 
         // Set up a Live Data observer for beacon data
         val regionViewModel = BeaconManager.getInstanceForApplication(this).getRegionViewModel(beaconReferenceApplication.region)
-        // observer will be called each time the monitored regionState changes (inside vs. outside region)
-        regionViewModel.regionState.observe(this, monitoringObserver)
         // observer will be called each time a new list of beacons is ranged (typically ~1 second in the foreground)
         regionViewModel.rangedBeacons.observe(this, rangingObserver)
-        rangingButton = findViewById<Button>(R.id.rangingButton)
-        monitoringButton = findViewById<Button>(R.id.monitoringButton)
         beaconListView = findViewById<ListView>(R.id.beaconList)
         beaconCountTextView = findViewById<TextView>(R.id.beaconCount)
         beaconCountTextView.text = "No beacons detected"
@@ -271,12 +227,12 @@ class MapActivity : AppCompatActivity(),
 
 
 //        //加载离线数据
-//        val path = FileUtils.getDefaultMapPath(this)
-//        mMap?.openMapByPath(path)
+        val path = FileUtils.getDefaultMapPath(this)
+        mMap?.openMapByPath(path)
 
-        //加载在线地图数据，并自动更新地图数据
-        var bid = "1537848990359105538"
-        mMap?.openMapById(bid,true)
+//        //加载在线地图数据，并自动更新地图数据
+//        var bid = "1537848990359105538"
+//        mMap?.openMapById(bid,true)
 
 
 
@@ -303,17 +259,15 @@ class MapActivity : AppCompatActivity(),
 
 
 
-
-
-
-
-
         // 点击定位Button
         btnMyLocation = findViewById(R.id.btn_my_location) as FloatingActionButton
         btnMyLocation?.setOnClickListener(View.OnClickListener { // 默认无问题
 
-            // 打开扫描器
-            Log.i(CAT,"$isScanning here 232")
+            // todo
+
+
+
+
 
 
         })
@@ -328,6 +282,7 @@ class MapActivity : AppCompatActivity(),
 
 
     override fun onMapInitSuccess(p0: String?) {
+
 
         //加载离线主题文件
        mMap?.loadThemeByPath(FileUtils.getDefaultThemePath(this));
