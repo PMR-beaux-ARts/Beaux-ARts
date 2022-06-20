@@ -41,10 +41,6 @@ drawable img4
 drawable shape_bg_blue
 drawable shape_bg_rect_white
 drawable shape_bg_white
-id FirstFragment
-id SecondFragment
-id action_FirstFragment_to_SecondFragment
-id action_SecondFragment_to_FirstFragment
 id action_settings
 id bt_change_language
 id btn_my_location
@@ -56,7 +52,6 @@ id image
 id layout_mode
 id list
 id mapView
-id nav_graph
 id pieceAudio
 id pieceDescription
 id pieceGlasses
@@ -85,7 +80,6 @@ layout item_layout
 menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
-navigation nav_graph
 string action_settings
 string app_name
 string audioOption

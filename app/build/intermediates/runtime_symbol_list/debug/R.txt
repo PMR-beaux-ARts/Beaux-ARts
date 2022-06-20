@@ -2595,7 +2595,6 @@ int id BOTTOM_END 0x7f090001
 int id BOTTOM_START 0x7f090002
 int id CTRL 0x7f090003
 int id FUNCTION 0x7f090004
-int id FirstFragment 0x7f090005
 int id META 0x7f090006
 int id NO_DEBUG 0x7f090007
 int id SHIFT 0x7f090008
@@ -2603,7 +2602,6 @@ int id SHOW_ALL 0x7f090009
 int id SHOW_PATH 0x7f09000a
 int id SHOW_PROGRESS 0x7f09000b
 int id SYM 0x7f09000c
-int id SecondFragment 0x7f09000d
 int id TOP_END 0x7f09000e
 int id TOP_START 0x7f09000f
 int id accelerate 0x7f090010
@@ -2643,8 +2641,6 @@ int id accessibility_custom_action_9 0x7f090031
 int id actionDown 0x7f090032
 int id actionDownUp 0x7f090033
 int id actionUp 0x7f090034
-int id action_FirstFragment_to_SecondFragment 0x7f090035
-int id action_SecondFragment_to_FirstFragment 0x7f090036
 int id action_bar 0x7f090037
 int id action_bar_activity_content 0x7f090038
 int id action_bar_container 0x7f090039
@@ -2913,7 +2909,6 @@ int id mtrl_picker_title_text 0x7f09013e
 int id mtrl_view_tag_bottom_padding 0x7f09013f
 int id multiply 0x7f090140
 int id nav_controller_view_tag 0x7f090141
-int id nav_graph 0x7f090142
 int id nav_host_fragment_container 0x7f090143
 int id navigation_bar_item_active_indicator_view 0x7f090144
 int id navigation_bar_item_icon_container 0x7f090145
@@ -3313,7 +3308,6 @@ int menu example_menu2 0x7f0d0001
 int menu menu_main 0x7f0d0002
 int mipmap ic_launcher 0x7f0e0000
 int mipmap ic_launcher_round 0x7f0e0001
-int navigation nav_graph 0x7f0f0000
 int plurals mtrl_badge_content_description 0x7f100000
 int string abc_action_bar_home_description 0x7f110000
 int string abc_action_bar_up_description 0x7f110001

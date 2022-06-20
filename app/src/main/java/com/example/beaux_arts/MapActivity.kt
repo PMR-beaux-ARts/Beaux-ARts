@@ -67,7 +67,7 @@ class MapActivity : AppCompatActivity(),
     private val mRotate = 60f
     private val mTilt = 45f
     private val mGroupId = 1
-    private var startpoint = FMMapCoord(349075.21843737597,6518727.876407377)
+    private var myPoint = FMMapCoord(349075.21843737597,6518727.876407377)
 
 
     private val mButtons = arrayOfNulls<Button>(2)
@@ -79,10 +79,7 @@ class MapActivity : AppCompatActivity(),
      */
     protected var mLineLayer: FMLineLayer? = null
 
-    /**
-     * 添加导览线图层
-     */
-    protected var mLineLayer_2: FMLineLayer? = null
+
 
     /**
      * 导航分析
@@ -241,6 +238,7 @@ class MapActivity : AppCompatActivity(),
         mMap!!.rotateAngle = angle //设置地图偏60度
 
 
+//        切换语言
         // 这个设置要放到主题回调里面
         val bt_change_language = findViewById<View>(R.id.bt_change_language) as Button
         bt_change_language.setOnClickListener { // 这个设置要放到主题回调里面
@@ -263,11 +261,25 @@ class MapActivity : AppCompatActivity(),
         // 点击定位Button
         btnMyLocation = findViewById<FloatingActionButton>(R.id.btn_my_location)
         btnMyLocation?.setOnClickListener(View.OnClickListener { // 默认无问题
-            startpoint = FMMapCoord(1.296164E7, 4861800.0)
+            updatemylocation()
             updateLocationMarker()
             Toast.makeText(applicationContext,"26:$distance_26 m\n20:$distance_20 m\n55:$distance_55 m",Toast.LENGTH_SHORT).show()
         })
 
+    }
+    private fun updatemylocation(){
+// 需要在这里对位置进行更新，根据三个distance算出相对坐标
+
+        var distance_20 = 0.0
+        var distance_26 = 0.0
+        var distance_55 = 0.0
+        var x:Double = 0.0
+        var y:Double = 0.0
+
+
+//        示例坐标如下
+//        myPoint = FMMapCoord(349075.21843737597,6518727.876407377)
+        myPoint = FMMapCoord(x,y)
     }
 
 
@@ -275,7 +287,7 @@ class MapActivity : AppCompatActivity(),
     private fun updateLocationMarker() {
         if (mLocationMarker == null) {
             val groupId = mMap!!.focusGroupId
-            mLocationMarker = FMLocationMarker(groupId, startpoint)
+            mLocationMarker = FMLocationMarker(groupId, myPoint)
             //设置定位点图片
             mLocationMarker?.setActiveImageFromAssets("active.png")
             Log.i(CAT,"268 here")
@@ -287,7 +299,7 @@ class MapActivity : AppCompatActivity(),
             //更新定位点位置和方向
             Log.i(CAT,"275 here")
             val angle = 0f
-            mLocationMarker?.updateAngleAndPosition(angle, startpoint)
+            mLocationMarker?.updateAngleAndPosition(angle, myPoint)
         }
     }
 
@@ -300,12 +312,11 @@ class MapActivity : AppCompatActivity(),
 //        mFMMap?.loadThemeById("2001")
 
         //线图层
-        mLineLayer = mMap!!.fmLayerProxy.fmLineLayer
-        mMap!!.addLayer(mLineLayer)
+        this.mLineLayer = mMap!!.fmLayerProxy.fmLineLayer
+        mMap!!.addLayer(this.mLineLayer)
 
-        //线图层2 导览图层
-        mLineLayer_2 = mMap!!.fmLayerProxy.fmLineLayer
-        mMap!!.addLayer(mLineLayer_2)
+
+
 
         defaultVisitPoints.add(MapCoord(1,FMMapCoord(349083.72802841564,6518749.672903724)))
         defaultVisitPoints.add(MapCoord(2,FMMapCoord(349068.2017570451,6518735.639543063)))
@@ -340,6 +351,7 @@ class MapActivity : AppCompatActivity(),
 
         //2D显示模式
 //        mMap!!.setFMViewMode(FMViewMode.FMVIEW_MODE_2D)
+
         //缩放级别
         mMap!!.setZoomLevel(mLevel.toFloat(), false)
 
@@ -350,9 +362,9 @@ class MapActivity : AppCompatActivity(),
         mMap!!.tiltAngle = mTilt
 
         //地图中心点
-        mMap!!.mapCenter = startpoint
+        mMap!!.mapCenter = myPoint
 
-
+        multiDisplayFloor()
 
 
 
@@ -573,6 +585,7 @@ class MapActivity : AppCompatActivity(),
         mEndCoord = null
     }
 
+    private var lineMarker : FMLineMarker? = null
     /**
      * 添加线标注
      */
@@ -586,10 +599,13 @@ class MapActivity : AppCompatActivity(),
             segments.add(s)
         }
         //添加LineMarker
-        val lineMarker = FMLineMarker(segments)
-        lineMarker.lineWidth = 3f
-        mLineLayer!!.addMarker(lineMarker)
+        lineMarker = FMLineMarker(segments)
+        lineMarker?.lineWidth = 3f
+        this.mLineLayer!!.addMarker(lineMarker)
     }
+
+    private var visitLineMarker : FMLineMarker? = null
+
 
     /**
      * 添加线标注
@@ -604,9 +620,10 @@ class MapActivity : AppCompatActivity(),
             segments.add(s)
         }
         //添加LineMarker
-        val lineMarker = FMLineMarker(segments)
-        lineMarker.lineWidth = 3f
-        mLineLayer_2!!.addMarker(lineMarker)
+        visitLineMarker = FMLineMarker(segments)
+        visitLineMarker?.lineWidth = 3f
+        this.mLineLayer!!.addMarker(visitLineMarker)
+
     }
 
 
@@ -653,8 +670,9 @@ class MapActivity : AppCompatActivity(),
      * 清除线图层
      */
     protected fun clearLineLayer() {
-        if (mLineLayer != null) {
-            mLineLayer!!.removeAll()
+        if (this.mLineLayer != null) {
+//            mLineLayer!!.removeAll()
+            this.mLineLayer!!.removeMarker(lineMarker)
         }
     }
 
