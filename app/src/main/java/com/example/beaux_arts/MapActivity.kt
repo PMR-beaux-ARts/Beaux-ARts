@@ -51,9 +51,20 @@ class MapActivity : AppCompatActivity(),
 
     var neverAskAgainPermissions = ArrayList<String>()
 
-    var distance_20 = 0.0
-    var distance_26 = 0.0
-    var distance_55 = 0.0
+    var distance_20 = 156.5
+    var distance_26 = 158.5
+    var distance_55 = 159.9
+
+    //Coordonnées de trois beacons
+    var coor_b20_x = 100.00
+    var coor_b20_y = 0.00
+    var coor_b20_z = 0.00
+    var coor_b26_x = 0.00
+    var coor_b26_y = 100.00
+    var coor_b26_z = 0.00
+    var coor_b55_x = 0.00
+    var coor_b55_y = 0.00
+    var coor_b55_z = 0.00
 
     val CAT : String  = "mapActivity"
     var mMap: FMMap? = null
@@ -263,23 +274,23 @@ class MapActivity : AppCompatActivity(),
         btnMyLocation?.setOnClickListener(View.OnClickListener { // 默认无问题
             updatemylocation()
             updateLocationMarker()
-            Toast.makeText(applicationContext,"26:$distance_26 m\n20:$distance_20 m\n55:$distance_55 m",Toast.LENGTH_SHORT).show()
+            val visteur_co = calculPositionActu(distance_20,distance_26,distance_55)
+            val x = visteur_co[0]
+            val y = visteur_co[1]
+            val z = visteur_co[2]
+            Toast.makeText(applicationContext,"26:$x m\n20:$y m\n55:$z m",Toast.LENGTH_SHORT).show()
         })
 
     }
     private fun updatemylocation(){
 // 需要在这里对位置进行更新，根据三个distance算出相对坐标
-
-        var distance_20 = 0.0
-        var distance_26 = 0.0
-        var distance_55 = 0.0
-        var x:Double = 0.0
-        var y:Double = 0.0
-
+        var visiteur_x = (coor_b20_x*coor_b20_x+distance_55*distance_55-distance_20*distance_20)/2/coor_b20_x
+        var visiteur_y = (coor_b26_y*coor_b20_y+distance_55*distance_55-distance_26*distance_26)/2/coor_b26_y
+        var visiteur_z = Math.sqrt(distance_55*distance_55-visiteur_y*visiteur_y-visiteur_x*visiteur_x)
 
 //        示例坐标如下
 //        myPoint = FMMapCoord(349075.21843737597,6518727.876407377)
-        myPoint = FMMapCoord(x,y)
+        myPoint = FMMapCoord(visiteur_x,visiteur_y)
     }
 
 
@@ -737,7 +748,7 @@ class MapActivity : AppCompatActivity(),
     fun checkPermissions() {
         // basepermissions are for M and higher
         var permissions = arrayOf( Manifest.permission.ACCESS_FINE_LOCATION)
-        var permissionRationale ="This app needs fine location permission to detect beacons.  Please grant this now."
+        var permissionRationale ="This app needs fine btn_my_location permission to detect beacons.  Please grant this now."
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             permissions = arrayOf( Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.BLUETOOTH_SCAN)
             permissionRationale ="This app needs fine location permission, and bluetooth scan permission to detect beacons.  Please grant all of these now."
@@ -872,6 +883,15 @@ class MapActivity : AppCompatActivity(),
             }
         }
 
+    }
+
+
+    private fun calculPositionActu(distance_20:Double,distance_26:Double,distance_55:Double) : List<Double>{
+        var visiteur_x = (coor_b20_x*coor_b20_x+distance_55*distance_55-distance_20*distance_20)/2/coor_b20_x
+        var visiteur_y = (coor_b26_y*coor_b26_y+distance_55*distance_55-distance_26*distance_26)/2/coor_b26_y
+        var visiteur_z = Math.sqrt(distance_55*distance_55-visiteur_y*visiteur_y-visiteur_x*visiteur_x)
+        val visteur_co = listOf<Double>(visiteur_x,visiteur_y,visiteur_z)
+        return visteur_co
     }
 
     companion object {

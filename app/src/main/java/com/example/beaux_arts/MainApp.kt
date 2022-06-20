@@ -1,8 +1,11 @@
 package com.example.beaux_arts
 
 import android.app.Application
+
 import com.fengmap.android.FMMapSDK
-import org.altbeacon.beacon.*
+import org.altbeacon.beacon.BeaconManager
+import org.altbeacon.beacon.BeaconParser
+import org.altbeacon.beacon.Region
 
 
 class MainApp : Application() {

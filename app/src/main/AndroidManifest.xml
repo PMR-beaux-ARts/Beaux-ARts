@@ -22,6 +22,7 @@
 
 
 
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -36,7 +37,7 @@
         >
 
         <meta-data  android:name="com.fengmap.mapapi.appkey"
-            android:value="db73cdf03a7a46cb0dbfd6cfbc2282bd" />
+            android:value="01020932fcbe14e67485bb9a0c7ed059" />
 
         <activity
             android:name=".PieceActivity"

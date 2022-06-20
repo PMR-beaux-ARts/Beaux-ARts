@@ -1,206 +1,202 @@
 [
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.beaux_arts.app-main-40:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\layout_item_layout.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\layout\\item_layout.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.beaux_arts.app-main-40:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\layout_fragment_chart.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\layout\\fragment_chart.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\xml_data_extraction_rules.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\xml\\data_extraction_rules.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_ic_baseline_location_on_24.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/ic_baseline_location_on_24.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_ic_baseline_more_vert_24.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\ic_baseline_more_vert_24.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_ic_marker_start.png.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/ic_marker_start.png"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_shape_bg_rect_white.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\shape_bg_rect_white.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_ic_glasses.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/ic_glasses.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_ic_baseline_home_24.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\ic_baseline_home_24.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_ic_baseline_map_24.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\ic_baseline_map_24.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.beaux_arts.app-main-40:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.beaux_arts.app-main-40:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\layout_fragment_settings.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\layout\\fragment_settings.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\color_inner_text2.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\color\\inner_text2.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/layout_fragment_home.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/layout/fragment_home.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/layout_activity_piece.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/layout/activity_piece.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_ic_baseline_location_on_24.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\ic_baseline_location_on_24.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_ic_baseline_map_24.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/ic_baseline_map_24.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable-v24_img3.jpg.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable-v24\\img3.jpg"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable-v24_img1.jpg.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable-v24/img1.jpg"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.beaux_arts.app-main-40:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\xml_backup_rules.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\xml\\backup_rules.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_ic_baseline_hearing_24.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/ic_baseline_hearing_24.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable-v24_img1.jpg.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable-v24\\img1.jpg"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/layout_fragment_list.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/layout/fragment_list.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_bg_text.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\bg_text.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_img3_1.jpg.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/img3_1.jpg"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_ic_glasses.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\ic_glasses.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.beaux_arts.app-main-40:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_ic_baseline_more_vert_24.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/ic_baseline_more_vert_24.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_shape_bg_blue.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\shape_bg_blue.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable-v24_img4.jpg.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable-v24/img4.jpg"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_ic_marker_end.png.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\ic_marker_end.png"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/layout_activity_map.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/layout/activity_map.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\layout_fragment_home.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\layout\\fragment_home.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.beaux_arts.app-main-40:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\color_inner_text1.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\color\\inner_text1.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.beaux_arts.app-main-40:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\navigation_nav_graph.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\navigation\\nav_graph.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/color_inner_text1.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/color/inner_text1.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/layout_activity_main.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/layout/activity_main.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable-v24_img4.jpg.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable-v24\\img4.jpg"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/xml_backup_rules.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/xml/backup_rules.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_shape_bg_white.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\shape_bg_white.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.beaux_arts.app-main-40:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\layout_fragment_list.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\layout\\fragment_list.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/layout_inner_groups_bottom.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/layout/inner_groups_bottom.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-pngs-0:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_bg_text.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/bg_text.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_ic_baseline_star_24.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\ic_baseline_star_24.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/menu_menu_main.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/menu/menu_main.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_ic_marker_blue.png.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\ic_marker_blue.png"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/layout_item_layout.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/layout/item_layout.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_img3_1.jpg.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\img3_1.jpg"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.beaux_arts.app-pngs-33:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\layout_inner_groups_bottom.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\layout\\inner_groups_bottom.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_shape_bg_white.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/shape_bg_white.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_ic_baseline_hearing_24.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\ic_baseline_hearing_24.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable-v24_img3.jpg.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable-v24/img3.jpg"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_ic_launcher_background.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_shape_bg_rect_white.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/shape_bg_rect_white.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/layout_fragment_settings.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/layout/fragment_settings.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_ic_marker_end.png.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/ic_marker_end.png"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\layout_activity_piece.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\layout\\activity_piece.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/layout_fragment_chart.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/layout/fragment_chart.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/color_inner_text2.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/color/inner_text2.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\layout_activity_map.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\layout\\activity_map.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/layout_card_layout.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/layout/card_layout.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_ic_marker_start.png.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\ic_marker_start.png"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\layout_activity_main.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\layout\\activity_main.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.beaux_arts.app-main-40:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_bg_radio.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\bg_radio.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_shape_bg_blue.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/shape_bg_blue.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable_img3_2.jpg.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable\\img3_2.jpg"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_ic_baseline_home_24.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/ic_baseline_home_24.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_bg_radio.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/bg_radio.xml"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_ic_marker_blue.png.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/ic_marker_blue.png"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\menu_menu_main.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\menu\\menu_main.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_img3_2.jpg.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/img3_2.jpg"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\drawable-v24_img2.jpg.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\drawable-v24\\img2.jpg"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable-v24_img2.jpg.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable-v24/img2.jpg"
     },
     {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\mipmap-mdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-5:\\layout_card_layout.xml.flat",
-        "source": "E:\\Android_SDK\\daemon\\7.3.3\\com.example.beaux_arts.app-main-7:\\layout\\card_layout.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-38:/drawable_ic_baseline_star_24.xml.flat",
+        "source": "com.example.beaux_arts.app-main-40:/drawable/ic_baseline_star_24.xml"
     }
 ]
