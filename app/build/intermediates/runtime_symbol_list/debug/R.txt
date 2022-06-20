@@ -2685,8 +2685,6 @@ int id autoCompleteToEnd 0x7f09005b
 int id autoCompleteToStart 0x7f09005c
 int id barrier 0x7f09005d
 int id baseline 0x7f09005e
-int id beaconCount 0x7f09020d
-int id beaconList 0x7f09020e
 int id beginOnFirstDraw 0x7f09005f
 int id beginning 0x7f090060
 int id bestChoice 0x7f090061

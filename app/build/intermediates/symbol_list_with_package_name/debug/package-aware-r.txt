@@ -2686,8 +2686,6 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id barrier
 id baseline
-id beaconCount
-id beaconList
 id beginOnFirstDraw
 id beginning
 id bestChoice

@@ -46,8 +46,6 @@ id SecondFragment
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id action_settings
-id beaconCount
-id beaconList
 id bt_change_language
 id btn_my_location
 id cb_groups

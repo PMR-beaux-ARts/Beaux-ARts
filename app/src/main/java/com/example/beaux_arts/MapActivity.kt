@@ -1,14 +1,8 @@
 package com.example.beaux_arts
 
 import android.Manifest
-import android.annotation.SuppressLint
 import android.app.AlertDialog
-import android.bluetooth.BluetoothAdapter
-import android.bluetooth.BluetoothAdapter.LeScanCallback
-import android.bluetooth.BluetoothManager
-import android.content.Context
 import android.content.pm.PackageManager
-
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
@@ -17,10 +11,9 @@ import android.view.View
 import android.widget.*
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
+import androidx.lifecycle.Observer
 import com.example.beaux_arts.utils.FileUtils
 import com.example.beaux_arts.utils.ViewHelper
-import com.fengmap.android.FMMapSDK
 import com.fengmap.android.analysis.navi.FMNaviAnalyser
 import com.fengmap.android.exception.FMObjectException
 import com.fengmap.android.map.*
@@ -32,31 +25,26 @@ import com.fengmap.android.map.event.OnFMSwitchGroupListener
 import com.fengmap.android.map.geometry.FMMapCoord
 import com.fengmap.android.map.layer.FMImageLayer
 import com.fengmap.android.map.layer.FMLineLayer
+import com.fengmap.android.map.layer.FMLocationLayer
 import com.fengmap.android.map.marker.FMLineMarker
+import com.fengmap.android.map.marker.FMLocationMarker
 import com.fengmap.android.map.marker.FMSegment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import org.altbeacon.beacon.Beacon
 import org.altbeacon.beacon.BeaconManager
-import org.altbeacon.beacon.MonitorNotifier
-import org.altbeacon.beacon.Region
 import java.io.FileNotFoundException
 import java.util.*
-import androidx.lifecycle.Observer
-import org.altbeacon.beacon.Beacon
 
 
 class MapActivity : AppCompatActivity(),
     OnFMMapInitListener,
-    CompoundButton.OnCheckedChangeListener ,
+    CompoundButton.OnCheckedChangeListener,
     OnFMMapThemeListener,
     View.OnClickListener,
     OnFMMapClickListener{
 
 
 
-    lateinit var beaconListView: ListView
-    lateinit var beaconCountTextView: TextView
-    lateinit var monitoringButton: Button
-    lateinit var rangingButton: Button
     lateinit var beaconReferenceApplication: MainApp
 
     var neverAskAgainPermissions = ArrayList<String>()
@@ -77,7 +65,8 @@ class MapActivity : AppCompatActivity(),
     private val mRotate = 60f
     private val mTilt = 45f
     private val mGroupId = 1
-    private val CENTER_COORD = FMMapCoord(1.296164E7, 4861800.0)
+    private var CENTER_COORD = FMMapCoord(349075.21843737597,6518727.876407377)
+
 
     private val mButtons = arrayOfNulls<Button>(2)
     private var mPosition = 1
@@ -99,6 +88,16 @@ class MapActivity : AppCompatActivity(),
      * 起点坐标
      */
     protected var mSartCoord: FMMapCoord? = null
+
+    /**
+     * 定位层
+     */
+    private var mLocationLayer: FMLocationLayer? = null
+
+    /**
+     * 定位点
+     */
+    private var mLocationMarker: FMLocationMarker? = null
 
     /**
      * 起点楼层
@@ -126,6 +125,7 @@ class MapActivity : AppCompatActivity(),
     protected var mEndImageLayer: FMImageLayer? = null
 
 
+
     override fun onDestroy() {
         if (mMap != null) {
             mMap!!.onDestroy()
@@ -135,7 +135,7 @@ class MapActivity : AppCompatActivity(),
 
 
     private val rangingObserver = Observer<Collection<Beacon>> { beacons ->
-        Log.d(TAG, "Ranged: ${beacons.count()} beacons")
+//        Log.d(TAG, "Ranged: ${beacons.count()} beacons")
         if (BeaconManager.getInstanceForApplication(this).rangedRegions.isNotEmpty()) {
             for (item in beacons){
                 if (item.id3.toString() == "26" ) {
@@ -153,11 +153,11 @@ class MapActivity : AppCompatActivity(),
                 }
             }
 
-            beaconCountTextView.text = "Ranging enabled: ${beacons.count()} beacon(s) detected"
-            beaconListView.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1,
-                beacons
-                    .sortedBy { it.id3 }
-                    .map { "id3: ${it.id3}\ndistance: ${it.distance} m" }.toTypedArray())
+//            beaconCountTextView.text = "Ranging enabled: ${beacons.count()} beacon(s) detected"
+//            beaconListView.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1,
+//                beacons
+//                    .sortedBy { it.id3 }
+//                    .map { "id3: ${it.id3}\ndistance: ${it.distance} m" }.toTypedArray())
         }
     }
 
@@ -200,10 +200,10 @@ class MapActivity : AppCompatActivity(),
         val regionViewModel = BeaconManager.getInstanceForApplication(this).getRegionViewModel(beaconReferenceApplication.region)
         // observer will be called each time a new list of beacons is ranged (typically ~1 second in the foreground)
         regionViewModel.rangedBeacons.observe(this, rangingObserver)
-        beaconListView = findViewById<ListView>(R.id.beaconList)
-        beaconCountTextView = findViewById<TextView>(R.id.beaconCount)
-        beaconCountTextView.text = "No beacons detected"
-        beaconListView.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayOf("--"))
+//        beaconListView = findViewById<ListView>(R.id.beaconList)
+//        beaconCountTextView = findViewById<TextView>(R.id.beaconCount)
+//        beaconCountTextView.text = "No beacons detected"
+//        beaconListView.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayOf("--"))
         val mapView =  findViewById<FMMapView>(R.id.mapView)
         mMap = mapView.fmMap
 
@@ -212,12 +212,13 @@ class MapActivity : AppCompatActivity(),
 
 
 //        //加载离线数据
-        val path = FileUtils.getDefaultMapPath(this)
-        mMap?.openMapByPath(path)
+//        val path = FileUtils.getDefaultMapPath(this)
+//        mMap?.openMapByPath(path)
 
 //        //加载在线地图数据，并自动更新地图数据
-//        var bid = "1537848990359105538"
-//        mMap?.openMapById(bid,true)
+        var bid = "1537849394373218305" // centrale E
+//        var bid = "10347"
+        mMap?.openMapById(bid,true)
 
 
 
@@ -245,25 +246,38 @@ class MapActivity : AppCompatActivity(),
 
 
         // 点击定位Button
-        btnMyLocation = findViewById(R.id.btn_my_location) as FloatingActionButton
+        btnMyLocation = findViewById<FloatingActionButton>(R.id.btn_my_location)
         btnMyLocation?.setOnClickListener(View.OnClickListener { // 默认无问题
-
+            CENTER_COORD = FMMapCoord(1.296164E7, 4861800.0)
+            updateLocationMarker()
             Toast.makeText(applicationContext,"26:$distance_26 m\n20:$distance_20 m\n55:$distance_55 m",Toast.LENGTH_SHORT).show()
-
-
         })
 
     }
 
 
 
-
-
-
+    private fun updateLocationMarker() {
+        if (mLocationMarker == null) {
+            val groupId = mMap!!.focusGroupId
+            mLocationMarker = FMLocationMarker(groupId, CENTER_COORD)
+            //设置定位点图片
+            mLocationMarker?.setActiveImageFromAssets("active.png")
+            Log.i(CAT,"268 here")
+            //设置定位图片宽高
+            mLocationMarker?.markerWidth = 90
+            mLocationMarker?.markerHeight = 90
+            mLocationLayer?.addMarker(mLocationMarker)
+        } else {
+            //更新定位点位置和方向
+            Log.i(CAT,"275 here")
+            val angle = 0f
+            mLocationMarker?.updateAngleAndPosition(angle, CENTER_COORD)
+        }
+    }
 
 
     override fun onMapInitSuccess(p0: String?) {
-
 
         //加载离线主题文件
        mMap?.loadThemeByPath(FileUtils.getDefaultThemePath(this));
@@ -274,11 +288,19 @@ class MapActivity : AppCompatActivity(),
         mLineLayer = mMap!!.fmLayerProxy.fmLineLayer
         mMap!!.addLayer(mLineLayer)
 
-        //导航分析
 
-        //导航分析
+        //获取定位图层
+        mLocationLayer = mMap!!.fmLayerProxy.fmLocationLayer
+        mMap!!.addLayer(mLocationLayer)
+
+
+        //导航分析器，需要指定地图id，每天调用上限1000次
         try {
-            mNaviAnalyser = FMNaviAnalyser.getFMNaviAnalyserById(FileUtils.DEFAULT_MAP_ID)
+//            mNaviAnalyser = FMNaviAnalyser.getFMNaviAnalyserById(FileUtils.DEFAULT_MAP_ID)
+            var bid = "1537849394373218305" // centrale E
+//            var bid = "10347"
+            mNaviAnalyser = FMNaviAnalyser.getFMNaviAnalyserById(bid)
+
         } catch (e: FileNotFoundException) {
             e.printStackTrace()
         } catch (e: FMObjectException) {
@@ -304,6 +326,8 @@ class MapActivity : AppCompatActivity(),
 
         //地图中心点
         mMap!!.mapCenter = CENTER_COORD
+
+
     }
 
     private fun displayGroupView(groups: ArrayList<FMGroupInfo>) {
