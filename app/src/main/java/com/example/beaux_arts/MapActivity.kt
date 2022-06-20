@@ -12,6 +12,7 @@ import android.widget.*
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
+import com.example.beaux_arts.donnees.MapCoord
 import com.example.beaux_arts.utils.FileUtils
 import com.example.beaux_arts.utils.ViewHelper
 import com.fengmap.android.analysis.navi.FMNaviAnalyser
@@ -34,6 +35,7 @@ import org.altbeacon.beacon.Beacon
 import org.altbeacon.beacon.BeaconManager
 import java.io.FileNotFoundException
 import java.util.*
+import kotlin.collections.ArrayList
 
 
 class MapActivity : AppCompatActivity(),
@@ -65,14 +67,22 @@ class MapActivity : AppCompatActivity(),
     private val mRotate = 60f
     private val mTilt = 45f
     private val mGroupId = 1
-    private var CENTER_COORD = FMMapCoord(349075.21843737597,6518727.876407377)
+    private var startpoint = FMMapCoord(349075.21843737597,6518727.876407377)
 
 
     private val mButtons = arrayOfNulls<Button>(2)
+
     private var mPosition = 1
 
-
+    /**
+     * 添加线图层
+     */
     protected var mLineLayer: FMLineLayer? = null
+
+    /**
+     * 添加导览线图层
+     */
+    protected var mLineLayer_2: FMLineLayer? = null
 
     /**
      * 导航分析
@@ -87,7 +97,7 @@ class MapActivity : AppCompatActivity(),
     /**
      * 起点坐标
      */
-    protected var mSartCoord: FMMapCoord? = null
+    protected var mStartCoord: FMMapCoord? = null
 
     /**
      * 定位层
@@ -123,6 +133,11 @@ class MapActivity : AppCompatActivity(),
      * 终点图层
      */
     protected var mEndImageLayer: FMImageLayer? = null
+
+    /**
+     * 用来标记整体游览路线的点
+     */
+    private var defaultVisitPoints : ArrayList<MapCoord> =   ArrayList()
 
 
 
@@ -248,7 +263,7 @@ class MapActivity : AppCompatActivity(),
         // 点击定位Button
         btnMyLocation = findViewById<FloatingActionButton>(R.id.btn_my_location)
         btnMyLocation?.setOnClickListener(View.OnClickListener { // 默认无问题
-            CENTER_COORD = FMMapCoord(1.296164E7, 4861800.0)
+            startpoint = FMMapCoord(1.296164E7, 4861800.0)
             updateLocationMarker()
             Toast.makeText(applicationContext,"26:$distance_26 m\n20:$distance_20 m\n55:$distance_55 m",Toast.LENGTH_SHORT).show()
         })
@@ -260,7 +275,7 @@ class MapActivity : AppCompatActivity(),
     private fun updateLocationMarker() {
         if (mLocationMarker == null) {
             val groupId = mMap!!.focusGroupId
-            mLocationMarker = FMLocationMarker(groupId, CENTER_COORD)
+            mLocationMarker = FMLocationMarker(groupId, startpoint)
             //设置定位点图片
             mLocationMarker?.setActiveImageFromAssets("active.png")
             Log.i(CAT,"268 here")
@@ -272,7 +287,7 @@ class MapActivity : AppCompatActivity(),
             //更新定位点位置和方向
             Log.i(CAT,"275 here")
             val angle = 0f
-            mLocationMarker?.updateAngleAndPosition(angle, CENTER_COORD)
+            mLocationMarker?.updateAngleAndPosition(angle, startpoint)
         }
     }
 
@@ -287,6 +302,16 @@ class MapActivity : AppCompatActivity(),
         //线图层
         mLineLayer = mMap!!.fmLayerProxy.fmLineLayer
         mMap!!.addLayer(mLineLayer)
+
+        //线图层2 导览图层
+        mLineLayer_2 = mMap!!.fmLayerProxy.fmLineLayer
+        mMap!!.addLayer(mLineLayer_2)
+
+        defaultVisitPoints.add(MapCoord(1,FMMapCoord(349083.72802841564,6518749.672903724)))
+        defaultVisitPoints.add(MapCoord(2,FMMapCoord(349068.2017570451,6518735.639543063)))
+        defaultVisitPoints.add(MapCoord(2,FMMapCoord(349087.46030518727,6518710.857225298)))
+        defaultVisitPoints.add(MapCoord(1,FMMapCoord(349048.1967535487,6518677.565316495)))
+        defaultVisitPoints.add(MapCoord(1,FMMapCoord(349086.11668554955,6518711.752971724)))
 
 
         //获取定位图层
@@ -325,7 +350,13 @@ class MapActivity : AppCompatActivity(),
         mMap!!.tiltAngle = mTilt
 
         //地图中心点
-        mMap!!.mapCenter = CENTER_COORD
+        mMap!!.mapCenter = startpoint
+
+
+
+
+
+        visitroad(defaultVisitPoints)
 
 
     }
@@ -521,10 +552,10 @@ class MapActivity : AppCompatActivity(),
         val mapCoordResult = mMap!!.pickMapCoord(x, y) ?: return
 
         // 起点
-        if (mSartCoord == null) {
+        if (mStartCoord == null) {
             clear()
-            mSartCoord = mapCoordResult.mapCoord
-            mStartGroupId = mapCoordResult.groupId
+            mStartCoord = mapCoordResult.mapCoord    //起点坐标
+            mStartGroupId = mapCoordResult.groupId  //起点楼层
             createStartImageMarker()
             return
         }
@@ -538,7 +569,7 @@ class MapActivity : AppCompatActivity(),
         analyzeNavigation()
 
         // 画完置空
-        mSartCoord = null
+        mStartCoord = null
         mEndCoord = null
     }
 
@@ -561,6 +592,29 @@ class MapActivity : AppCompatActivity(),
     }
 
     /**
+     * 添加线标注
+     */
+    protected fun addLineMarker2() {
+        val results = mNaviAnalyser!!.naviResults
+        // 填充导航数据
+        val segments = ArrayList<FMSegment>()
+        for (r in results) {
+            val groupId = r.groupId
+            val s = FMSegment(groupId, r.pointList)
+            segments.add(s)
+        }
+        //添加LineMarker
+        val lineMarker = FMLineMarker(segments)
+        lineMarker.lineWidth = 3f
+        mLineLayer_2!!.addMarker(lineMarker)
+    }
+
+
+
+
+
+
+    /**
      * 创建起点图标
      */
     protected fun createStartImageMarker() {
@@ -569,7 +623,7 @@ class MapActivity : AppCompatActivity(),
         mStartImageLayer = mMap!!.fmLayerProxy.getFMImageLayer(mStartGroupId)
         // 标注物样式
         val imageMarker =
-            ViewHelper.buildImageMarker(resources, mSartCoord, R.drawable.ic_marker_start)
+            ViewHelper.buildImageMarker(resources, mStartCoord, R.drawable.ic_marker_start)
         mStartImageLayer?.addMarker(imageMarker)
     }
 
@@ -631,12 +685,32 @@ class MapActivity : AppCompatActivity(),
      */
     private fun analyzeNavigation() {
         val type = mNaviAnalyser!!.analyzeNavi(
-            mStartGroupId, mSartCoord, mEndGroupId, mEndCoord,
+            mStartGroupId, mStartCoord, mEndGroupId, mEndCoord,
             FMNaviAnalyser.FMNaviModule.MODULE_SHORTEST
         )
 
         if (type == FMNaviAnalyser.FMRouteCalcuResult.ROUTE_SUCCESS) {
             addLineMarker()
+        }
+    }
+
+    /**
+     * 开始分析两点之间的游览导航
+     */
+    private fun analyzeNavigation2(StartGroupId:Int, StartCoord:FMMapCoord, EndGroupId:Int, EndCoord:FMMapCoord) {
+        val type = mNaviAnalyser!!.analyzeNavi(
+            StartGroupId, StartCoord, EndGroupId, EndCoord,
+            FMNaviAnalyser.FMNaviModule.MODULE_SHORTEST
+        )
+
+        if (type == FMNaviAnalyser.FMRouteCalcuResult.ROUTE_SUCCESS) {
+            addLineMarker2()
+        }
+    }
+
+    private fun visitroad(defaultVisitPoints : ArrayList<MapCoord>){
+        for ( i in 0 until defaultVisitPoints.size-1){
+            analyzeNavigation2(defaultVisitPoints[i].groupId,defaultVisitPoints[i].mapCoord,defaultVisitPoints[i+1].groupId,defaultVisitPoints[i+1].mapCoord)
         }
     }
 
