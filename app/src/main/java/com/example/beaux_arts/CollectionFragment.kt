@@ -45,7 +45,7 @@ class CollectionFragment : Fragment() {
         recyclerDataArrayList = ArrayList()
 
 
-//        //Initialiser la database
+//       //Initialiser la database
 //        Init()
         var database = SQLiteDatabase.openOrCreateDatabase(ImportDB.DB_PATH+ "/" + ImportDB.DB_NAME, null)
         Log.i("test","Open database")

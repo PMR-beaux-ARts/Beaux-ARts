@@ -6,163 +6,163 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml
+8-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml
+9-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.CAMERA" />
-11-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:6:5-65
-11-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:6:22-62
+11-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:6:5-65
+11-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:6:22-62
 12
 13    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
 14    <uses-feature
-14-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:25:5-27:36
+14-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:25:5-27:36
 15        android:name="android.hardware.camera"
-15-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:26:9-47
+15-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:26:9-47
 16        android:required="false" />
-16-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:27:9-33
+16-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:27:9-33
 17    <uses-feature
-17-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:28:5-30:36
+17-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:28:5-30:36
 18        android:name="android.hardware.camera.front"
-18-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:29:9-53
+18-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:29:9-53
 19        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
-19-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:30:9-33
+19-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:30:9-33
 20    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
 21    <uses-feature
-21-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:33:5-35:36
+21-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:33:5-35:36
 22        android:name="android.hardware.camera.autofocus"
-22-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:34:9-57
+22-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:34:9-57
 23        android:required="false" />
-23-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:35:9-33
+23-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:35:9-33
 24    <uses-feature
-24-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:36:5-38:36
+24-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:36:5-38:36
 25        android:name="android.hardware.camera.flash"
-25-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:37:9-53
+25-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:37:9-53
 26        android:required="false" />
-26-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:38:9-33
+26-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:38:9-33
 27    <uses-feature
-27-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:39:5-41:36
+27-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:39:5-41:36
 28        android:name="android.hardware.screen.landscape"
-28-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:40:9-57
+28-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:40:9-57
 29        android:required="false" />
-29-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:41:9-33
+29-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:41:9-33
 30    <uses-feature
-30-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:42:5-44:36
+30-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:42:5-44:36
 31        android:name="android.hardware.wifi"
-31-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:43:9-45
+31-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:43:9-45
 32        android:required="false" />
-32-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:44:9-33
+32-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:44:9-33
 33
 34    <application
-34-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:8:5-38:19
+34-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:8:5-38:19
 35        android:allowBackup="true"
-35-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:9:9-35
+35-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:9:9-35
 36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-36-->[androidx.core:core:1.7.0] C:\Users\alici\.gradle\caches\transforms-3\4825226d7bdc18dc642f18a8a048b277\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+36-->[androidx.core:core:1.7.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\4825226d7bdc18dc642f18a8a048b277\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 37        android:dataExtractionRules="@xml/data_extraction_rules"
-37-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:10:9-65
+37-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:10:9-65
 38        android:debuggable="true"
 39        android:extractNativeLibs="false"
 40        android:fullBackupContent="@xml/backup_rules"
-40-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:11:9-54
+40-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:11:9-54
 41        android:icon="@mipmap/ic_launcher"
-41-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:12:9-43
+41-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:12:9-43
 42        android:label="@string/app_name"
-42-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:13:9-41
+42-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:13:9-41
 43        android:roundIcon="@mipmap/ic_launcher_round"
-43-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:14:9-54
+43-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:14:9-54
 44        android:supportsRtl="true"
-44-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:15:9-35
+44-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:15:9-35
 45        android:testOnly="true"
 46        android:theme="@style/Theme.Beaux_ARts" >
-46-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:16:9-48
+46-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:16:9-48
 47        <activity
-47-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:18:9-20:40
+47-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:18:9-20:40
 48            android:name="com.example.beaux_arts.ItineraryActivity"
-48-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:19:13-46
+48-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:19:13-46
 49            android:exported="false" />
-49-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:20:13-37
+49-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:20:13-37
 50        <activity
-50-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:21:9-23:40
+50-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:21:9-23:40
 51            android:name="com.example.beaux_arts.ProduitActivity"
-51-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:22:13-44
+51-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:22:13-44
 52            android:exported="false" />
-52-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:23:13-37
+52-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:23:13-37
 53        <activity
-53-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:24:9-26:40
+53-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:24:9-26:40
 54            android:name="com.example.beaux_arts.PieceActivity"
-54-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:25:13-42
+54-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:25:13-42
 55            android:exported="false" />
-55-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:26:13-37
+55-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:26:13-37
 56        <activity
-56-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:27:9-37:20
+56-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:27:9-37:20
 57            android:name="com.example.beaux_arts.MainActivity"
-57-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:28:13-41
+57-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:28:13-41
 58            android:exported="true"
-58-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:29:13-36
+58-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:29:13-36
 59            android:label="@string/app_name"
-59-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:30:13-45
+59-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:30:13-45
 60            android:theme="@style/Theme.Beaux_ARts.NoActionBar" >
-60-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:31:13-64
+60-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:31:13-64
 61            <intent-filter>
-61-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:32:13-36:29
+61-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:32:13-36:29
 62                <action android:name="android.intent.action.MAIN" />
-62-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:33:17-69
-62-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:33:25-66
+62-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:33:17-69
+62-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:33:25-66
 63
 64                <category android:name="android.intent.category.LAUNCHER" />
-64-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:35:17-77
-64-->C:\Users\alici\AndroidStudioProjects\Projet_Beaux-Art\Beaux-ARts\app\src\main\AndroidManifest.xml:35:27-74
+64-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:35:17-77
+64-->D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:35:27-74
 65            </intent-filter>
 66        </activity>
 67        <activity
-67-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:47:9-53:63
+67-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:47:9-53:63
 68            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-68-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:48:13-74
+68-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:48:13-74
 69            android:clearTaskOnLaunch="true"
-69-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:49:13-45
+69-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:49:13-45
 70            android:screenOrientation="sensorLandscape"
-70-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:50:13-56
+70-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:50:13-56
 71            android:stateNotNeeded="true"
-71-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:51:13-42
+71-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:51:13-42
 72            android:theme="@style/zxing_CaptureTheme"
-72-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:52:13-54
+72-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:52:13-54
 73            android:windowSoftInputMode="stateAlwaysHidden" />
-73-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\alici\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:53:13-60
+73-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:53:13-60
 74
 75        <uses-library
-75-->[androidx.window:window:1.0.0] C:\Users\alici\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+75-->[androidx.window:window:1.0.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
 76            android:name="androidx.window.extensions"
-76-->[androidx.window:window:1.0.0] C:\Users\alici\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+76-->[androidx.window:window:1.0.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
 77            android:required="false" />
-77-->[androidx.window:window:1.0.0] C:\Users\alici\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+77-->[androidx.window:window:1.0.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
 78        <uses-library
-78-->[androidx.window:window:1.0.0] C:\Users\alici\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+78-->[androidx.window:window:1.0.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
 79            android:name="androidx.window.sidecar"
-79-->[androidx.window:window:1.0.0] C:\Users\alici\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+79-->[androidx.window:window:1.0.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
 80            android:required="false" />
-80-->[androidx.window:window:1.0.0] C:\Users\alici\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+80-->[androidx.window:window:1.0.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
 81
 82        <provider
-82-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alici\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+82-->[androidx.emoji2:emoji2:1.0.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 83            android:name="androidx.startup.InitializationProvider"
-83-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alici\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+83-->[androidx.emoji2:emoji2:1.0.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
 84            android:authorities="com.example.beaux_arts.androidx-startup"
-84-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alici\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+84-->[androidx.emoji2:emoji2:1.0.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
 85            android:exported="false" >
-85-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alici\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+85-->[androidx.emoji2:emoji2:1.0.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
 86            <meta-data
-86-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alici\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+86-->[androidx.emoji2:emoji2:1.0.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
 87                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-87-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alici\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+87-->[androidx.emoji2:emoji2:1.0.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
 88                android:value="androidx.startup" />
-88-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alici\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+88-->[androidx.emoji2:emoji2:1.0.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\82c9c14de60ed4332b88f2f7dffd6adb\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
 89            <meta-data
-89-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\alici\.gradle\caches\transforms-3\c9ffce7b077fa143d431c613385b3923\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+89-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\c9ffce7b077fa143d431c613385b3923\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
 90                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-90-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\alici\.gradle\caches\transforms-3\c9ffce7b077fa143d431c613385b3923\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+90-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\c9ffce7b077fa143d431c613385b3923\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
 91                android:value="androidx.startup" />
-91-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\alici\.gradle\caches\transforms-3\c9ffce7b077fa143d431c613385b3923\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+91-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\c9ffce7b077fa143d431c613385b3923\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
 92        </provider>
 93    </application>
 94

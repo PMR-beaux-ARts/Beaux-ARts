@@ -3371,8 +3371,17 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
 plurals mtrl_badge_content_description
+raw adoration_des_mages
+raw alfred_agache
 raw amphore_a_spirales
+raw apelle_peignant_campaspe
+raw aquamanile
+raw autoportait
 raw beauxarts
+raw bouquet_champetre
+raw buste_de_caumartin
+raw cincinnatus
+raw jazz
 raw zxing_beep
 string abc_action_bar_home_description
 string abc_action_bar_up_description

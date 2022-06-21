@@ -37,7 +37,15 @@ class ItemAdapter(
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        holder.bind(item = dataSet[position], clickListener)
+//        holder.bind(item = dataSet[position], clickListener)
+        // Set the data to textview and imageview.
+        val recyclerData = dataSet[position]
+        holder.title.text = recyclerData.nom
+        holder.image.setImageDrawable(recyclerData.image)
+        holder.subtitle.text = recyclerData.type
+
+        holder.bind(dataSet[position], clickListener)
+
     }
 
     companion object {
@@ -46,14 +54,14 @@ class ItemAdapter(
     }
     class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        private val image = itemView.findViewById<ImageView>(R.id.image)
-        private val title = itemView.findViewById<TextView>(R.id.title)
-        private val subtitle = itemView.findViewById<TextView>(R.id.subtitle)
+        val image = itemView.findViewById<ImageView>(R.id.image)
+        val title = itemView.findViewById<TextView>(R.id.title)
+        val subtitle = itemView.findViewById<TextView>(R.id.subtitle)
 
         fun bind(item: Itineraire, clickListener: (Itineraire) -> Unit) {
-            title.text = item.title
-            subtitle.text = item.subTitle
-            image.setImageResource(item.imageRes)
+            title.text = item.nom
+            subtitle.text = item.type
+            image.setImageDrawable(item.image)
 
             title.setOnClickListener { clickListener(item) }
             subtitle.setOnClickListener { clickListener(item) }
