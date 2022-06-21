@@ -4,10 +4,12 @@ import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
 import android.graphics.BitmapFactory
 import android.graphics.drawable.BitmapDrawable
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
 import android.util.Log
+import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -16,12 +18,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.beaux_arts.adapter.ProduitAdapter
 import com.example.beaux_arts.donnees.ImportDB
 import com.example.beaux_arts.donnees.Produit
+import kotlinx.android.synthetic.main.activity_piece.*
+import kotlinx.android.synthetic.main.activity_produit.*
 import org.json.JSONObject
 
 class PieceActivity() : AppCompatActivity() {
 
     private var recyclerProduitsArrayList: ArrayList<Produit>? = null
-// title, "unknown", imageRes, "Un tableau", produits, nom: String, image: Int
+    private var mediaPlayer: MediaPlayer? = null
+    private var play: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val database = SQLiteDatabase.openOrCreateDatabase(ImportDB.DB_PATH+ "/" + ImportDB.DB_NAME, null)
@@ -95,7 +100,22 @@ class PieceActivity() : AppCompatActivity() {
             val layoutManager = GridLayoutManager(this, 2)
             pieceProduits.setLayoutManager(layoutManager)
             pieceProduits.setAdapter(adapter)
+
+        mediaPlayer = MediaPlayer.create(this, R.raw.amphore_a_spirales)
+        mediaPlayer?.setOnPreparedListener { println("Ready to go")}
+        pieceAudio.setOnClickListener{event -> handleClick(event)}
+
         }
+
+    private fun handleClick(event: View?) {
+        if (play) {
+            mediaPlayer?.pause()
+            play = false
+        } else {
+            mediaPlayer?.start()
+            play = true
+        }
+    }
 
 
     private fun produitClicked(produit: Produit) {
@@ -108,4 +128,14 @@ class PieceActivity() : AppCompatActivity() {
         startActivity(activiteVisee)
 
     }
+
+    override fun onPause() {
+        super.onPause()
+        if(play) {
+            mediaPlayer?.pause()
+            play = false
+        }
+    }
 }
+
+

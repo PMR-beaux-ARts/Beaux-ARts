@@ -136,10 +136,6 @@
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-merged_res-39:/layout_card_layout.xml.flat",
-        "source": "com.example.beaux_arts.app-main-41:/layout/card_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\layout_activity_piece.xml.flat",
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\layout\\activity_piece.xml"
     },
@@ -168,10 +164,6 @@
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable-v24\\img2.jpg"
     },
     {
-        "merged": "com.example.beaux_arts.app-merged_res-39:/layout_activity_piece.xml.flat",
-        "source": "com.example.beaux_arts.app-main-41:/layout/activity_piece.xml"
-    },
-    {
         "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\layout_activity_itinerary.xml.flat",
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\layout\\activity_itinerary.xml"
     },
@@ -194,5 +186,9 @@
     {
         "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_img3_1.jpg.flat",
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\img3_1.jpg"
+    },
+    {
+        "merged": "com.example.beaux_arts.app-merged_res-39:/raw_amphore_a_spirales.mp3.flat",
+        "source": "com.example.beaux_arts.app-main-41:/raw/amphore_a_spirales.mp3"
     }
 ]

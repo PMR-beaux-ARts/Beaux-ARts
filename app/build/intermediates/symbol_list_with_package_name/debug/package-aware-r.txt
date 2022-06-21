@@ -3371,6 +3371,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
 plurals mtrl_badge_content_description
+raw amphore_a_spirales
 raw beauxarts
 raw zxing_beep
 string abc_action_bar_home_description

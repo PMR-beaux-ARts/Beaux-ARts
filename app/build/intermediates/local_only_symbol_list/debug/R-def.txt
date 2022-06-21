@@ -87,6 +87,7 @@ menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
+raw amphore_a_spirales
 raw beauxarts
 string action_settings
 string app_name
