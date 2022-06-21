@@ -76,8 +76,6 @@ class ItineraireFragment : Fragment() {
         cursor.close()
         database.close()
 
-
-
         list?.adapter = ItemAdapter(recyclerDataArrayList!!,{itineraire : Itineraire -> itineraireClicked(itineraire)})
         list?.layoutManager = LinearLayoutManager(activity, VERTICAL, false)
 

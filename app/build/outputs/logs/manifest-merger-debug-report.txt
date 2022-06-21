@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-46:12
 MERGED from [androidx.databinding:viewbinding:7.2.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\702c71cad9d47ac36dca86b4efe50bd3\transformed\viewbinding-7.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.2] C:\Users\橦枭sys\.gradle\caches\transforms-3\85eda578b0388e2fa02852c08c1ba0e0\transformed\navigation-fragment-ktx-2.4.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.4.2] C:\Users\橦枭sys\.gradle\caches\transforms-3\dd89adeb42328d46ab29481e08e223f0\transformed\navigation-fragment-2.4.2\AndroidManifest.xml:17:1-24:12
@@ -67,22 +67,22 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\橦枭sys\.gradl
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\da64b280e174979c60b9224c5a3d82ef\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\424999a548111c4541eab4ae2b82d443\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\140ec7622853f5231f651809ee8adfd0\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:4:5-37
 		INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml
 		INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml
-		ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-40:12
+		ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml
-		ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-40:12
+		ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:2:11-69
@@ -93,7 +93,7 @@ MERGED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.g
 	android:name
 		ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:6:22-62
 application
-ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:8:5-38:19
+ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:8:5-44:19
 MERGED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:46:5-54:19
 MERGED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\d0726cc55495dc81526e8f4eb9bb9f03\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:46:5-54:19
 MERGED from [androidx.window:window:1.0.0] C:\Users\橦枭sys\.gradle\caches\transforms-3\ce4907934619d5ea0150f25288c4f865\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
@@ -170,6 +170,16 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:35:17-77
 	android:name
 		ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:35:27-74
+activity#com.example.beaux_arts.Capture
+ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:39:9-43:56
+	android:screenOrientation
+		ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:41:13-49
+	android:stateNotNeeded
+		ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:42:13-42
+	android:theme
+		ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:43:13-54
+	android:name
+		ADDED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml:40:13-36
 uses-sdk
 INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\AppData\Local\Beaux-ARts_2\app\src\main\AndroidManifest.xml

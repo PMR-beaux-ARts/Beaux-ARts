@@ -4,8 +4,9 @@ package com.example.beaux_arts.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -17,19 +18,100 @@ import java.lang.String;
 
 public final class FragmentInfoBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
-  public final ImageButton QRCodeButton;
+  public final TextView infoAdresseCorpus;
 
-  private FragmentInfoBinding(@NonNull FrameLayout rootView, @NonNull ImageButton QRCodeButton) {
+  @NonNull
+  public final LinearLayout infoAdresseLayout;
+
+  @NonNull
+  public final TextView infoAdresseTitle;
+
+  @NonNull
+  public final TextView infoContactCorpus;
+
+  @NonNull
+  public final LinearLayout infoContactLayout;
+
+  @NonNull
+  public final TextView infoContactTitle;
+
+  @NonNull
+  public final TextView infoDescriptionCorpus;
+
+  @NonNull
+  public final LinearLayout infoDescriptionLayout;
+
+  @NonNull
+  public final TextView infoDescriptionTitle;
+
+  @NonNull
+  public final TextView infoHorairesCorpus;
+
+  @NonNull
+  public final LinearLayout infoHorairesLayout;
+
+  @NonNull
+  public final TextView infoHorairesTitle;
+
+  @NonNull
+  public final TextView infoTicketsCorpus;
+
+  @NonNull
+  public final LinearLayout infoTicketsLayout;
+
+  @NonNull
+  public final TextView infoTicketsTitle;
+
+  @NonNull
+  public final TextView infoTransportCorpus;
+
+  @NonNull
+  public final LinearLayout infoTransportLayout;
+
+  @NonNull
+  public final TextView infoTransportTitle;
+
+  @NonNull
+  public final TextView titleInfoFragment;
+
+  private FragmentInfoBinding(@NonNull RelativeLayout rootView, @NonNull TextView infoAdresseCorpus,
+      @NonNull LinearLayout infoAdresseLayout, @NonNull TextView infoAdresseTitle,
+      @NonNull TextView infoContactCorpus, @NonNull LinearLayout infoContactLayout,
+      @NonNull TextView infoContactTitle, @NonNull TextView infoDescriptionCorpus,
+      @NonNull LinearLayout infoDescriptionLayout, @NonNull TextView infoDescriptionTitle,
+      @NonNull TextView infoHorairesCorpus, @NonNull LinearLayout infoHorairesLayout,
+      @NonNull TextView infoHorairesTitle, @NonNull TextView infoTicketsCorpus,
+      @NonNull LinearLayout infoTicketsLayout, @NonNull TextView infoTicketsTitle,
+      @NonNull TextView infoTransportCorpus, @NonNull LinearLayout infoTransportLayout,
+      @NonNull TextView infoTransportTitle, @NonNull TextView titleInfoFragment) {
     this.rootView = rootView;
-    this.QRCodeButton = QRCodeButton;
+    this.infoAdresseCorpus = infoAdresseCorpus;
+    this.infoAdresseLayout = infoAdresseLayout;
+    this.infoAdresseTitle = infoAdresseTitle;
+    this.infoContactCorpus = infoContactCorpus;
+    this.infoContactLayout = infoContactLayout;
+    this.infoContactTitle = infoContactTitle;
+    this.infoDescriptionCorpus = infoDescriptionCorpus;
+    this.infoDescriptionLayout = infoDescriptionLayout;
+    this.infoDescriptionTitle = infoDescriptionTitle;
+    this.infoHorairesCorpus = infoHorairesCorpus;
+    this.infoHorairesLayout = infoHorairesLayout;
+    this.infoHorairesTitle = infoHorairesTitle;
+    this.infoTicketsCorpus = infoTicketsCorpus;
+    this.infoTicketsLayout = infoTicketsLayout;
+    this.infoTicketsTitle = infoTicketsTitle;
+    this.infoTransportCorpus = infoTransportCorpus;
+    this.infoTransportLayout = infoTransportLayout;
+    this.infoTransportTitle = infoTransportTitle;
+    this.titleInfoFragment = titleInfoFragment;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -54,13 +136,126 @@ public final class FragmentInfoBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.QRCodeButton;
-      ImageButton QRCodeButton = ViewBindings.findChildViewById(rootView, id);
-      if (QRCodeButton == null) {
+      id = R.id.info_adresse_corpus;
+      TextView infoAdresseCorpus = ViewBindings.findChildViewById(rootView, id);
+      if (infoAdresseCorpus == null) {
         break missingId;
       }
 
-      return new FragmentInfoBinding((FrameLayout) rootView, QRCodeButton);
+      id = R.id.info_adresse_layout;
+      LinearLayout infoAdresseLayout = ViewBindings.findChildViewById(rootView, id);
+      if (infoAdresseLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.info_adresse_title;
+      TextView infoAdresseTitle = ViewBindings.findChildViewById(rootView, id);
+      if (infoAdresseTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.info_contact_corpus;
+      TextView infoContactCorpus = ViewBindings.findChildViewById(rootView, id);
+      if (infoContactCorpus == null) {
+        break missingId;
+      }
+
+      id = R.id.info_contact_layout;
+      LinearLayout infoContactLayout = ViewBindings.findChildViewById(rootView, id);
+      if (infoContactLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.info_contact_title;
+      TextView infoContactTitle = ViewBindings.findChildViewById(rootView, id);
+      if (infoContactTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.info_description_corpus;
+      TextView infoDescriptionCorpus = ViewBindings.findChildViewById(rootView, id);
+      if (infoDescriptionCorpus == null) {
+        break missingId;
+      }
+
+      id = R.id.info_description_layout;
+      LinearLayout infoDescriptionLayout = ViewBindings.findChildViewById(rootView, id);
+      if (infoDescriptionLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.info_description_title;
+      TextView infoDescriptionTitle = ViewBindings.findChildViewById(rootView, id);
+      if (infoDescriptionTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.info_horaires_corpus;
+      TextView infoHorairesCorpus = ViewBindings.findChildViewById(rootView, id);
+      if (infoHorairesCorpus == null) {
+        break missingId;
+      }
+
+      id = R.id.info_horaires_layout;
+      LinearLayout infoHorairesLayout = ViewBindings.findChildViewById(rootView, id);
+      if (infoHorairesLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.info_horaires_title;
+      TextView infoHorairesTitle = ViewBindings.findChildViewById(rootView, id);
+      if (infoHorairesTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.info_tickets_corpus;
+      TextView infoTicketsCorpus = ViewBindings.findChildViewById(rootView, id);
+      if (infoTicketsCorpus == null) {
+        break missingId;
+      }
+
+      id = R.id.info_tickets_layout;
+      LinearLayout infoTicketsLayout = ViewBindings.findChildViewById(rootView, id);
+      if (infoTicketsLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.info_tickets_title;
+      TextView infoTicketsTitle = ViewBindings.findChildViewById(rootView, id);
+      if (infoTicketsTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.info_transport_corpus;
+      TextView infoTransportCorpus = ViewBindings.findChildViewById(rootView, id);
+      if (infoTransportCorpus == null) {
+        break missingId;
+      }
+
+      id = R.id.info_transport_layout;
+      LinearLayout infoTransportLayout = ViewBindings.findChildViewById(rootView, id);
+      if (infoTransportLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.info_transport_title;
+      TextView infoTransportTitle = ViewBindings.findChildViewById(rootView, id);
+      if (infoTransportTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.title_InfoFragment;
+      TextView titleInfoFragment = ViewBindings.findChildViewById(rootView, id);
+      if (titleInfoFragment == null) {
+        break missingId;
+      }
+
+      return new FragmentInfoBinding((RelativeLayout) rootView, infoAdresseCorpus,
+          infoAdresseLayout, infoAdresseTitle, infoContactCorpus, infoContactLayout,
+          infoContactTitle, infoDescriptionCorpus, infoDescriptionLayout, infoDescriptionTitle,
+          infoHorairesCorpus, infoHorairesLayout, infoHorairesTitle, infoTicketsCorpus,
+          infoTicketsLayout, infoTicketsTitle, infoTransportCorpus, infoTransportLayout,
+          infoTransportTitle, titleInfoFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

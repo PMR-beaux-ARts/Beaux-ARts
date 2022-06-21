@@ -1,234 +1,230 @@
 [
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable_img3_2.jpg.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable/img3_2.jpg"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_img3_1.jpg.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\img3_1.jpg"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/raw_bouquet_champetre.mp3.flat",
+        "source": "com.example.beaux_arts.app-main-41:/raw/bouquet_champetre.mp3"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable-v24_img4.jpg.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable-v24\\img4.jpg"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.beaux_arts.app-main-41:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\menu_menu_main.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\menu\\menu_main.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/raw_jazz.mp3.flat",
+        "source": "com.example.beaux_arts.app-main-41:/raw/jazz.mp3"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_baseline_home_24.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_baseline_home_24.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable_ic_baseline_home_24.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable/ic_baseline_home_24.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\layout_activity_itinerary.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\layout\\activity_itinerary.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/raw_aquamanile.mp3.flat",
+        "source": "com.example.beaux_arts.app-main-41:/raw/aquamanile.mp3"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_baseline_collections_24.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_baseline_collections_24.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.beaux_arts.app-main-41:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_jazz.mp3.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\jazz.mp3"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/xml_backup_rules.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable_ic_baseline_location_on_24.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable/ic_baseline_location_on_24.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\layout_activity_produit.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\layout\\activity_produit.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/layout_activity_itinerary.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/layout/activity_itinerary.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/navigation_nav_graph.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/navigation/nav_graph.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable-v24_img1.jpg.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable-v24\\img1.jpg"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable-v24_img1.jpg.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable-v24/img1.jpg"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\layout_fragment_itin.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\layout\\fragment_itin.xml"
-    },
-    {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\mipmap-mdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_baseline_qr_code_scanner_24.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_baseline_qr_code_scanner_24.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
         "merged": "com.example.beaux_arts.app-merged_res-39:/raw_beauxarts.db.flat",
         "source": "com.example.beaux_arts.app-main-41:/raw/beauxarts.db"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_bouquet_champetre.mp3.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\bouquet_champetre.mp3"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.beaux_arts.app-main-41:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable-v24_img2.jpg.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable-v24/img2.jpg"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable-v24_img3.jpg.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable-v24\\img3.jpg"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.beaux_arts.app-main-41:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\layout_item_layout.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\layout\\item_layout.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/layout_fragment_chart.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/layout/fragment_chart.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_baseline_location_on_24.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_baseline_location_on_24.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/layout_fragment_colle.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/layout/fragment_colle.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_alfred_agache.mp3.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\alfred_agache.mp3"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable_ic_baseline_map_24.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable/ic_baseline_map_24.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_apelle_peignant_campaspe.mp3.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\apelle_peignant_campaspe.mp3"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/layout_fragment_info.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/layout/fragment_info.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.beaux_arts.app-main-41:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\layout_fragment_shop.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\layout\\fragment_shop.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/layout_fragment_shop.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/layout/fragment_shop.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_baseline_info_24.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_baseline_info_24.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable_ic_baseline_more_vert_24.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable/ic_baseline_more_vert_24.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_cincinnatus.mp3.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\cincinnatus.mp3"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_autoportait.mp3.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\autoportait.mp3"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/layout_activity_main.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/menu_menu_main.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/menu/menu_main.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\layout_fragment_info.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\layout\\fragment_info.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.beaux_arts.app-main-41:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.beaux_arts.app-main-41:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\xml\\backup_rules.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.beaux_arts.app-main-41:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_aquamanile.mp3.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\aquamanile.mp3"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable_ic_baseline_qr_code_scanner_24.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable/ic_baseline_qr_code_scanner_24.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\navigation_nav_graph.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\navigation\\nav_graph.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable-v24_img3.jpg.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable-v24/img3.jpg"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.beaux_arts.app-main-41:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_beauxarts.db.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\beauxarts.db"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable_ic_baseline_collections_24.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable/ic_baseline_collections_24.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\xml\\data_extraction_rules.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\layout_activity_piece.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\layout\\activity_piece.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/layout_fragment_itin.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/layout/fragment_itin.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable-v24_img2.jpg.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable-v24\\img2.jpg"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/raw_apelle_peignant_campaspe.mp3.flat",
+        "source": "com.example.beaux_arts.app-main-41:/raw/apelle_peignant_campaspe.mp3"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/layout_card_layout.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/layout/card_layout.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_baseline_shopping_basket_24.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_baseline_shopping_basket_24.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable_ic_baseline_star_24.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable/ic_baseline_star_24.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/raw_buste_de_caumartin.mp3.flat",
+        "source": "com.example.beaux_arts.app-main-41:/raw/buste_de_caumartin.mp3"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\layout\\activity_main.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\layout_card_layout.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\layout\\card_layout.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable_ic_baseline_info_24.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable/ic_baseline_info_24.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_img3_2.jpg.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\img3_2.jpg"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable_ic_glasses.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable/ic_glasses.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_adoration_des_mages.mp3.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\adoration_des_mages.mp3"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/layout_activity_piece.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/layout/activity_piece.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_buste_de_caumartin.mp3.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\buste_de_caumartin.mp3"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/raw_cincinnatus.mp3.flat",
+        "source": "com.example.beaux_arts.app-main-41:/raw/cincinnatus.mp3"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_amphore_a_spirales.mp3.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\amphore_a_spirales.mp3"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable_ic_baseline_shopping_basket_24.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable/ic_baseline_shopping_basket_24.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable-v24_img4.jpg.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable-v24/img4.jpg"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_baseline_more_vert_24.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_baseline_more_vert_24.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/layout_activity_produit.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/layout/activity_produit.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable_ic_baseline_hearing_24.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable/ic_baseline_hearing_24.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_baseline_star_24.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_baseline_star_24.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_glasses.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_glasses.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.beaux_arts.app-main-41:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\layout_fragment_colle.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\layout\\fragment_colle.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/raw_alfred_agache.mp3.flat",
+        "source": "com.example.beaux_arts.app-main-41:/raw/alfred_agache.mp3"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_baseline_hearing_24.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_baseline_hearing_24.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/raw_autoportait.mp3.flat",
+        "source": "com.example.beaux_arts.app-main-41:/raw/autoportait.mp3"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/drawable_img3_1.jpg.flat",
+        "source": "com.example.beaux_arts.app-main-41:/drawable/img3_1.jpg"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\layout_fragment_chart.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\layout\\fragment_chart.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/raw_amphore_a_spirales.mp3.flat",
+        "source": "com.example.beaux_arts.app-main-41:/raw/amphore_a_spirales.mp3"
     },
     {
-        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_baseline_map_24.xml.flat",
-        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_baseline_map_24.xml"
+        "merged": "com.example.beaux_arts.app-merged_res-39:/raw_adoration_des_mages.mp3.flat",
+        "source": "com.example.beaux_arts.app-main-41:/raw/adoration_des_mages.mp3"
+    },
+    {
+        "merged": "com.example.beaux_arts.app-merged_res-39:/layout_item_layout.xml.flat",
+        "source": "com.example.beaux_arts.app-main-41:/layout/item_layout.xml"
     }
 ]
