@@ -371,9 +371,9 @@ class MapActivity : AppCompatActivity(),
     override fun onMapInitSuccess(p0: String?) {
 
         //加载离线主题文件
-        mMap?.loadThemeByPath(FileUtils.getDefaultThemePath(this));
+        //mMap?.loadThemeByPath(FileUtils.getDefaultThemePath(this));
         //加载在线主题文件
-//        mMap?.loadThemeById("1539001530494816258")
+        mMap?.loadThemeById("1539001530494816258")
 
         //线图层
         this.mLineLayer = mMap!!.fmLayerProxy.fmLineLayer
