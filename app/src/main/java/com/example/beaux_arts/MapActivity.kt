@@ -50,17 +50,17 @@ class MapActivity : AppCompatActivity(),
 
     var neverAskAgainPermissions = ArrayList<String>()
 
-    var distance_20 = 17.1
-    var distance_26 = 0.00
-    var distance_55 = 6.46
+    var distance_20 = 6.81
+    var distance_26 = 10.33
+    var distance_55 = 7.88
 
     //Coordonnées de trois beacons
     //55 est au coin superieur droie de la cafet et 20 au infe-droite, 26 supe-gauche
-    var coor_b20_x = 15.9
+    var coor_b20_x = 6.46
     var coor_b20_y = 0.00
 //    var coor_b20_z = 0.00
 //    var coor_b26_x = 0.00
-    var coor_b26_y = 6.46
+    var coor_b26_y = 15.9
 //    var coor_b26_z = 0.00
 //    var coor_b55_x = 0.00
 //    var coor_b55_y = 0.00
@@ -301,7 +301,7 @@ class MapActivity : AppCompatActivity(),
     private fun transformtoFMMap(x:Double,y:Double):FMMapCoord{
         val transformer = FMLocateCoordTransformer()
         // beacon 50,20,26 sur Fengmap
-        transformer.setFengmapCoordinate(FMMapCoord(349201.1939747968,6518687.166971912), FMMapCoord(349196.4963470237,6518672.06893436), FMMapCoord(349207.3655576721,6518685.264394011));
+        transformer.setFengmapCoordinate(FMMapCoord(349201.1939747968,6518687.166971912), FMMapCoord(349207.3655576721,6518685.264394011), FMMapCoord(349196.4963470237,6518672.06893436));
         // beacon 50,20,26 dans le système coordonées
         transformer.setLocateCoordinate(0.0, 0.0,6.46,15.9);
         val coord = transformer.transform(x, y)
