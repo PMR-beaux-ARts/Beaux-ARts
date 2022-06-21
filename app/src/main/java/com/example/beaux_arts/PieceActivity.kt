@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.graphics.BitmapFactory
 import android.graphics.drawable.BitmapDrawable
 import android.media.MediaPlayer
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
@@ -13,6 +14,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.database.getStringOrNull
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.beaux_arts.adapter.ProduitAdapter
@@ -38,6 +40,7 @@ class PieceActivity() : AppCompatActivity() {
         val pieceImage = findViewById<ImageView>(R.id.pieceImageView)
         val pieceDescription = findViewById<TextView>(R.id.pieceDescription)
         val pieceProduits = findViewById<RecyclerView>(R.id.pieceRecyclerview)
+        var audio: String? = null
 
         pieceName.text = intent.getStringExtra("title")
         pieceDescription.text = intent.getStringExtra("description")
@@ -52,6 +55,8 @@ class PieceActivity() : AppCompatActivity() {
                 BitmapFactory.decodeByteArray(img_b_collection, 0, img_b_collection.size, null)
             val Co_image = BitmapDrawable(resources, img_bitmap_collection)
             pieceImage.setImageDrawable(Co_image)
+
+            audio = cursor1.getStringOrNull(cursor1.getColumnIndex("audio"))
 
             val nomproduit = cursor1.getString(cursor1.getColumnIndex("nom"))
             Log.i("test","Item ${nomproduit}")
@@ -101,7 +106,7 @@ class PieceActivity() : AppCompatActivity() {
             pieceProduits.setLayoutManager(layoutManager)
             pieceProduits.setAdapter(adapter)
 
-        mediaPlayer = MediaPlayer.create(this, R.raw.amphore_a_spirales)
+        mediaPlayer = MediaPlayer.create(this, R.raw.alfred_agache)
         mediaPlayer?.setOnPreparedListener { println("Ready to go")}
         pieceAudio.setOnClickListener{event -> handleClick(event)}
 

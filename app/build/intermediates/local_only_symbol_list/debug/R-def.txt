@@ -87,8 +87,17 @@ menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
+raw adoration_des_mages
+raw alfred_agache
 raw amphore_a_spirales
+raw apelle_peignant_campaspe
+raw aquamanile
+raw autoportait
 raw beauxarts
+raw bouquet_champetre
+raw buste_de_caumartin
+raw cincinnatus
+raw jazz
 string action_settings
 string app_name
 string audioOption

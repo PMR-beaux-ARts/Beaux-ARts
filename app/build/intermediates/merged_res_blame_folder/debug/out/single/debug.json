@@ -16,12 +16,12 @@
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_baseline_map_24.xml.flat",
-        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_baseline_map_24.xml"
-    },
-    {
         "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_baseline_map_24.xml.flat",
+        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_baseline_map_24.xml"
     },
     {
         "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_baseline_location_on_24.xml.flat",
@@ -30,6 +30,10 @@
     {
         "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_cincinnatus.mp3.flat",
+        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\cincinnatus.mp3"
     },
     {
         "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_beauxarts.db.flat",
@@ -52,12 +56,24 @@
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\layout\\fragment_colle.xml"
     },
     {
+        "merged": "com.example.beaux_arts.app-merged_res-39:/raw_beauxarts.db.flat",
+        "source": "com.example.beaux_arts.app-main-41:/raw/beauxarts.db"
+    },
+    {
+        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_adoration_des_mages.mp3.flat",
+        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\adoration_des_mages.mp3"
+    },
+    {
         "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\layout_fragment_chart.xml.flat",
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\layout\\fragment_chart.xml"
     },
     {
         "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_glasses.xml.flat",
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_glasses.xml"
+    },
+    {
+        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_alfred_agache.mp3.flat",
+        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\alfred_agache.mp3"
     },
     {
         "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
@@ -128,6 +144,10 @@
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_baseline_shopping_basket_24.xml"
     },
     {
+        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_bouquet_champetre.mp3.flat",
+        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\bouquet_champetre.mp3"
+    },
+    {
         "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_ic_baseline_star_24.xml.flat",
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\ic_baseline_star_24.xml"
     },
@@ -148,6 +168,10 @@
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_apelle_peignant_campaspe.mp3.flat",
+        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\apelle_peignant_campaspe.mp3"
+    },
+    {
         "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\navigation_nav_graph.xml.flat",
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\navigation\\nav_graph.xml"
     },
@@ -162,6 +186,18 @@
     {
         "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable-v24_img2.jpg.flat",
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable-v24\\img2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_buste_de_caumartin.mp3.flat",
+        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\buste_de_caumartin.mp3"
+    },
+    {
+        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_aquamanile.mp3.flat",
+        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\aquamanile.mp3"
+    },
+    {
+        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_amphore_a_spirales.mp3.flat",
+        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\amphore_a_spirales.mp3"
     },
     {
         "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\layout_activity_itinerary.xml.flat",
@@ -184,11 +220,15 @@
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\layout\\activity_main.xml"
     },
     {
+        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_autoportait.mp3.flat",
+        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\autoportait.mp3"
+    },
+    {
         "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\drawable_img3_1.jpg.flat",
         "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\drawable\\img3_1.jpg"
     },
     {
-        "merged": "com.example.beaux_arts.app-merged_res-39:/raw_amphore_a_spirales.mp3.flat",
-        "source": "com.example.beaux_arts.app-main-41:/raw/amphore_a_spirales.mp3"
+        "merged": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-merged_res-39:\\raw_jazz.mp3.flat",
+        "source": "C:\\Users\\alici\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-41:\\raw\\jazz.mp3"
     }
 ]
