@@ -2,6 +2,7 @@ package com.example.beaux_arts
 
 import android.Manifest
 import android.app.AlertDialog
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
@@ -35,6 +36,12 @@ import org.altbeacon.beacon.Beacon
 import org.altbeacon.beacon.BeaconManager
 import java.io.FileNotFoundException
 import java.util.*
+import android.speech.RecognitionListener
+import android.speech.RecognizerIntent
+import android.speech.SpeechRecognizer
+import androidx.core.app.ActivityCompat
+import androidx.lifecycle.Transformations
+import com.example.beaux_arts.donnees.CollectionCoord
 
 
 class MapActivity : AppCompatActivity(),
@@ -42,9 +49,10 @@ class MapActivity : AppCompatActivity(),
     CompoundButton.OnCheckedChangeListener,
     OnFMMapThemeListener,
     View.OnClickListener,
-    OnFMMapClickListener{
+    OnFMMapClickListener,
+    RecognitionListener{
 
-
+    private val permissionCode = 100
 
     lateinit var beaconReferenceApplication: MainApp
 
@@ -80,7 +88,6 @@ class MapActivity : AppCompatActivity(),
     private val mGroupId = 1
     private var myPoint = FMMapCoord(349201.1939747968,6518687.166971912)
 
-
     private val mButtons = arrayOfNulls<Button>(2)
 
     private var mPosition = 1
@@ -89,8 +96,6 @@ class MapActivity : AppCompatActivity(),
      * 添加线图层
      */
     protected var mLineLayer: FMLineLayer? = null
-
-
 
     /**
      * 导航分析
@@ -147,15 +152,12 @@ class MapActivity : AppCompatActivity(),
      */
     private var defaultVisitPoints : ArrayList<MapCoord> =   ArrayList()
 
-
-
     override fun onDestroy() {
         if (mMap != null) {
             mMap!!.onDestroy()
         }
         super.onDestroy()
     }
-
 
     private val rangingObserver = Observer<Collection<Beacon>> { beacons ->
 //        Log.d(TAG, "Ranged: ${beacons.count()} beacons")
@@ -184,10 +186,6 @@ class MapActivity : AppCompatActivity(),
         }
     }
 
-
-
-
-
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<out String>,
@@ -210,12 +208,10 @@ class MapActivity : AppCompatActivity(),
         checkPermissions()
     }
 
-
     @RequiresApi(Build.VERSION_CODES.S)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)
-
 
         beaconReferenceApplication = application as MainApp
 
@@ -267,12 +263,25 @@ class MapActivity : AppCompatActivity(),
 
         mMap!!.setOnFMMapClickListener(this)
 
+        //create speech recognizer
+        val mySpeechRecognizer = SpeechRecognizer.createSpeechRecognizer(this)
+        mySpeechRecognizer.setRecognitionListener(this)
 
+        val myRecognitionIntent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
+        myRecognitionIntent.putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS,true)
+        myRecognitionIntent.putExtra(RecognizerIntent.EXTRA_MAX_RESULTS,1)
+        myRecognitionIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE,"en-US")
+        Log.d(CAT,"start recognition")
+        Log.d(CAT,SpeechRecognizer.isRecognitionAvailable(this).toString())
+
+        //get audio permission
+        ActivityCompat.requestPermissions(this@MapActivity, arrayOf(Manifest.permission.RECORD_AUDIO), permissionCode)
 
         // 点击定位Button
-        btnMyLocation = findViewById<FloatingActionButton>(R.id.btn_my_location)
+        btnMyLocation = findViewById<FloatingActionButton>(R.id.btn_audio)
         btnMyLocation?.setOnClickListener(View.OnClickListener { // 默认无问题
             updatemylocation()
+            mySpeechRecognizer.startListening(myRecognitionIntent)
             updateLocationMarker()
 //            val visteur_co = calculPositionActu(distance_20,distance_26,distance_55)
 //            val x = visteur_co[0]
@@ -283,10 +292,11 @@ class MapActivity : AppCompatActivity(),
         })
 
     }
+
     private fun updatemylocation(){
 // Calculer les positions suite à la distance obtenue par trois beacons
-        var visiteur_x = (coor_b20_x*coor_b20_x+distance_55*distance_55-distance_20*distance_20)/2/coor_b20_x
-        var visiteur_y = (coor_b26_y*coor_b26_y+distance_55*distance_55-distance_26*distance_26)/2/coor_b26_y
+        val visiteur_x = (coor_b20_x*coor_b20_x+distance_55*distance_55-distance_20*distance_20)/2/coor_b20_x
+        val visiteur_y = (coor_b26_y*coor_b26_y+distance_55*distance_55-distance_26*distance_26)/2/coor_b26_y
         var visiteur_z = Math.sqrt(distance_55*distance_55-visiteur_y*visiteur_y-visiteur_x*visiteur_x)
 
 //  Transformer en Fengmap
@@ -294,8 +304,10 @@ class MapActivity : AppCompatActivity(),
 //        transformer.setFengmapCoordinate(FMMapCoord(349207.3655576721,6518685.264394011), FMMapCoord(349202.48743259825,6518670.132302859), FMMapCoord(349201.1939747968,6518687.166971912));
 //        transformer.setLocateCoordinate(0.0, 0.0,15.9,6.46);
 //        val visiteur_coord = transformer.transform(visiteur_x, visiteur_y)
-        myPoint = transformtoFMMap(visiteur_x,visiteur_y)
-        //myPoint = FMMapCoord(visiteur_x,visiteur_y)
+        myPoint = transformtoFMMap(visiteur_x,visiteur_y) //myPoint = FMMapCoord(visiteur_x,visiteur_y)
+
+        //        refresh the groupID(according to the num of the beacon with the minimum distance)
+        TODO(/* using a map to get the groupID */)
     }
 
     private fun transformtoFMMap(x:Double,y:Double):FMMapCoord{
@@ -307,8 +319,6 @@ class MapActivity : AppCompatActivity(),
         val coord = transformer.transform(x, y)
         return coord
     }
-
-
 
     private fun updateLocationMarker() {
         if (mLocationMarker == null) {
@@ -539,6 +549,7 @@ class MapActivity : AppCompatActivity(),
             }
         }
     }
+
     override fun onMapInitFailure(p0: String?, p1: Int) {
 
         Log.i(CAT,"onMapInitFailure")
@@ -550,9 +561,6 @@ class MapActivity : AppCompatActivity(),
         //TODO 获取到最新地图更新的信息，可以进行地图的下载操作
         return false
     }
-
-
-
 
     override fun onSuccess(p0: String?) {
         themeLoadSuccess = true
@@ -612,6 +620,7 @@ class MapActivity : AppCompatActivity(),
     }
 
     private var lineMarker : FMLineMarker? = null
+
     /**
      * 添加线标注
      */
@@ -651,11 +660,6 @@ class MapActivity : AppCompatActivity(),
         this.mLineLayer!!.addMarker(visitLineMarker)
 
     }
-
-
-
-
-
 
     /**
      * 创建起点图标
@@ -738,7 +742,7 @@ class MapActivity : AppCompatActivity(),
         }
     }
 
-    /**
+    /**2
      * 开始分析两点之间的游览导航
      */
     private fun analyzeNavigation2(StartGroupId:Int, StartCoord:FMMapCoord, EndGroupId:Int, EndCoord:FMMapCoord) {
@@ -757,8 +761,6 @@ class MapActivity : AppCompatActivity(),
             analyzeNavigation2(defaultVisitPoints[i].groupId,defaultVisitPoints[i].mapCoord,defaultVisitPoints[i+1].groupId,defaultVisitPoints[i+1].mapCoord)
         }
     }
-
-
 
     fun checkPermissions() {
         // basepermissions are for M and higher
@@ -900,7 +902,6 @@ class MapActivity : AppCompatActivity(),
 
     }
 
-
     private fun calculPositionActu(distance_20:Double,distance_26:Double,distance_55:Double) : List<Double>{
         var visiteur_x = (coor_b20_x*coor_b20_x+distance_55*distance_55-distance_20*distance_20)/2/coor_b20_x
         var visiteur_y = (coor_b26_y*coor_b26_y+distance_55*distance_55-distance_26*distance_26)/2/coor_b26_y
@@ -915,5 +916,56 @@ class MapActivity : AppCompatActivity(),
         val PERMISSION_REQUEST_BLUETOOTH_SCAN = 1
         val PERMISSION_REQUEST_BLUETOOTH_CONNECT = 2
         val PERMISSION_REQUEST_FINE_LOCATION = 3
+    }
+
+
+
+    /**
+    * speech recognition part
+    *
+     **/
+    override fun onReadyForSpeech(params: Bundle?) {}
+
+    override fun onBeginningOfSpeech() {}
+
+    override fun onRmsChanged(rmsdB: Float) {}
+
+    override fun onBufferReceived(buffer: ByteArray?) {}
+
+    override fun onEndOfSpeech() {}
+
+    override fun onError(error: Int) {
+        Toast.makeText(this@MapActivity, getErrorText(error),Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onPartialResults(partialResults: Bundle?) {}
+
+    override fun onEvent(eventType: Int, params: Bundle?) {}
+
+    override fun onResults(results: Bundle?) {
+        val speech =  (results!!.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION) as ArrayList<String>)[0]
+        if (speech.contains("Mona Lisa")){
+            val array:Array<Double> = CollectionCoord().transfer("Mona Lisa")
+            mEndGroupId = array[0].toInt()
+            mEndCoord = transformtoFMMap(array[1],array[2])
+            analyzeNavigation2(mGroupId,myPoint,mEndGroupId,mEndCoord as FMMapCoord)
+        }
+    }
+
+    private fun getErrorText(error: Int): String {
+        var message = ""
+        message = when (error) {
+            SpeechRecognizer.ERROR_AUDIO -> "Audio recording error"
+            SpeechRecognizer.ERROR_CLIENT -> "Client side error"
+            SpeechRecognizer.ERROR_INSUFFICIENT_PERMISSIONS -> "Insufficient permissions"
+            SpeechRecognizer.ERROR_NETWORK -> "Network error"
+            SpeechRecognizer.ERROR_NETWORK_TIMEOUT -> "Network timeout"
+            SpeechRecognizer.ERROR_NO_MATCH -> "please try again"
+            SpeechRecognizer.ERROR_RECOGNIZER_BUSY -> "RecognitionService busy"
+            SpeechRecognizer.ERROR_SERVER -> "error from server"
+            SpeechRecognizer.ERROR_SPEECH_TIMEOUT -> "please try again"
+            else -> "Didn't understand, please try again."
+        }
+        return message
     }
 }

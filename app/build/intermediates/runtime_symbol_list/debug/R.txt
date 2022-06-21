@@ -2691,7 +2691,7 @@ int id bounceBoth 0x7f090061
 int id bounceEnd 0x7f090062
 int id bounceStart 0x7f090063
 int id bt_change_language 0x7f090064
-int id btn_my_location 0x7f090065
+int id btn_audio 0x7f090204
 int id buttonPanel 0x7f090066
 int id cache_measures 0x7f090067
 int id callMeasure 0x7f090068

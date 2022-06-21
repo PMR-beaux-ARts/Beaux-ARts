@@ -16,6 +16,7 @@
         android:required="false" />
     <!-- Android6.0以上开启蓝牙需要位置权限 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -42,7 +43,7 @@
         android:theme="@style/Theme.Beaux_ARts" >
         <meta-data
             android:name="com.fengmap.mapapi.appkey"
-            android:value="01020932fcbe14e67485bb9a0c7ed059" />
+            android:value="80b1dc1878fc9796b22e0ff868ed16b2" />
 
         <activity
             android:name="com.example.beaux_arts.PieceActivity"

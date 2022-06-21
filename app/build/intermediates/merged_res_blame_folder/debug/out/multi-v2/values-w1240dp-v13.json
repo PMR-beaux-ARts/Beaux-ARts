@@ -4,7 +4,7 @@
             "outputFile": "com.example.beaux_arts.app-mergeDebugResources-36:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "D:\\AppData\\Local\\Beaux-ARts\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "source": "E:\\CodeExercise\\Android\\Beaux-ARts\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",

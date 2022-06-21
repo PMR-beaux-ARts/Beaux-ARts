@@ -2692,7 +2692,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id bt_change_language
-id btn_my_location
+id btn_audio
 id buttonPanel
 id cache_measures
 id callMeasure
