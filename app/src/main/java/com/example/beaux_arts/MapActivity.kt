@@ -292,21 +292,21 @@ class MapActivity : AppCompatActivity(),
         mMap!!.rotateAngle = angle //设置地图偏60度
 
 
-//        切换语言
-        // 这个设置要放到主题回调里面
-        val bt_change_language = findViewById<View>(R.id.bt_change_language) as Button
-        bt_change_language.setOnClickListener { // 这个设置要放到主题回调里面
-            Log.i(CAT,"btn clicked $themeLoadSuccess")
-            if (themeLoadSuccess) {
-                if (mMap?.mapLanguage == FMLableField.NAME) {
-                    mMap?.mapLanguage = FMLableField.ENAME
-
-                } else {
-                    mMap?.mapLanguage = FMLableField.NAME
-
-                }
-            }
-        }
+////        切换语言
+//        // 这个设置要放到主题回调里面
+//        val bt_change_language = findViewById<View>(R.id.bt_change_language) as Button
+//        bt_change_language.setOnClickListener { // 这个设置要放到主题回调里面
+//            Log.i(CAT,"btn clicked $themeLoadSuccess")
+//            if (themeLoadSuccess) {
+//                if (mMap?.mapLanguage == FMLableField.NAME) {
+//                    mMap?.mapLanguage = FMLableField.ENAME
+//
+//                } else {
+//                    mMap?.mapLanguage = FMLableField.NAME
+//
+//                }
+//            }
+//        }
 
         mMap!!.setOnFMMapClickListener(this)
 

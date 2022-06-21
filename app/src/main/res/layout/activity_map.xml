@@ -70,13 +70,13 @@
             android:textSize="14sp"/>
 
     </LinearLayout>
-    <Button
-        android:background="@drawable/bg_text"
-        android:id="@+id/bt_change_language"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="change language"
-        android:layout_weight="0"/>
+<!--    <Button-->
+<!--        android:background="@drawable/bg_text"-->
+<!--        android:id="@+id/bt_change_language"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="change language"-->
+<!--        android:layout_weight="0"/>-->
 
     <include
         layout="@layout/inner_groups_bottom"

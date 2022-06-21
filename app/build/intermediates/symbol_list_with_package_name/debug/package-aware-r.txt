@@ -2691,7 +2691,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id bt_change_language
 id btn_my_location
 id buttonPanel
 id cache_measures

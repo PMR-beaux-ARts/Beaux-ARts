@@ -42,7 +42,6 @@ drawable shape_bg_blue
 drawable shape_bg_rect_white
 drawable shape_bg_white
 id action_settings
-id bt_change_language
 id btn_my_location
 id cb_groups
 id idCourseRV

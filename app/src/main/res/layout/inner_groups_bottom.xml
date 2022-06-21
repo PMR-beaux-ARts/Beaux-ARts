@@ -14,7 +14,7 @@
         android:gravity="center"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="title_groups_single"
+        android:text="Un/Tous étages"
         android:textColor="@color/black"
         android:textSize="14sp"/>
 
@@ -25,35 +25,35 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <RadioButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/bg_radio"
-            android:button="@null"
-            android:gravity="center"
-            android:textColor="@color/inner_text2"
-            android:textSize="14sp"/>
+<!--        <RadioButton-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/bg_radio"-->
+<!--            android:button="@null"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/inner_text2"-->
+<!--            android:textSize="14sp"/>-->
 
-        <RadioButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/bg_radio"
-            android:button="@null"
-            android:gravity="center"
-            android:textColor="@color/inner_text2"
-            android:textSize="14sp"/>
+<!--        <RadioButton-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/bg_radio"-->
+<!--            android:button="@null"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/inner_text2"-->
+<!--            android:textSize="14sp"/>-->
 
-        <RadioButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/bg_radio"
-            android:button="@null"
-            android:gravity="center"
-            android:textColor="@color/inner_text2"
-            android:textSize="14sp"/>
+<!--        <RadioButton-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/bg_radio"-->
+<!--            android:button="@null"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/inner_text2"-->
+<!--            android:textSize="14sp"/>-->
 
         <RadioButton
             android:layout_width="0dp"

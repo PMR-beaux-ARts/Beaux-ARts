@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-37:/layout/fragment_home.xml",
-        "source": "com.example.beaux_arts.app-main-40:/layout/fragment_home.xml"
-    },
-    {
         "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-37:\\layout\\activity_main.xml",
         "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-40:\\layout\\activity_main.xml"
     },
@@ -32,6 +28,10 @@
         "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-40:\\layout\\inner_groups_bottom.xml"
     },
     {
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-37:/layout/activity_map.xml",
+        "source": "com.example.beaux_arts.app-main-40:/layout/activity_map.xml"
+    },
+    {
         "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-37:\\layout\\activity_piece.xml",
         "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-40:\\layout\\activity_piece.xml"
     },
@@ -44,7 +44,7 @@
         "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-40:\\layout\\fragment_list.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-37:/layout/fragment_list.xml",
-        "source": "com.example.beaux_arts.app-main-40:/layout/fragment_list.xml"
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-37:/layout/inner_groups_bottom.xml",
+        "source": "com.example.beaux_arts.app-main-40:/layout/inner_groups_bottom.xml"
     }
 ]
