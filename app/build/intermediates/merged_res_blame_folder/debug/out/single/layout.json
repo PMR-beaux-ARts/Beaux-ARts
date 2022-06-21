@@ -1,42 +1,42 @@
 [
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-37:/layout/fragment_home.xml",
-        "source": "com.example.beaux_arts.app-main-40:/layout/fragment_home.xml"
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/fragment_chart.xml",
+        "source": "com.example.beaux_arts.app-main-7:/layout/fragment_chart.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-37:/layout/activity_piece.xml",
-        "source": "com.example.beaux_arts.app-main-40:/layout/activity_piece.xml"
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/activity_map.xml",
+        "source": "com.example.beaux_arts.app-main-7:/layout/activity_map.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-37:/layout/fragment_chart.xml",
-        "source": "com.example.beaux_arts.app-main-40:/layout/fragment_chart.xml"
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/inner_groups_bottom.xml",
+        "source": "com.example.beaux_arts.app-main-7:/layout/inner_groups_bottom.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-37:/layout/card_layout.xml",
-        "source": "com.example.beaux_arts.app-main-40:/layout/card_layout.xml"
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/fragment_settings.xml",
+        "source": "com.example.beaux_arts.app-main-7:/layout/fragment_settings.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-37:/layout/item_layout.xml",
-        "source": "com.example.beaux_arts.app-main-40:/layout/item_layout.xml"
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/activity_piece.xml",
+        "source": "com.example.beaux_arts.app-main-7:/layout/activity_piece.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-37:/layout/fragment_settings.xml",
-        "source": "com.example.beaux_arts.app-main-40:/layout/fragment_settings.xml"
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/fragment_home.xml",
+        "source": "com.example.beaux_arts.app-main-7:/layout/fragment_home.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-37:/layout/inner_groups_bottom.xml",
-        "source": "com.example.beaux_arts.app-main-40:/layout/inner_groups_bottom.xml"
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/activity_main.xml",
+        "source": "com.example.beaux_arts.app-main-7:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-37:/layout/fragment_list.xml",
-        "source": "com.example.beaux_arts.app-main-40:/layout/fragment_list.xml"
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/card_layout.xml",
+        "source": "com.example.beaux_arts.app-main-7:/layout/card_layout.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-37:/layout/activity_main.xml",
-        "source": "com.example.beaux_arts.app-main-40:/layout/activity_main.xml"
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/item_layout.xml",
+        "source": "com.example.beaux_arts.app-main-7:/layout/item_layout.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-37:/layout/activity_map.xml",
-        "source": "com.example.beaux_arts.app-main-40:/layout/activity_map.xml"
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/fragment_list.xml",
+        "source": "com.example.beaux_arts.app-main-7:/layout/fragment_list.xml"
     }
 ]

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-36:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-3:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\橦枭sys\\.gradle\\caches\\transforms-3\\43699aa8fd20be8bf6165d23296034cd\\transformed\\material-1.6.1\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+                    "source": "E:\\Android_SDK\\caches\\transforms-3\\43699aa8fd20be8bf6165d23296034cd\\transformed\\material-1.6.1\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

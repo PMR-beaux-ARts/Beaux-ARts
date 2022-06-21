@@ -37,7 +37,7 @@ public class FileUtils {
     /**
      * 默认主题
      */
-    public static final String DEFAULT_THEME_ID = "1539001530494816258";
+    public static final String DEFAULT_THEME_ID = "2001";
 
     /**
      * 通过主题id获取主题路径

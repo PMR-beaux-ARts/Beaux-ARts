@@ -13,6 +13,7 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.beaux_arts.donnees.MapCoord
+import com.example.beaux_arts.utils.FileUtils
 import com.example.beaux_arts.utils.ViewHelper
 import com.fengmap.android.analysis.navi.FMNaviAnalyser
 import com.fengmap.android.exception.FMObjectException
@@ -35,6 +36,7 @@ import org.altbeacon.beacon.Beacon
 import org.altbeacon.beacon.BeaconManager
 import java.io.FileNotFoundException
 import java.util.*
+import kotlin.collections.ArrayList
 
 
 class MapActivity : AppCompatActivity(),
@@ -78,7 +80,7 @@ class MapActivity : AppCompatActivity(),
     private val mRotate = 60f
     private val mTilt = 45f
     private val mGroupId = 1
-    private var myPoint = FMMapCoord(349201.1939747968,6518687.166971912)
+    private var myPoint = FMMapCoord(349075.21843737597,6518727.876407377)
 
 
     private val mButtons = arrayOfNulls<Button>(2)
@@ -333,9 +335,9 @@ class MapActivity : AppCompatActivity(),
     override fun onMapInitSuccess(p0: String?) {
 
         //加载离线主题文件
-        //mMap?.loadThemeByPath(FileUtils.getDefaultThemePath(this));
+        mMap?.loadThemeByPath(FileUtils.getDefaultThemePath(this));
         //加载在线主题文件
-        mMap?.loadThemeById("1539001530494816258")
+//        mMap?.loadThemeById("1539001530494816258")
 
         //线图层
         this.mLineLayer = mMap!!.fmLayerProxy.fmLineLayer
@@ -344,11 +346,11 @@ class MapActivity : AppCompatActivity(),
 
 
 
-        defaultVisitPoints.add(MapCoord(1,FMMapCoord(349083.72802841564,6518749.672903724)))
-        defaultVisitPoints.add(MapCoord(2,FMMapCoord(349068.2017570451,6518735.639543063)))
-        defaultVisitPoints.add(MapCoord(2,FMMapCoord(349087.46030518727,6518710.857225298)))
-        defaultVisitPoints.add(MapCoord(1,FMMapCoord(349048.1967535487,6518677.565316495)))
-        defaultVisitPoints.add(MapCoord(1,FMMapCoord(349086.11668554955,6518711.752971724)))
+        defaultVisitPoints.add(MapCoord(1,FMMapCoord(349202.78765743406,6518697.495674456)))
+        defaultVisitPoints.add(MapCoord(1,FMMapCoord(349196.10620590183,6518687.596318541)))
+        defaultVisitPoints.add(MapCoord(1,FMMapCoord(349204.8465219906,6518682.05897545)))
+        defaultVisitPoints.add(MapCoord(3,FMMapCoord(349196.10620590183,6518687.596318541)))
+        defaultVisitPoints.add(MapCoord(3,FMMapCoord(349201.86748218216,6518674.551672029)))
 
 
         //获取定位图层
@@ -626,7 +628,7 @@ class MapActivity : AppCompatActivity(),
         }
         //添加LineMarker
         lineMarker = FMLineMarker(segments)
-        lineMarker?.lineWidth = 3f
+        lineMarker?.lineWidth = 1.5f
         this.mLineLayer!!.addMarker(lineMarker)
     }
 
@@ -647,7 +649,7 @@ class MapActivity : AppCompatActivity(),
         }
         //添加LineMarker
         visitLineMarker = FMLineMarker(segments)
-        visitLineMarker?.lineWidth = 3f
+        visitLineMarker?.lineWidth = 1.5f
         this.mLineLayer!!.addMarker(visitLineMarker)
 
     }
