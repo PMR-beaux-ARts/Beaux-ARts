@@ -13,7 +13,6 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.beaux_arts.donnees.MapCoord
-import com.example.beaux_arts.utils.FileUtils
 import com.example.beaux_arts.utils.ViewHelper
 import com.fengmap.android.analysis.navi.FMNaviAnalyser
 import com.fengmap.android.exception.FMObjectException
@@ -30,12 +29,12 @@ import com.fengmap.android.map.layer.FMLocationLayer
 import com.fengmap.android.map.marker.FMLineMarker
 import com.fengmap.android.map.marker.FMLocationMarker
 import com.fengmap.android.map.marker.FMSegment
+import com.fengmap.android.utils.FMLocateCoordTransformer
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import org.altbeacon.beacon.Beacon
 import org.altbeacon.beacon.BeaconManager
 import java.io.FileNotFoundException
 import java.util.*
-import kotlin.collections.ArrayList
 
 
 class MapActivity : AppCompatActivity(),
@@ -51,20 +50,21 @@ class MapActivity : AppCompatActivity(),
 
     var neverAskAgainPermissions = ArrayList<String>()
 
-    var distance_20 = 156.5
-    var distance_26 = 158.5
-    var distance_55 = 159.9
+    var distance_20 = 17.1
+    var distance_26 = 0.00
+    var distance_55 = 6.46
 
     //Coordonnées de trois beacons
-    var coor_b20_x = 100.00
+    //55 est au coin superieur droie de la cafet et 20 au infe-droite, 26 supe-gauche
+    var coor_b20_x = 15.9
     var coor_b20_y = 0.00
-    var coor_b20_z = 0.00
-    var coor_b26_x = 0.00
-    var coor_b26_y = 100.00
-    var coor_b26_z = 0.00
-    var coor_b55_x = 0.00
-    var coor_b55_y = 0.00
-    var coor_b55_z = 0.00
+//    var coor_b20_z = 0.00
+//    var coor_b26_x = 0.00
+    var coor_b26_y = 6.46
+//    var coor_b26_z = 0.00
+//    var coor_b55_x = 0.00
+//    var coor_b55_y = 0.00
+//    var coor_b55_z = 0.00
 
     val CAT : String  = "mapActivity"
     var mMap: FMMap? = null
@@ -78,7 +78,7 @@ class MapActivity : AppCompatActivity(),
     private val mRotate = 60f
     private val mTilt = 45f
     private val mGroupId = 1
-    private var myPoint = FMMapCoord(349075.21843737597,6518727.876407377)
+    private var myPoint = FMMapCoord(349201.1939747968,6518687.166971912)
 
 
     private val mButtons = arrayOfNulls<Button>(2)
@@ -274,23 +274,38 @@ class MapActivity : AppCompatActivity(),
         btnMyLocation?.setOnClickListener(View.OnClickListener { // 默认无问题
             updatemylocation()
             updateLocationMarker()
-            val visteur_co = calculPositionActu(distance_20,distance_26,distance_55)
-            val x = visteur_co[0]
-            val y = visteur_co[1]
-            val z = visteur_co[2]
-            Toast.makeText(applicationContext,"26:$x m\n20:$y m\n55:$z m",Toast.LENGTH_SHORT).show()
+//            val visteur_co = calculPositionActu(distance_20,distance_26,distance_55)
+//            val x = visteur_co[0]
+//            val y = visteur_co[1]
+//            val z = visteur_co[2]
+//            myPoint = transformtoFMMap(x,y)
+            Toast.makeText(applicationContext,"Myposition_x:${myPoint.x} m\nMyposition_y:${myPoint.y} m\n Myposition_y:$myPoint.z m",Toast.LENGTH_SHORT).show()
         })
 
     }
     private fun updatemylocation(){
-// 需要在这里对位置进行更新，根据三个distance算出相对坐标
+// Calculer les positions suite à la distance obtenue par trois beacons
         var visiteur_x = (coor_b20_x*coor_b20_x+distance_55*distance_55-distance_20*distance_20)/2/coor_b20_x
-        var visiteur_y = (coor_b26_y*coor_b20_y+distance_55*distance_55-distance_26*distance_26)/2/coor_b26_y
+        var visiteur_y = (coor_b26_y*coor_b26_y+distance_55*distance_55-distance_26*distance_26)/2/coor_b26_y
         var visiteur_z = Math.sqrt(distance_55*distance_55-visiteur_y*visiteur_y-visiteur_x*visiteur_x)
 
-//        示例坐标如下
-//        myPoint = FMMapCoord(349075.21843737597,6518727.876407377)
-        myPoint = FMMapCoord(visiteur_x,visiteur_y)
+//  Transformer en Fengmap
+//        val transformer: FMLocateCoordTransformer = FMLocateCoordTransformer()
+//        transformer.setFengmapCoordinate(FMMapCoord(349207.3655576721,6518685.264394011), FMMapCoord(349202.48743259825,6518670.132302859), FMMapCoord(349201.1939747968,6518687.166971912));
+//        transformer.setLocateCoordinate(0.0, 0.0,15.9,6.46);
+//        val visiteur_coord = transformer.transform(visiteur_x, visiteur_y)
+        myPoint = transformtoFMMap(visiteur_x,visiteur_y)
+        //myPoint = FMMapCoord(visiteur_x,visiteur_y)
+    }
+
+    private fun transformtoFMMap(x:Double,y:Double):FMMapCoord{
+        val transformer = FMLocateCoordTransformer()
+        // beacon 50,20,26 sur Fengmap
+        transformer.setFengmapCoordinate(FMMapCoord(349201.1939747968,6518687.166971912), FMMapCoord(349196.4963470237,6518672.06893436), FMMapCoord(349207.3655576721,6518685.264394011));
+        // beacon 50,20,26 dans le système coordonées
+        transformer.setLocateCoordinate(0.0, 0.0,6.46,15.9);
+        val coord = transformer.transform(x, y)
+        return coord
     }
 
 
@@ -318,9 +333,9 @@ class MapActivity : AppCompatActivity(),
     override fun onMapInitSuccess(p0: String?) {
 
         //加载离线主题文件
-       mMap?.loadThemeByPath(FileUtils.getDefaultThemePath(this));
+        //mMap?.loadThemeByPath(FileUtils.getDefaultThemePath(this));
         //加载在线主题文件
-//        mFMMap?.loadThemeById("2001")
+        mMap?.loadThemeById("1539001530494816258")
 
         //线图层
         this.mLineLayer = mMap!!.fmLayerProxy.fmLineLayer
