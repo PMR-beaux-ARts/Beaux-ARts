@@ -15,7 +15,7 @@ import com.example.beaux_arts.donnees.Produit
 import com.example.recyclerviewusinggridlayoutmanager.CollectionAdapter
 
 
-class ListFragment : Fragment() {
+class CollectionFragment : Fragment() {
 
     private val CAT: String = "collection page"
 

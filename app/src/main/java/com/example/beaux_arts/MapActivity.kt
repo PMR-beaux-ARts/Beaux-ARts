@@ -3,6 +3,9 @@ package com.example.beaux_arts
 import android.Manifest
 import android.app.AlertDialog
 import android.content.pm.PackageManager
+import android.database.sqlite.SQLiteDatabase
+import android.graphics.BitmapFactory
+import android.graphics.drawable.BitmapDrawable
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
@@ -12,7 +15,9 @@ import android.widget.*
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
+import com.example.beaux_arts.donnees.ImportDB
 import com.example.beaux_arts.donnees.MapCoord
+import com.example.beaux_arts.donnees.Produit
 import com.example.beaux_arts.utils.FileUtils
 import com.example.beaux_arts.utils.ViewHelper
 import com.fengmap.android.analysis.navi.FMNaviAnalyser
@@ -34,6 +39,7 @@ import com.fengmap.android.utils.FMLocateCoordTransformer
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import org.altbeacon.beacon.Beacon
 import org.altbeacon.beacon.BeaconManager
+import org.json.JSONObject
 import java.io.FileNotFoundException
 import java.util.*
 import kotlin.collections.ArrayList
@@ -52,12 +58,13 @@ class MapActivity : AppCompatActivity(),
 
     var neverAskAgainPermissions = ArrayList<String>()
 
-    var distance_20 = 6.81
-    var distance_26 = 10.33
-    var distance_55 = 7.88
+    //distance entre le telephone et trois beacons, par defaut la meme position que 55
+    var distance_20 = 6.46
+    var distance_26 = 15.9
+    var distance_55 = 0.00
 
     //Coordonnées de trois beacons
-    //55 est au coin superieur droie de la cafet et 20 au infe-droite, 26 supe-gauche
+    //55 est au coin superieur gauche de la cafet et 20 au sup-droite, 26 inf-gauche
     var coor_b20_x = 6.46
     var coor_b20_y = 0.00
 //    var coor_b20_z = 0.00
@@ -215,9 +222,43 @@ class MapActivity : AppCompatActivity(),
 
     @RequiresApi(Build.VERSION_CODES.S)
     override fun onCreate(savedInstanceState: Bundle?) {
+        //ouvrir database
+        val database = SQLiteDatabase.openOrCreateDatabase(ImportDB.DB_PATH+ "/" + ImportDB.DB_NAME, null)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)
 
+        // Obtenir id de cette itineraires
+        val itiId = intent.getIntExtra("id",1)
+        val cursor1 = database.rawQuery("SELECT * FROM Itineraire WHERE id = ${itiId} ",null)
+        if(cursor1 != null &&cursor1.moveToFirst()) {
+            val collctions_json = JSONObject(cursor1.getString(cursor1.getColumnIndex("mescollections")))
+            Log.i("test","on obtient collections")
+            val keys = collctions_json.keys()
+            Log.i("test","keys of json${keys}")
+            while (keys.hasNext()) {
+                var key = keys.next().toString()
+                //chercher id dans le database
+                val collecId = collctions_json.getInt(key)
+                Log.i("test","collectionId ${collecId}")
+                val cursor2 = database.rawQuery("SELECT * FROM Collection WHERE id = ${collecId} ",null)
+                if(cursor2.moveToFirst()){
+                    do {
+                        var etage:Int = 1 // par defaut au F0 premier etage
+                        when(cursor2.getInt(cursor2.getColumnIndex("salle"))){
+                            in 1..9 -> etage = 1 //salle 0-9 dans F0
+                            in 10..18 -> etage = 2 //salle 10-18 dans F1
+                            else -> etage = 3 //salle 19-27 dans F2
+                        }
+                        val position_json = JSONObject(cursor2.getString(cursor2.getColumnIndex("position")))
+                        Log.i("test","on obtient positions")
+                        defaultVisitPoints.add(MapCoord(etage,FMMapCoord(position_json.getDouble("x"),position_json.getDouble("y"))))
+                    } while (cursor2.moveToNext())
+                }
+                cursor2.close()
+            }
+        }
+        cursor1.close()
+        database.close()
 
         beaconReferenceApplication = application as MainApp
 
@@ -291,11 +332,6 @@ class MapActivity : AppCompatActivity(),
         var visiteur_y = (coor_b26_y*coor_b26_y+distance_55*distance_55-distance_26*distance_26)/2/coor_b26_y
         var visiteur_z = Math.sqrt(distance_55*distance_55-visiteur_y*visiteur_y-visiteur_x*visiteur_x)
 
-//  Transformer en Fengmap
-//        val transformer: FMLocateCoordTransformer = FMLocateCoordTransformer()
-//        transformer.setFengmapCoordinate(FMMapCoord(349207.3655576721,6518685.264394011), FMMapCoord(349202.48743259825,6518670.132302859), FMMapCoord(349201.1939747968,6518687.166971912));
-//        transformer.setLocateCoordinate(0.0, 0.0,15.9,6.46);
-//        val visiteur_coord = transformer.transform(visiteur_x, visiteur_y)
         myPoint = transformtoFMMap(visiteur_x,visiteur_y)
         //myPoint = FMMapCoord(visiteur_x,visiteur_y)
     }
@@ -345,12 +381,11 @@ class MapActivity : AppCompatActivity(),
 
 
 
-
-        defaultVisitPoints.add(MapCoord(1,FMMapCoord(349202.78765743406,6518697.495674456)))
-        defaultVisitPoints.add(MapCoord(1,FMMapCoord(349196.10620590183,6518687.596318541)))
-        defaultVisitPoints.add(MapCoord(1,FMMapCoord(349204.8465219906,6518682.05897545)))
-        defaultVisitPoints.add(MapCoord(3,FMMapCoord(349196.10620590183,6518687.596318541)))
-        defaultVisitPoints.add(MapCoord(3,FMMapCoord(349201.86748218216,6518674.551672029)))
+//        defaultVisitPoints.add(MapCoord(1,FMMapCoord(349202.78765743406,6518697.495674456)))
+//        defaultVisitPoints.add(MapCoord(1,FMMapCoord(349196.10620590183,6518687.596318541)))
+//        defaultVisitPoints.add(MapCoord(1,FMMapCoord(349204.8465219906,6518682.05897545)))
+//        defaultVisitPoints.add(MapCoord(3,FMMapCoord(349196.10620590183,6518687.596318541)))
+//        defaultVisitPoints.add(MapCoord(3,FMMapCoord(349201.86748218216,6518674.551672029)))
 
 
         //获取定位图层

@@ -1,5 +1,6 @@
-package com.example.beaux_arts.adapter
+package fr.ec.sequence1.ui.adapter
 
+import android.content.ClipData
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,11 +8,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.beaux_arts.R
+import com.example.beaux_arts.donnees.Collection
 import com.example.beaux_arts.donnees.Itineraire
 
 class ItemAdapter(
     private val dataSet: List<Itineraire>,
-    private val actionListener: ActionListener
+    val clickListener:(Itineraire) -> Unit
 ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
     override fun getItemCount(): Int = dataSet.size
@@ -35,41 +37,37 @@ class ItemAdapter(
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        holder.bind(item = dataSet[position])
+//        holder.bind(item = dataSet[position], clickListener)
+        // Set the data to textview and imageview.
+        val recyclerData = dataSet[position]
+        holder.title.text = recyclerData.nom
+        holder.image.setImageDrawable(recyclerData.image)
+        holder.subtitle.text = recyclerData.type
+
+        holder.bind(dataSet[position], clickListener)
+
     }
 
     companion object {
         const val HEADER_ITEM_ID = 0
         const val ITEM_ID = 1
     }
-    inner class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        private val image = itemView.findViewById<ImageView>(R.id.image)
-        private val title = itemView.findViewById<TextView>(R.id.title)
-        private val subtitle = itemView.findViewById<TextView>(R.id.subtitle)
+        val image = itemView.findViewById<ImageView>(R.id.image)
+        val title = itemView.findViewById<TextView>(R.id.title)
+        val subtitle = itemView.findViewById<TextView>(R.id.subtitle)
 
-        fun bind(item: Itineraire) {
-            title.text = item.title
-            subtitle.text = item.subTitle
-            image.setImageResource(item.imageRes)
+        fun bind(item: Itineraire, clickListener: (Itineraire) -> Unit) {
+            title.text = item.nom
+            subtitle.text = item.type
+            image.setImageDrawable(item.image)
+
+            title.setOnClickListener { clickListener(item) }
+            subtitle.setOnClickListener { clickListener(item) }
+            image.setOnClickListener { clickListener(item) }
         }
 
-        init {
-            itemView.setOnClickListener{
-
-                val postPosition = adapterPosition
-                if (postPosition != RecyclerView.NO_POSITION){
-                    val clickedPosition = dataSet[adapterPosition]
-                    actionListener.onItemClicked(clickedPosition,postPosition)
-                }
-
-
-            }
-        }
-
-    }
-    interface ActionListener{
-        fun onItemClicked(listItem: Itineraire, position: Int)
     }
 
 }

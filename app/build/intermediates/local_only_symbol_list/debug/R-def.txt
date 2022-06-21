@@ -80,6 +80,7 @@ layout item_layout
 menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw beauxarts
 string action_settings
 string app_name
 string audioOption
