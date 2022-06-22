@@ -2,6 +2,7 @@ package com.example.beaux_arts
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.graphics.BitmapFactory
 import android.graphics.drawable.BitmapDrawable
@@ -29,6 +30,7 @@ class ItineraireFragment : Fragment() {
     val CAT : String = "homepage"
     private var recyclerDataArrayList: ArrayList<Itineraire>? = null
     var dureeChoisie: Int = 10000
+    var themeChoisi: String = "Tout"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -120,6 +122,9 @@ class ItineraireFragment : Fragment() {
                 Toast.makeText(activity,
                     "you selected ${parent?.getItemAtPosition(position).toString()}",
                     Toast.LENGTH_SHORT).show()
+
+                themeChoisi = parent?.getItemAtPosition(position).toString()
+                updateDB()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -166,7 +171,13 @@ class ItineraireFragment : Fragment() {
         var database = SQLiteDatabase.openOrCreateDatabase(ImportDB.DB_PATH+ "/" + ImportDB.DB_NAME, null)
         Log.i("test","Open database")
 
-        var cursor = database.rawQuery("SELECT * FROM Itineraire WHERE duree < $dureeChoisie",null)
+        var cursor: Cursor
+        if (themeChoisi == "Tout") {
+            cursor = database.rawQuery("SELECT * FROM Itineraire WHERE duree < $dureeChoisie",null)
+        } else {
+            cursor = database.rawQuery("SELECT * FROM Itineraire WHERE duree < $dureeChoisie AND type LIKE '%$themeChoisi%'",null)
+        }
+
 
         if(cursor.moveToFirst()){
             do {

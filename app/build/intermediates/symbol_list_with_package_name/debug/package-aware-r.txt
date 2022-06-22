@@ -2802,6 +2802,7 @@ id dragUp
 id dropdown_editable
 id dropdown_menu
 id dropdown_noneditable
+id duree
 id easeIn
 id easeInOut
 id easeOut

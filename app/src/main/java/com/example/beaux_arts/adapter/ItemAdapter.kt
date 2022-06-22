@@ -42,7 +42,8 @@ class ItemAdapter(
         val recyclerData = dataSet[position]
         holder.title.text = recyclerData.nom
         holder.image.setImageDrawable(recyclerData.image)
-        holder.subtitle.text = recyclerData.type
+        holder.subtitle.text = "Thème : " + recyclerData.type
+        holder.duree.text = "Durée (min) : " + recyclerData.duree.toString()
 
         holder.bind(dataSet[position], clickListener)
 
@@ -57,6 +58,7 @@ class ItemAdapter(
         val image = itemView.findViewById<ImageView>(R.id.image)
         val title = itemView.findViewById<TextView>(R.id.title)
         val subtitle = itemView.findViewById<TextView>(R.id.subtitle)
+        val duree = itemView.findViewById<TextView>(R.id.duree)
 
         fun bind(item: Itineraire, clickListener: (Itineraire) -> Unit) {
             title.text = item.nom
