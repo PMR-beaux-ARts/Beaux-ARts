@@ -1,5 +1,6 @@
 package com.example.beaux_arts
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
 import android.graphics.BitmapFactory
@@ -18,8 +19,7 @@ import androidx.recyclerview.widget.RecyclerView.VERTICAL
 import com.example.beaux_arts.donnees.ImportDB
 import com.example.beaux_arts.donnees.Itineraire
 import fr.ec.sequence1.ui.adapter.ItemAdapter
-
-import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_itin.*
 
 
 class ItineraireFragment : Fragment() {
@@ -36,6 +36,7 @@ class ItineraireFragment : Fragment() {
 
 
 
+    @SuppressLint("Range")
     override fun onStart() {
         super.onStart()
         Log.i(CAT,"onStart")
@@ -134,7 +135,7 @@ class ItineraireFragment : Fragment() {
 
     private fun itineraireClicked(itineraire: Itineraire) {
         Toast.makeText(this.context, "Clicked: ${itineraire.nom}", Toast.LENGTH_SHORT).show()
-        val activiteVisee = Intent(this.context, MapActivity::class.java)
+        val activiteVisee = Intent(this.context, ItineraryActivity::class.java)
 
         activiteVisee.putExtra("id", itineraire.id)
 
@@ -146,7 +147,7 @@ class ItineraireFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        return inflater.inflate(R.layout.fragment_itin, container, false)
     }
 
 

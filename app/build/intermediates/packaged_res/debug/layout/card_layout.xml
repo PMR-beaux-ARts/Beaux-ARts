@@ -16,7 +16,7 @@
 
         <ImageView
             android:id="@+id/idIVcourseIV"
-            android:layout_width="100dp"
+            android:layout_width="402dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:src="@mipmap/ic_launcher" />

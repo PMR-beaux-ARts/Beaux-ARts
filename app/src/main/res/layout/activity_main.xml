@@ -5,43 +5,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/QRCode_floattingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/viewPager"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:alpha="0.7"
+
+        android:contentDescription="QR Code Recognition"
+        android:focusable="true"
+        app:srcCompat="@drawable/ic_baseline_qr_code_scanner_24" />
+
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/tablayout"/>
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tablayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabMaxWidth="0dp"
-        app:tabGravity="fill"
-        app:tabMode="fixed"
+        android:layout_alignParentBottom="true"
         android:background="@color/tabBackgroundColor"
+        app:tabGravity="fill"
         app:tabIndicatorColor="?colorPrimary"
-        android:layout_alignParentBottom="true">
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/ic_baseline_home_24"
-            android:text="Itineraries"/>
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:icon="@drawable/ic_baseline_location_on_24"
-            android:layout_height="wrap_content"
-            android:text="Collections"/>
-        <com.google.android.material.tabs.TabItem
-            android:icon="@drawable/ic_baseline_star_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Info"/>
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:icon="@drawable/ic_baseline_more_vert_24"
-            android:text="shop"/>
+            android:text="Itineraries" />
 
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_baseline_collections_24"
+            android:scrollbarSize="4dp"
+            android:text="Collections" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:text="Info" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_baseline_shopping_basket_24"
+            android:text="shop" />
 
 
     </com.google.android.material.tabs.TabLayout>

@@ -24,8 +24,8 @@ class CollectionAdapter(
     override fun onBindViewHolder(holder: RecyclerViewHolder, position: Int) {
         // Set the data to textview and imageview.
         val recyclerData = courseDataArrayList[position]
-        holder.courseTV.text = recyclerData.title
-        holder.courseIV.setImageResource(recyclerData.imageRes)
+        holder.courseTV.text = recyclerData.nom
+        holder.courseIV.setImageDrawable(recyclerData.image)
         holder.bind(courseDataArrayList[position], clickListener)
     }
 
@@ -45,7 +45,8 @@ class CollectionAdapter(
         }
 
         fun bind(collection : Collection, clickListener: (Collection) -> Unit){
-            courseTV.text = collection.title
+            courseTV.text = collection.nom
+            courseTV.setOnClickListener {clickListener(collection)}
             courseIV.setOnClickListener {clickListener(collection)}
         }
     }

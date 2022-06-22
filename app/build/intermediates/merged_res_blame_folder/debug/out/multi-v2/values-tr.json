@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-36:/values-tr/values-tr.xml",
+            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-3:/values-tr/values-tr.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\橦枭sys\\.gradle\\caches\\transforms-3\\d0e8f22e312394d67b28e89a642fd258\\transformed\\appcompat-1.4.2\\res\\values-tr\\values-tr.xml",
+                    "source": "E:\\Android_SDK\\caches\\transforms-3\\d0726cc55495dc81526e8f4eb9bb9f03\\transformed\\zxing-android-embedded-4.1.0\\res\\values-tr\\values-tr.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,116,166,313",
+                        "endColumns": "60,49,146,119",
+                        "endOffsets": "111,161,308,428"
+                    },
+                    "to": {
+                        "startLines": "91,92,93,94",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "7622,7683,7733,7880",
+                        "endColumns": "60,49,146,119",
+                        "endOffsets": "7678,7728,7875,7995"
+                    }
+                },
+                {
+                    "source": "E:\\Android_SDK\\caches\\transforms-3\\d0e8f22e312394d67b28e89a642fd258\\transformed\\appcompat-1.4.2\\res\\values-tr\\values-tr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\橦枭sys\\.gradle\\caches\\transforms-3\\43699aa8fd20be8bf6165d23296034cd\\transformed\\material-1.6.1\\res\\values-tr\\values-tr.xml",
+                    "source": "E:\\Android_SDK\\caches\\transforms-3\\43699aa8fd20be8bf6165d23296034cd\\transformed\\material-1.6.1\\res\\values-tr\\values-tr.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,24 +57,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\橦枭sys\\.gradle\\caches\\transforms-3\\664a48282c5832d766dfe4bca8a82f89\\transformed\\core-1.8.0\\res\\values-tr\\values-tr.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "90",
-                        "startColumns": "4",
-                        "startOffsets": "7521",
-                        "endColumns": "100",
-                        "endOffsets": "7617"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\橦枭sys\\.gradle\\caches\\transforms-3\\0f5a5398614b825cb9dc24264211c6ef\\transformed\\navigation-ui-2.4.2\\res\\values-tr\\values-tr.xml",
+                    "source": "E:\\Android_SDK\\caches\\transforms-3\\0f5a5398614b825cb9dc24264211c6ef\\transformed\\navigation-ui-2.4.2\\res\\values-tr\\values-tr.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -71,6 +71,23 @@
                         "startOffsets": "7140,7245",
                         "endColumns": "104,116",
                         "endOffsets": "7240,7357"
+                    }
+                },
+                {
+                    "source": "E:\\Android_SDK\\caches\\transforms-3\\664a48282c5832d766dfe4bca8a82f89\\transformed\\core-1.8.0\\res\\values-tr\\values-tr.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "90",
+                        "startColumns": "4",
+                        "startOffsets": "7521",
+                        "endColumns": "100",
+                        "endOffsets": "7617"
                     }
                 }
             ]
