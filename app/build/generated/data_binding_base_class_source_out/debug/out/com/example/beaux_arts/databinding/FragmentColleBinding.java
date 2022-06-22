@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
@@ -22,9 +23,14 @@ public final class FragmentColleBinding implements ViewBinding {
   @NonNull
   public final RecyclerView idCourseRV;
 
-  private FragmentColleBinding(@NonNull FrameLayout rootView, @NonNull RecyclerView idCourseRV) {
+  @NonNull
+  public final TextView titleColleFragment;
+
+  private FragmentColleBinding(@NonNull FrameLayout rootView, @NonNull RecyclerView idCourseRV,
+      @NonNull TextView titleColleFragment) {
     this.rootView = rootView;
     this.idCourseRV = idCourseRV;
+    this.titleColleFragment = titleColleFragment;
   }
 
   @Override
@@ -60,7 +66,13 @@ public final class FragmentColleBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentColleBinding((FrameLayout) rootView, idCourseRV);
+      id = R.id.title_ColleFragment;
+      TextView titleColleFragment = ViewBindings.findChildViewById(rootView, id);
+      if (titleColleFragment == null) {
+        break missingId;
+      }
+
+      return new FragmentColleBinding((FrameLayout) rootView, idCourseRV, titleColleFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

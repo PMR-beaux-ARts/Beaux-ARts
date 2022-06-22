@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,7 +20,7 @@ import java.lang.String;
 
 public final class ActivityPieceBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
   public final ImageButton pieceAudio;
@@ -46,7 +46,7 @@ public final class ActivityPieceBinding implements ViewBinding {
   @NonNull
   public final TextView textView;
 
-  private ActivityPieceBinding(@NonNull LinearLayout rootView, @NonNull ImageButton pieceAudio,
+  private ActivityPieceBinding(@NonNull RelativeLayout rootView, @NonNull ImageButton pieceAudio,
       @NonNull TextView pieceDescription, @NonNull ImageButton pieceGlasses,
       @NonNull ImageView pieceImageView, @NonNull ImageButton pieceMap, @NonNull TextView pieceName,
       @NonNull RecyclerView pieceRecyclerview, @NonNull TextView textView) {
@@ -63,7 +63,7 @@ public final class ActivityPieceBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -136,7 +136,7 @@ public final class ActivityPieceBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPieceBinding((LinearLayout) rootView, pieceAudio, pieceDescription,
+      return new ActivityPieceBinding((RelativeLayout) rootView, pieceAudio, pieceDescription,
           pieceGlasses, pieceImageView, pieceMap, pieceName, pieceRecyclerview, textView);
     }
     String missingId = rootView.getResources().getResourceName(id);

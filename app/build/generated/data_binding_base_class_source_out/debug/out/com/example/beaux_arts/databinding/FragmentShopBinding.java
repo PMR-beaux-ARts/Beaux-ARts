@@ -4,7 +4,8 @@ package com.example.beaux_arts.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,19 +18,24 @@ import java.lang.String;
 
 public final class FragmentShopBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final RecyclerView souvenirList;
 
-  private FragmentShopBinding(@NonNull FrameLayout rootView, @NonNull RecyclerView souvenirList) {
+  @NonNull
+  public final TextView titleShopFragment;
+
+  private FragmentShopBinding(@NonNull LinearLayout rootView, @NonNull RecyclerView souvenirList,
+      @NonNull TextView titleShopFragment) {
     this.rootView = rootView;
     this.souvenirList = souvenirList;
+    this.titleShopFragment = titleShopFragment;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -60,7 +66,13 @@ public final class FragmentShopBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentShopBinding((FrameLayout) rootView, souvenirList);
+      id = R.id.title_ShopFragment;
+      TextView titleShopFragment = ViewBindings.findChildViewById(rootView, id);
+      if (titleShopFragment == null) {
+        break missingId;
+      }
+
+      return new FragmentShopBinding((LinearLayout) rootView, souvenirList, titleShopFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

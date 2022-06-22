@@ -3137,7 +3137,10 @@ id textinput_suffix_text
 id time
 id title
 id titleDividerNoCustom
+id title_ColleFragment
 id title_InfoFragment
+id title_ItinFragment
+id title_ShopFragment
 id title_template
 id toggle
 id top

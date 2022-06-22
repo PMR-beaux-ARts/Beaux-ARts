@@ -102,7 +102,10 @@ id textView
 id textView3
 id textView5
 id title
+id title_ColleFragment
 id title_InfoFragment
+id title_ItinFragment
+id title_ShopFragment
 id viewPager
 layout activity_itinerary
 layout activity_main
