@@ -28,6 +28,8 @@ class ItineraireFragment : Fragment() {
 
     val CAT : String = "homepage"
     private var recyclerDataArrayList: ArrayList<Itineraire>? = null
+    var dureeChoisie: Int = 10000
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -84,7 +86,6 @@ class ItineraireFragment : Fragment() {
         list?.adapter = ItemAdapter(recyclerDataArrayList!!,{itineraire : Itineraire -> itineraireClicked(itineraire)})
         list?.layoutManager = LinearLayoutManager(activity, VERTICAL, false)
 
-
         spinner1.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
             override fun onItemSelected(
                 parent: AdapterView<*>?,
@@ -95,6 +96,14 @@ class ItineraireFragment : Fragment() {
                 Toast.makeText(activity,
                     "you selected ${parent?.getItemAtPosition(position).toString()}",
                     Toast.LENGTH_SHORT).show()
+
+                when (parent?.getItemAtPosition(position).toString()) {
+                    "30 mins" -> dureeChoisie = 31
+                    "1 hour" -> dureeChoisie = 61
+                    "1 hour 30 mins" -> dureeChoisie = 91
+                    "Tout" -> dureeChoisie = 10000
+                }
+                updateDB()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -150,5 +159,47 @@ class ItineraireFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_itin, container, false)
     }
 
+
+    fun updateDB() {
+        recyclerDataArrayList?.clear()
+        //Initialiser la database
+        var database = SQLiteDatabase.openOrCreateDatabase(ImportDB.DB_PATH+ "/" + ImportDB.DB_NAME, null)
+        Log.i("test","Open database")
+
+        var cursor = database.rawQuery("SELECT * FROM Itineraire WHERE duree < $dureeChoisie",null)
+
+        if(cursor.moveToFirst()){
+            do {
+                var It_id = cursor.getInt(cursor.getColumnIndex("id"))
+                //Log.i("test","$It_id")
+                var It_nom = cursor.getString(cursor.getColumnIndex("nom"))
+                var It_type = cursor.getString(cursor.getColumnIndex("type"))
+                var It_description = cursor.getString(cursor.getColumnIndex("description"))
+                var It_duree = cursor.getInt(cursor.getColumnIndex("duree"))
+                val img_b = cursor.getBlob(cursor.getColumnIndex("image"))
+                val img_bitmap = BitmapFactory.decodeByteArray(img_b,0,img_b.size,null)
+                val It_image= BitmapDrawable(resources,img_bitmap)
+                var It_mescollection = null
+
+                var newItineraire = Itineraire(
+                    It_id,
+                    It_nom,
+                    It_type,
+                    It_description,
+                    It_duree,
+                    It_mescollection,
+                    "carte",
+                    It_image
+                )
+                // added data to array list
+                recyclerDataArrayList!!.add(newItineraire)
+                Log.i("test","$recyclerDataArrayList")
+            } while (cursor.moveToNext())
+        }
+        cursor.close()
+        database.close()
+
+        list?.adapter?.notifyDataSetChanged()
+    }
 
 }

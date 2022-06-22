@@ -65,7 +65,7 @@
         android:theme="@style/Theme.Beaux_ARts" >
         <meta-data
             android:name="com.fengmap.mapapi.appkey"
-            android:value="01020932fcbe14e67485bb9a0c7ed059" />
+            android:value="db73cdf03a7a46cb0dbfd6cfbc2282bd" />
 
         <activity
             android:name="com.example.beaux_arts.ItineraryActivity"

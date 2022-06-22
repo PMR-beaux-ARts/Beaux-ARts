@@ -1,6 +1,7 @@
 package com.example.beaux_arts
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.content.pm.PackageManager
 import android.database.sqlite.SQLiteDatabase
@@ -220,6 +221,7 @@ class MapActivity : AppCompatActivity(),
     }
 
 
+    @SuppressLint("Range")
     @RequiresApi(Build.VERSION_CODES.S)
     override fun onCreate(savedInstanceState: Bundle?) {
         //ouvrir database
@@ -367,7 +369,12 @@ class MapActivity : AppCompatActivity(),
 //            val y = visteur_co[1]
 //            val z = visteur_co[2]
 //            myPoint = transformtoFMMap(x,y)
-            Toast.makeText(applicationContext,"Myposition_x:${myPoint.x} m\nMyposition_y:${myPoint.y} m\n Myposition_y:$myPoint.z m",Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext,
+                "Myposition_x:${myPoint.x} m\n" +
+                        "Myposition_y:${myPoint.y} m\n" +
+                        "distance20 = ${distance_20} m\n" +
+                        "distance55 = ${distance_55} m\n"+
+                        "distance26 = ${distance_26} m",Toast.LENGTH_SHORT).show()
         })
 
     }
