@@ -47,19 +47,11 @@
         android:layout_width="match_parent"
         android:layout_height="150dp" />
 
-    <TextView
-        android:id="@+id/textView6"
+    <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
-        android:background="#EFEEEE"
-        android:gravity="center_vertical"
-        android:text="Carte"
-        android:textSize="15sp" />
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:text="Afficher sur la carte" />
 
-    <ImageView
-        android:id="@+id/itineraireMapView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 </LinearLayout>

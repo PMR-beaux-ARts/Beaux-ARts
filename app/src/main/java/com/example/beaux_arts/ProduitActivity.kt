@@ -1,5 +1,6 @@
 package com.example.beaux_arts
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
 import android.graphics.BitmapFactory
@@ -18,6 +19,7 @@ import com.example.beaux_arts.donnees.Collection
 import com.example.beaux_arts.donnees.ImportDB
 
 class ProduitActivity : AppCompatActivity() {
+    @SuppressLint("Range")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_produit)

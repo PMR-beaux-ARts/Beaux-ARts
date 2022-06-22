@@ -1,5 +1,6 @@
 package com.example.beaux_arts
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
 import android.graphics.*
@@ -19,12 +20,14 @@ import com.example.beaux_arts.donnees.Collection
 import com.example.beaux_arts.donnees.ImportDB
 import com.example.beaux_arts.donnees.Produit
 import com.example.recyclerviewusinggridlayoutmanager.CollectionAdapter
+import kotlinx.android.synthetic.main.activity_itinerary.*
 import org.json.JSONObject
 
 class ItineraryActivity : AppCompatActivity() {
 
     private var recyclerDataArrayList: ArrayList<Collection>? = ArrayList()
 
+    @SuppressLint("Range")
     override fun onCreate(savedInstanceState: Bundle?) {
         val database = SQLiteDatabase.openOrCreateDatabase(ImportDB.DB_PATH+ "/" + ImportDB.DB_NAME, null)
         super.onCreate(savedInstanceState)
@@ -97,6 +100,17 @@ class ItineraryActivity : AppCompatActivity() {
         recyclerView?.setAdapter(adapter)
 
         //createMap()
+
+
+
+        button.setOnClickListener(){
+            val activiteVisee = Intent(this@ItineraryActivity, MapActivity::class.java)
+
+            val itiId = intent.getIntExtra("id",1)
+            activiteVisee.putExtra("id", itiId)
+
+            startActivity(activiteVisee)
+        }
 
     }
 

@@ -23,7 +23,7 @@ data class Collection(
 //    var produits: MutableList<Produit>? = null
 
 ){
-   // constructor(title : String,imageRes : Int) : this(title, "unknown", imageRes, "Un tableau")
+    // constructor(title : String,imageRes : Int) : this(title, "unknown", imageRes, "Un tableau")
 //    override fun toString(): String {
 //        return "Collection(id=$id, nom='$nom', auteur='$auteur', type='$type', desciption='$desciption', salle=$salle, mesproduits=$mesproduits, position=${position.contentToString()}, image='$image')"
 //    }
@@ -31,5 +31,4 @@ data class Collection(
 
     //constructor(title : String, imageRes : Int, description: String, produits: MutableList<Produit>?) : this(title, "unknown", imageRes, description, produits)
 }
-
 

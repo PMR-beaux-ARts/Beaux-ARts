@@ -1,5 +1,6 @@
 package com.example.beaux_arts
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
 import android.graphics.BitmapFactory
@@ -30,6 +31,7 @@ class ShopFragment : Fragment() {
         super.onCreate(savedInstanceState)
         Log.i(CAT,"onCreate")
     }
+    @SuppressLint("Range")
     override fun onStart() {
         super.onStart()
         Log.i(CAT,"onStart")

@@ -5,9 +5,10 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="23"
+        android:minSdkVersion="24"
         android:targetSdkVersion="32" />
 
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission
         android:name="android.permission.BLUETOOTH"
         android:required="false" />
@@ -24,6 +25,28 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
@@ -42,8 +65,14 @@
         android:theme="@style/Theme.Beaux_ARts" >
         <meta-data
             android:name="com.fengmap.mapapi.appkey"
-            android:value="01020932fcbe14e67485bb9a0c7ed059" />
+            android:value="db73cdf03a7a46cb0dbfd6cfbc2282bd" />
 
+        <activity
+            android:name="com.example.beaux_arts.ItineraryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.beaux_arts.ProduitActivity"
+            android:exported="false" />
         <activity
             android:name="com.example.beaux_arts.PieceActivity"
             android:exported="false" />
@@ -61,6 +90,18 @@
         <activity
             android:name="com.example.beaux_arts.MapActivity"
             android:theme="@style/Theme.Beaux_ARts.NoActionBar" />
+        <activity
+            android:name="com.example.beaux_arts.Capture"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="sensorLandscape"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
 
         <uses-library
             android:name="androidx.window.extensions"

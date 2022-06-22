@@ -1,5 +1,6 @@
 package com.example.beaux_arts
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
 import android.graphics.BitmapFactory
@@ -28,6 +29,7 @@ class PieceActivity() : AppCompatActivity() {
     private var mediaPlayer: MediaPlayer? = null
     private var play: Boolean = false
 
+    @SuppressLint("Range")
     override fun onCreate(savedInstanceState: Bundle?) {
         val database = SQLiteDatabase.openOrCreateDatabase(ImportDB.DB_PATH+ "/" + ImportDB.DB_NAME, null)
         super.onCreate(savedInstanceState)
@@ -105,7 +107,18 @@ class PieceActivity() : AppCompatActivity() {
         mediaPlayer?.setOnPreparedListener { println("Ready to go")}
         pieceAudio.setOnClickListener{event -> handleClick(event)}
 
+        pieceMap.setOnClickListener(){
+
+            val activiteVisee = Intent(this, MapActivity::class.java)
+
+//            activiteVisee.putExtra("id", "在这换成单个目标点的数据")
+            startActivity(activiteVisee)
+            //todo
         }
+
+
+
+    }
 
     private fun handleClick(event: View?) {
         if (play) {

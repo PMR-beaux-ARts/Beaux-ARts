@@ -4,7 +4,7 @@ package com.example.beaux_arts.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -22,10 +22,10 @@ public final class ActivityItineraryBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final TextView itineraireDescription;
+  public final Button button;
 
   @NonNull
-  public final ImageView itineraireMapView;
+  public final TextView itineraireDescription;
 
   @NonNull
   public final TextView itineraryName;
@@ -39,21 +39,17 @@ public final class ActivityItineraryBinding implements ViewBinding {
   @NonNull
   public final TextView textView5;
 
-  @NonNull
-  public final TextView textView6;
-
-  private ActivityItineraryBinding(@NonNull LinearLayout rootView,
-      @NonNull TextView itineraireDescription, @NonNull ImageView itineraireMapView,
-      @NonNull TextView itineraryName, @NonNull RecyclerView oeuvresCollectionVIew,
-      @NonNull TextView textView3, @NonNull TextView textView5, @NonNull TextView textView6) {
+  private ActivityItineraryBinding(@NonNull LinearLayout rootView, @NonNull Button button,
+      @NonNull TextView itineraireDescription, @NonNull TextView itineraryName,
+      @NonNull RecyclerView oeuvresCollectionVIew, @NonNull TextView textView3,
+      @NonNull TextView textView5) {
     this.rootView = rootView;
+    this.button = button;
     this.itineraireDescription = itineraireDescription;
-    this.itineraireMapView = itineraireMapView;
     this.itineraryName = itineraryName;
     this.oeuvresCollectionVIew = oeuvresCollectionVIew;
     this.textView3 = textView3;
     this.textView5 = textView5;
-    this.textView6 = textView6;
   }
 
   @Override
@@ -83,15 +79,15 @@ public final class ActivityItineraryBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.itineraireDescription;
-      TextView itineraireDescription = ViewBindings.findChildViewById(rootView, id);
-      if (itineraireDescription == null) {
+      id = R.id.button;
+      Button button = ViewBindings.findChildViewById(rootView, id);
+      if (button == null) {
         break missingId;
       }
 
-      id = R.id.itineraireMapView;
-      ImageView itineraireMapView = ViewBindings.findChildViewById(rootView, id);
-      if (itineraireMapView == null) {
+      id = R.id.itineraireDescription;
+      TextView itineraireDescription = ViewBindings.findChildViewById(rootView, id);
+      if (itineraireDescription == null) {
         break missingId;
       }
 
@@ -119,14 +115,8 @@ public final class ActivityItineraryBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView6;
-      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
-      if (textView6 == null) {
-        break missingId;
-      }
-
-      return new ActivityItineraryBinding((LinearLayout) rootView, itineraireDescription,
-          itineraireMapView, itineraryName, oeuvresCollectionVIew, textView3, textView5, textView6);
+      return new ActivityItineraryBinding((LinearLayout) rootView, button, itineraireDescription,
+          itineraryName, oeuvresCollectionVIew, textView3, textView5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
