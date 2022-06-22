@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-3:/values-v25/values-v25.xml",
+            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-38:/values-v25/values-v25.xml",
             "map": [
                 {
-                    "source": "E:\\Android_SDK\\caches\\transforms-3\\d0e8f22e312394d67b28e89a642fd258\\transformed\\appcompat-1.4.2\\res\\values-v25\\values-v25.xml",
+                    "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\d0e8f22e312394d67b28e89a642fd258\\transformed\\appcompat-1.4.2\\res\\values-v25\\values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",

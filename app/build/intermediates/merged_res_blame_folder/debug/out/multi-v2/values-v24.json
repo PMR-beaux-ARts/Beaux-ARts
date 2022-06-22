@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-3:/values-v24/values-v24.xml",
+            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-38:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "E:\\Android_SDK\\caches\\transforms-3\\43699aa8fd20be8bf6165d23296034cd\\transformed\\material-1.6.1\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\43699aa8fd20be8bf6165d23296034cd\\transformed\\material-1.6.1\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "E:\\Android_SDK\\caches\\transforms-3\\d0e8f22e312394d67b28e89a642fd258\\transformed\\appcompat-1.4.2\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\d0e8f22e312394d67b28e89a642fd258\\transformed\\appcompat-1.4.2\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -33,7 +33,7 @@
                     }
                 },
                 {
-                    "source": "E:\\Android_SDK\\caches\\transforms-3\\ddd81fde9d3030664e6a7ff589753db1\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\alici\\.gradle\\caches\\transforms-3\\ddd81fde9d3030664e6a7ff589753db1\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
