@@ -34,6 +34,7 @@ class ProduitActivity : AppCompatActivity() {
 
         produitName.text = intent.getStringExtra("nom")
         produitDescription.text = intent.getStringExtra("nom")
+        produitPrix.text = "Prix : ${intent.getIntExtra("prix",0)}"
 
 
         //chercher id dans le database et retourner l'image
@@ -42,7 +43,6 @@ class ProduitActivity : AppCompatActivity() {
         val cursor = database.rawQuery("SELECT * FROM Produit WHERE id = ${produitId} ",null)
         var collectionId : Int = 1
         if(cursor != null &&cursor.moveToFirst()) {
-            produitPrix.text = "Prix : ${cursor.getDouble(cursor.getColumnIndex("prix"))}  €"
             val img_b = cursor.getBlob(cursor.getColumnIndex("image"))
             val img_bitmap = BitmapFactory.decodeByteArray(img_b, 0, img_b.size, null)
             val img_bitmapDrawable = BitmapDrawable(resources, img_bitmap)

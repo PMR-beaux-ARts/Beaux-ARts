@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-38:/values-port/values-port.xml",
+            "outputFile": "com.example.beaux_arts.app-mergeDebugResources-3:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\橦枭sys\\.gradle\\caches\\transforms-3\\d0e8f22e312394d67b28e89a642fd258\\transformed\\appcompat-1.4.2\\res\\values-port\\values-port.xml",
+                    "source": "E:\\Android_SDK\\caches\\transforms-3\\d0e8f22e312394d67b28e89a642fd258\\transformed\\appcompat-1.4.2\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
