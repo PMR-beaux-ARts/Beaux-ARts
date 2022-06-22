@@ -1,12 +1,13 @@
 package com.example.beaux_arts
 
 import android.annotation.SuppressLint
+import android.content.ContentResolver
 import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
 import android.graphics.BitmapFactory
 import android.graphics.drawable.BitmapDrawable
 import android.media.MediaPlayer
-import androidx.appcompat.app.AppCompatActivity
+import android.net.Uri
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
 import android.util.Log
@@ -14,16 +15,16 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.beaux_arts.adapter.ProduitAdapter
 import com.example.beaux_arts.donnees.ImportDB
-import com.example.beaux_arts.donnees.MapCoord
 import com.example.beaux_arts.donnees.Produit
-import com.fengmap.android.map.geometry.FMMapCoord
 import kotlinx.android.synthetic.main.activity_piece.*
 import kotlinx.android.synthetic.main.activity_produit.*
 import org.json.JSONObject
+
 
 class PieceActivity() : AppCompatActivity() {
 
@@ -45,6 +46,7 @@ class PieceActivity() : AppCompatActivity() {
         var piecePosition_x : Double = 0.00
         var piecePosition_y : Double = 0.00
         var pieceSalle : Int = 1
+        var audio: String = "jazz"
 
         val pieceId = intent.getIntExtra("id",1)
         val cursor1 = database.rawQuery("SELECT * FROM Collection WHERE id = ${pieceId} ",null)
@@ -65,6 +67,7 @@ class PieceActivity() : AppCompatActivity() {
             pieceImage.setImageDrawable(Co_image)
 
             val nomproduit = cursor1.getString(cursor1.getColumnIndex("nom"))
+//            audio = cursor1.getString(cursor1.getColumnIndex("audio"))
             Log.i("test","Item ${nomproduit}")
 
             recyclerProduitsArrayList = ArrayList()
@@ -112,7 +115,25 @@ class PieceActivity() : AppCompatActivity() {
             pieceProduits.setLayoutManager(layoutManager)
             pieceProduits.setAdapter(adapter)
 
-        mediaPlayer = MediaPlayer.create(this, R.raw.amphore_a_spirales)
+
+//        val uri: Uri =
+//            Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE + "://" + this.packageName + "/R.raw.jazz")
+//        //mediaPlayer?.setDataSource(uri.toString())
+        when(pieceId){
+            1-> mediaPlayer = MediaPlayer.create(this,R.raw.amphore_a_spirales)
+            2-> mediaPlayer = MediaPlayer.create(this,R.raw.adoration_des_mages)
+            3-> mediaPlayer = MediaPlayer.create(this,R.raw.apelle_peignant_campaspe)
+            4-> mediaPlayer = MediaPlayer.create(this,R.raw.autoportait)
+            5-> mediaPlayer = MediaPlayer.create(this,R.raw.bouquet_champetre)
+            6-> mediaPlayer = MediaPlayer.create(this,R.raw.buste_de_caumartin)
+            7-> mediaPlayer = MediaPlayer.create(this,R.raw.cincinnatus)
+            8-> mediaPlayer = MediaPlayer.create(this,R.raw.alfred_agache)
+            9-> mediaPlayer = MediaPlayer.create(this,R.raw.jazz)
+            10-> mediaPlayer = MediaPlayer.create(this,R.raw.aquamanile)
+            else ->mediaPlayer = MediaPlayer.create(this,R.raw.aquamanile)
+        }
+
+//        Log.i("audio","${uri}")
         mediaPlayer?.setOnPreparedListener { println("Ready to go")}
         pieceAudio.setOnClickListener{event -> handleClick(event)}
 
