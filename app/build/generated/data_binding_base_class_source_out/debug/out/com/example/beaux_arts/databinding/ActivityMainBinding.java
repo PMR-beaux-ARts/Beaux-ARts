@@ -11,6 +11,7 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import androidx.viewpager2.widget.ViewPager2;
 import com.example.beaux_arts.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -21,14 +22,19 @@ public final class ActivityMainBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final FloatingActionButton QRCodeFloattingButton;
+
+  @NonNull
   public final TabLayout tablayout;
 
   @NonNull
   public final ViewPager2 viewPager;
 
-  private ActivityMainBinding(@NonNull RelativeLayout rootView, @NonNull TabLayout tablayout,
+  private ActivityMainBinding(@NonNull RelativeLayout rootView,
+      @NonNull FloatingActionButton QRCodeFloattingButton, @NonNull TabLayout tablayout,
       @NonNull ViewPager2 viewPager) {
     this.rootView = rootView;
+    this.QRCodeFloattingButton = QRCodeFloattingButton;
     this.tablayout = tablayout;
     this.viewPager = viewPager;
   }
@@ -60,6 +66,12 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.QRCode_floattingButton;
+      FloatingActionButton QRCodeFloattingButton = ViewBindings.findChildViewById(rootView, id);
+      if (QRCodeFloattingButton == null) {
+        break missingId;
+      }
+
       id = R.id.tablayout;
       TabLayout tablayout = ViewBindings.findChildViewById(rootView, id);
       if (tablayout == null) {
@@ -72,7 +84,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((RelativeLayout) rootView, tablayout, viewPager);
+      return new ActivityMainBinding((RelativeLayout) rootView, QRCodeFloattingButton, tablayout,
+          viewPager);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
