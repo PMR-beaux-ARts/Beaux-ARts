@@ -1,40 +1,102 @@
 package com.example.beaux_arts
 
 import android.content.Intent
+import android.database.sqlite.SQLiteDatabase
 import android.graphics.*
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.ShapeDrawable
 import android.graphics.drawable.shapes.OvalShape
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
+import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.beaux_arts.donnees.Collection
+import com.example.beaux_arts.donnees.ImportDB
+import com.example.beaux_arts.donnees.Produit
 import com.example.recyclerviewusinggridlayoutmanager.CollectionAdapter
+import org.json.JSONObject
 
 class ItineraryActivity : AppCompatActivity() {
 
     private var recyclerDataArrayList: ArrayList<Collection>? = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val database = SQLiteDatabase.openOrCreateDatabase(ImportDB.DB_PATH+ "/" + ImportDB.DB_NAME, null)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_itinerary)
         supportActionBar?.hide()
 
-        var description: TextView = findViewById(R.id.itineraireDescription)
-        //TODO : ajouter la description d'un itinéraire (depuis la DB ?)
+        var itineraireId = intent.getIntExtra("id",1)
+        Log.i("text","itineraireId:$itineraireId")
 
+        val ItineraireName = findViewById<TextView>(R.id.itineraryName)
+        var description: TextView = findViewById(R.id.itineraireDescription)
         var recyclerView: RecyclerView = findViewById(R.id.oeuvresCollectionVIew)
-        //TODO : ajouter les oeuvres de l'itinéraire dans recyclerDataArrayList (depuis la DB ?)
+
+        val cursor1 = database.rawQuery("SELECT * FROM Itineraire WHERE id = ${itineraireId} ",null)
+        Log.i("test","Searched succeed ${cursor1}")
+        if(cursor1 != null &&cursor1.moveToFirst()) {
+            val nameIt = cursor1.getString(cursor1.getColumnIndex("nom"))
+            val descripIt  = cursor1.getString(cursor1.getColumnIndex("description"))
+            ItineraireName.text = nameIt
+            description.text = descripIt
+            description.movementMethod = ScrollingMovementMethod()
+
+            recyclerDataArrayList = ArrayList()
+            val collection_json = JSONObject(cursor1.getString(cursor1.getColumnIndex("mescollections")))
+            Log.i("test","on obtient produits")
+            val keys = collection_json.keys()
+            Log.i("test","keys of json${keys}")
+            while (keys.hasNext()) {
+                var key = keys.next().toString()
+                //chercher id dans le database
+                val collectionId = collection_json.getInt(key)
+                Log.i("test","produitId ${collectionId}")
+                val cursor = database.rawQuery("SELECT * FROM Collection WHERE id = ${collectionId} ",null)
+                if(cursor.moveToFirst()){
+                    do {
+                        var Co_id = cursor.getInt(cursor.getColumnIndex("id"))
+                        var Co_nom = cursor.getString(cursor.getColumnIndex("nom"))
+                        var Co_auteur = cursor.getString(cursor.getColumnIndex("auteur"))
+                        var Co_type = cursor.getString(cursor.getColumnIndex("type"))
+                        var Co_description = cursor.getString(cursor.getColumnIndex("description"))
+                        var Co_salle = cursor.getInt(cursor.getColumnIndex("salle"))
+                        var Co_position = cursor.getString(cursor.getColumnIndex("position"))
+                        val img_b = cursor.getBlob(cursor.getColumnIndex("image"))
+                        val img_bitmap = BitmapFactory.decodeByteArray(img_b,0,img_b.size,null)
+                        val Co_image=BitmapDrawable(resources,img_bitmap)
+                        var Co_mesproduits = null
+                        var newCollection= Collection(
+                            Co_id,
+                            Co_nom,
+                            Co_auteur,
+                            Co_type,
+                            Co_description,
+                            Co_salle,
+                            Co_mesproduits,
+                            Co_image
+                        )
+                        //var img = intent.getIntExtra("produit.imageRes$i", 0)
+                        recyclerDataArrayList!!.add(newCollection)
+                    } while (cursor.moveToNext())
+                }
+                cursor.close()
+            }
+        }
+        cursor1.close()
+        database.close()
+
         val adapter = CollectionAdapter(recyclerDataArrayList!!,{collection : Collection -> collectionClicked(collection)})
         val layoutManager = GridLayoutManager(this, 4)
         recyclerView?.setLayoutManager(layoutManager)
         recyclerView?.setAdapter(adapter)
 
-        createMap()
+        //createMap()
 
     }
 
@@ -81,54 +143,54 @@ class ItineraryActivity : AppCompatActivity() {
 
     }
 
-    fun createMap() {
-
-        val imageDeFond = findViewById<ImageView>(R.id.itineraireMapView)
-        //on crée une bitmap vide, on spécifie qu'on qu'on dessine dessus
-        val bitmap: Bitmap = Bitmap.createBitmap(700, 800, Bitmap.Config.ARGB_8888)
-        val canvas: Canvas = Canvas(bitmap)
-
-
-
-
-        /*exemples
-        *
-        *
-        *
-        * */
-
-        val contourPiece = Path()
-        val paint = Paint()
-        paint.setColor(Color.parseColor("#aeebed"))
-
-        contourPiece.moveTo(100f,100f)
-
-        contourPiece.lineTo(100f,100f)
-        contourPiece.lineTo(100f,800f)
-        contourPiece.lineTo(650f,800f)
-        contourPiece.lineTo(650f,100f)
-
-        canvas.drawPath(contourPiece,paint)
-
-        placerOeuvre(canvas,200,700,"oeuvre1")
-        placerOeuvre(canvas,422,400,"oeuvre2")
-        placerOeuvre(canvas,511,600,"oeuvre3")
-
-        //ici liste des points de l'itineraire (à voir pour la structure de la bdd)
-        var listeEtapes = arrayOf<Float>(200F+20,700F+20,422F+20,400F+20,422F+20,400F+20,511F+20,600F+20)
-
-        //ici on convertit le array<float> en FloatArray
-        val listeEtapesFinal = listeEtapes.toFloatArray()
-        placerItineraire(canvas, listeEtapesFinal)
-
-        /*exemples
-        *
-        *
-        *
-        * */
-
-        //afficher la bitmap modifiée précédement
-
-        imageDeFond.background = BitmapDrawable(getResources(), bitmap)
-    }
+//    fun createMap() {
+//
+//        val imageDeFond = findViewById<ImageView>(R.id.itineraireMapView)
+//        //on crée une bitmap vide, on spécifie qu'on qu'on dessine dessus
+//        val bitmap: Bitmap = Bitmap.createBitmap(700, 800, Bitmap.Config.ARGB_8888)
+//        val canvas: Canvas = Canvas(bitmap)
+//
+//
+//
+//
+//        /*exemples
+//        *
+//        *
+//        *
+//        * */
+//
+//        val contourPiece = Path()
+//        val paint = Paint()
+//        paint.setColor(Color.parseColor("#aeebed"))
+//
+//        contourPiece.moveTo(100f,100f)
+//
+//        contourPiece.lineTo(100f,100f)
+//        contourPiece.lineTo(100f,800f)
+//        contourPiece.lineTo(650f,800f)
+//        contourPiece.lineTo(650f,100f)
+//
+//        canvas.drawPath(contourPiece,paint)
+//
+//        placerOeuvre(canvas,200,700,"oeuvre1")
+//        placerOeuvre(canvas,422,400,"oeuvre2")
+//        placerOeuvre(canvas,511,600,"oeuvre3")
+//
+//        //ici liste des points de l'itineraire (à voir pour la structure de la bdd)
+//        var listeEtapes = arrayOf<Float>(200F+20,700F+20,422F+20,400F+20,422F+20,400F+20,511F+20,600F+20)
+//
+//        //ici on convertit le array<float> en FloatArray
+//        val listeEtapesFinal = listeEtapes.toFloatArray()
+//        placerItineraire(canvas, listeEtapesFinal)
+//
+//        /*exemples
+//        *
+//        *
+//        *
+//        * */
+//
+//        //afficher la bitmap modifiée précédement
+//
+//        imageDeFond.background = BitmapDrawable(getResources(), bitmap)
+//    }
 }

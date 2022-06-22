@@ -2714,7 +2714,7 @@ int id bounce 0x7f090067
 int id bounceBoth 0x7f090068
 int id bounceEnd 0x7f090069
 int id bounceStart 0x7f09006a
-int id button2 0x7f09006b
+int id button 0x7f09023c
 int id buttonPanel 0x7f09006c
 int id cache_measures 0x7f09006d
 int id callMeasure 0x7f09006e
@@ -2877,7 +2877,6 @@ int id item3 0x7f09010a
 int id item4 0x7f09010b
 int id item_touch_helper_previous_elevation 0x7f09010c
 int id itineraireDescription 0x7f09010d
-int id itineraireMapView 0x7f09010e
 int id itineraryName 0x7f09010f
 int id jumpToEnd 0x7f090110
 int id jumpToStart 0x7f090111
@@ -3116,7 +3115,6 @@ int id textTop 0x7f0901f9
 int id textView 0x7f0901fa
 int id textView3 0x7f0901fb
 int id textView5 0x7f0901fc
-int id textView6 0x7f0901fd
 int id text_input_end_icon 0x7f0901fe
 int id text_input_error_icon 0x7f0901ff
 int id text_input_start_icon 0x7f090200

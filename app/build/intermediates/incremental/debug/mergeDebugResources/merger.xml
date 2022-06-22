@@ -10465,11 +10465,12 @@
         <item>30 mins</item>
         <item>1 hour</item>
         <item>1 hour 30 mins</item>
-        <item>2 hours</item>
+        <item>Tout</item>
     </string-array><string-array name="theme">
-        <item>Theme 1</item>
-        <item>Theme 2</item>
-        <item>Theme 3</item>
+        <item>Sculptures</item>
+        <item>Moyen Âge</item>
+        <item>Peintures</item>
+        <item>Tout</item>
 
     </string-array></file><file path="D:\AppData\Local\Beaux-ARts_2\app\src\main\res\values\themes.xml" qualifiers=""><style name="Theme.Beaux_ARts" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         

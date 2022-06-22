@@ -50,13 +50,4 @@
         android:inputType="textCapSentences"
         android:text="Voir la collection associée" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="0dp"
-        android:backgroundTint="#CA01B6"
-        android:inputType="textCapSentences"
-        android:text="Acheter" />
 </LinearLayout>

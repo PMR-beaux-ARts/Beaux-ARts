@@ -2715,7 +2715,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id button2
+id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2878,7 +2878,6 @@ id item3
 id item4
 id item_touch_helper_previous_elevation
 id itineraireDescription
-id itineraireMapView
 id itineraryName
 id jumpToEnd
 id jumpToStart
@@ -3117,7 +3116,6 @@ id textTop
 id textView
 id textView3
 id textView5
-id textView6
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon

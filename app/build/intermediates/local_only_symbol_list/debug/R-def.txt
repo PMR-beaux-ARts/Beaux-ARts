@@ -40,7 +40,7 @@ id SecondFragment
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id action_settings
-id button2
+id button
 id idCourseRV
 id idIVcourseIV
 id idTVCourse
@@ -64,7 +64,6 @@ id info_transport_corpus
 id info_transport_layout
 id info_transport_title
 id itineraireDescription
-id itineraireMapView
 id itineraryName
 id list
 id nav_graph
@@ -89,7 +88,6 @@ id tablayout
 id textView
 id textView3
 id textView5
-id textView6
 id title
 id title_InfoFragment
 id viewPager
