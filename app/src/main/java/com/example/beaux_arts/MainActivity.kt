@@ -46,9 +46,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         // On prépare l'intent (qui se lancera quand on cliquera sur le bouton)
         intentScanner = IntentIntegrator(this).apply {
-            setBeepEnabled(true)
+            setBeepEnabled(false)
             setOrientationLocked(true)
             setDesiredBarcodeFormats(IntentIntegrator.QR_CODE)
+            setTorchEnabled(false)
             captureActivity = Capture::class.java
             setTimeout(6000)
         }
