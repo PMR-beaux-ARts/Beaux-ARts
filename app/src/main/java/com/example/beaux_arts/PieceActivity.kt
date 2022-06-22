@@ -18,7 +18,9 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.beaux_arts.adapter.ProduitAdapter
 import com.example.beaux_arts.donnees.ImportDB
+import com.example.beaux_arts.donnees.MapCoord
 import com.example.beaux_arts.donnees.Produit
+import com.fengmap.android.map.geometry.FMMapCoord
 import kotlinx.android.synthetic.main.activity_piece.*
 import kotlinx.android.synthetic.main.activity_produit.*
 import org.json.JSONObject
@@ -40,15 +42,22 @@ class PieceActivity() : AppCompatActivity() {
         val pieceImage = findViewById<ImageView>(R.id.pieceImageView)
         val pieceDescription = findViewById<TextView>(R.id.pieceDescription)
         val pieceProduits = findViewById<RecyclerView>(R.id.pieceRecyclerview)
+        var piecePosition_x : Double = 0.00
+        var piecePosition_y : Double = 0.00
+        var pieceSalle : Int = 1
 
-        pieceName.text = intent.getStringExtra("title")
-        pieceDescription.text = intent.getStringExtra("description")
-        pieceDescription.movementMethod = ScrollingMovementMethod()
         val pieceId = intent.getIntExtra("id",1)
         val cursor1 = database.rawQuery("SELECT * FROM Collection WHERE id = ${pieceId} ",null)
         Log.i("test","Searched succeed ${cursor1}")
         if(cursor1 != null &&cursor1.moveToFirst()) {
             Log.i("test","in cursors1")
+            pieceName.text = cursor1.getString(cursor1.getColumnIndex("nom"))
+            pieceDescription.text = cursor1.getString(cursor1.getColumnIndex("description"))
+            pieceDescription.movementMethod = ScrollingMovementMethod()
+            val position_json = JSONObject(cursor1.getString(cursor1.getColumnIndex("position")))
+            piecePosition_x = position_json.getDouble("x")
+            piecePosition_y = position_json.getDouble("y")
+            pieceSalle = cursor1.getInt(cursor1.getColumnIndex("salle"))
             val img_b_collection = cursor1.getBlob(cursor1.getColumnIndex("image"))
             val img_bitmap_collection =
                 BitmapFactory.decodeByteArray(img_b_collection, 0, img_b_collection.size, null)
@@ -111,9 +120,12 @@ class PieceActivity() : AppCompatActivity() {
 
             val activiteVisee = Intent(this, MapActivity::class.java)
 
-//            activiteVisee.putExtra("id", "在这换成单个目标点的数据")
+            //activiteVisee.putExtra("id",pieceId)
+            activiteVisee.putExtra("position_x",piecePosition_x)
+            activiteVisee.putExtra("position_y",piecePosition_y)
+            activiteVisee.putExtra("salle", pieceSalle)
+
             startActivity(activiteVisee)
-            //todo
         }
 
 
