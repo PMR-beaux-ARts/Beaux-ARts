@@ -21,6 +21,9 @@ public final class ItemLayoutBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
+  public final TextView duree;
+
+  @NonNull
   public final ImageView image;
 
   @NonNull
@@ -29,9 +32,10 @@ public final class ItemLayoutBinding implements ViewBinding {
   @NonNull
   public final TextView title;
 
-  private ItemLayoutBinding(@NonNull FrameLayout rootView, @NonNull ImageView image,
-      @NonNull TextView subtitle, @NonNull TextView title) {
+  private ItemLayoutBinding(@NonNull FrameLayout rootView, @NonNull TextView duree,
+      @NonNull ImageView image, @NonNull TextView subtitle, @NonNull TextView title) {
     this.rootView = rootView;
+    this.duree = duree;
     this.image = image;
     this.subtitle = subtitle;
     this.title = title;
@@ -64,6 +68,12 @@ public final class ItemLayoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.duree;
+      TextView duree = ViewBindings.findChildViewById(rootView, id);
+      if (duree == null) {
+        break missingId;
+      }
+
       id = R.id.image;
       ImageView image = ViewBindings.findChildViewById(rootView, id);
       if (image == null) {
@@ -82,7 +92,7 @@ public final class ItemLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemLayoutBinding((FrameLayout) rootView, image, subtitle, title);
+      return new ItemLayoutBinding((FrameLayout) rootView, duree, image, subtitle, title);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

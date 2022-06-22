@@ -414,6 +414,8 @@ class MapActivity : AppCompatActivity(),
             mLocationLayer?.addMarker(mLocationMarker)
         } else {
             //更新定位点位置和方向
+            val groupId = mMap!!.focusGroupId
+            mLocationMarker = FMLocationMarker(groupId, myPoint)
             Log.i(CAT,"275 here")
             val angle = 0f
             mLocationMarker?.updateAngleAndPosition(angle, myPoint)

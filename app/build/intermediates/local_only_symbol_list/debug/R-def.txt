@@ -52,6 +52,7 @@ id action_settings
 id btn_my_location
 id button
 id cb_groups
+id duree
 id idCourseRV
 id idIVcourseIV
 id idTVCourse

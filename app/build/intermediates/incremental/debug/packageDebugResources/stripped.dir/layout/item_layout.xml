@@ -40,6 +40,14 @@
                 android:paddingTop="5dp"
                 android:textSize="16sp"
                 tools:text="Sous-titre" />
+            <TextView
+                android:id="@+id/duree"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingStart="10dp"
+                android:textSize="16sp"
+                tools:text="Sous-titre" />
+
         </LinearLayout>
 
     </LinearLayout>
