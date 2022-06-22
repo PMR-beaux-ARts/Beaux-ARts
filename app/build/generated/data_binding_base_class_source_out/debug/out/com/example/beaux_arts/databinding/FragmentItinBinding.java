@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
@@ -29,12 +30,16 @@ public final class FragmentItinBinding implements ViewBinding {
   @NonNull
   public final Spinner spinner2;
 
+  @NonNull
+  public final TextView titleItinFragment;
+
   private FragmentItinBinding(@NonNull FrameLayout rootView, @NonNull RecyclerView list,
-      @NonNull Spinner spinner1, @NonNull Spinner spinner2) {
+      @NonNull Spinner spinner1, @NonNull Spinner spinner2, @NonNull TextView titleItinFragment) {
     this.rootView = rootView;
     this.list = list;
     this.spinner1 = spinner1;
     this.spinner2 = spinner2;
+    this.titleItinFragment = titleItinFragment;
   }
 
   @Override
@@ -82,7 +87,14 @@ public final class FragmentItinBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentItinBinding((FrameLayout) rootView, list, spinner1, spinner2);
+      id = R.id.title_ItinFragment;
+      TextView titleItinFragment = ViewBindings.findChildViewById(rootView, id);
+      if (titleItinFragment == null) {
+        break missingId;
+      }
+
+      return new FragmentItinBinding((FrameLayout) rootView, list, spinner1, spinner2,
+          titleItinFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -41,26 +41,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/ic_baseline_home_24"
-            android:text="Itineraries" />
+            android:text="Itinéraires" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/ic_baseline_collections_24"
-            android:scrollbarSize="4dp"
             android:text="Collections" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/ic_baseline_info_24"
-            android:text="Info" />
+            android:text="Infos" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/ic_baseline_shopping_basket_24"
-            android:text="shop" />
+            android:text="Shop" />
 
 
     </com.google.android.material.tabs.TabLayout>

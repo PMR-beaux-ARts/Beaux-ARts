@@ -1,54 +1,78 @@
 [
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/fragment_chart.xml",
-        "source": "com.example.beaux_arts.app-main-7:/layout/fragment_chart.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-39:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-42:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/inner_groups_bottom.xml",
-        "source": "com.example.beaux_arts.app-main-7:/layout/inner_groups_bottom.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-39:\\layout\\fragment_colle.xml",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-42:\\layout\\fragment_colle.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/fragment_shop.xml",
-        "source": "com.example.beaux_arts.app-main-7:/layout/fragment_shop.xml"
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-39:/layout/activity_main.xml",
+        "source": "com.example.beaux_arts.app-main-42:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/activity_itinerary.xml",
-        "source": "com.example.beaux_arts.app-main-7:/layout/activity_itinerary.xml"
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-39:/layout/fragment_itin.xml",
+        "source": "com.example.beaux_arts.app-main-42:/layout/fragment_itin.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/fragment_colle.xml",
-        "source": "com.example.beaux_arts.app-main-7:/layout/fragment_colle.xml"
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-39:/layout/activity_piece.xml",
+        "source": "com.example.beaux_arts.app-main-42:/layout/activity_piece.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/fragment_itin.xml",
-        "source": "com.example.beaux_arts.app-main-7:/layout/fragment_itin.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-39:\\layout\\activity_produit.xml",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-42:\\layout\\activity_produit.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/card_layout.xml",
-        "source": "com.example.beaux_arts.app-main-7:/layout/card_layout.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-39:\\layout\\fragment_info.xml",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-42:\\layout\\fragment_info.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/activity_produit.xml",
-        "source": "com.example.beaux_arts.app-main-7:/layout/activity_produit.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-39:\\layout\\fragment_itin.xml",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-42:\\layout\\fragment_itin.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/fragment_info.xml",
-        "source": "com.example.beaux_arts.app-main-7:/layout/fragment_info.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-39:\\layout\\item_layout.xml",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-42:\\layout\\item_layout.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/activity_map.xml",
-        "source": "com.example.beaux_arts.app-main-7:/layout/activity_map.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-39:\\layout\\fragment_shop.xml",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-42:\\layout\\fragment_shop.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/activity_piece.xml",
-        "source": "com.example.beaux_arts.app-main-7:/layout/activity_piece.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-39:\\layout\\activity_map.xml",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-42:\\layout\\activity_map.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/activity_main.xml",
-        "source": "com.example.beaux_arts.app-main-7:/layout/activity_main.xml"
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-39:/layout/fragment_shop.xml",
+        "source": "com.example.beaux_arts.app-main-42:/layout/fragment_shop.xml"
     },
     {
-        "merged": "com.example.beaux_arts.app-mergeDebugResources-4:/layout/item_layout.xml",
-        "source": "com.example.beaux_arts.app-main-7:/layout/item_layout.xml"
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-39:\\layout\\inner_groups_bottom.xml",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-42:\\layout\\inner_groups_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-39:\\layout\\activity_piece.xml",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-42:\\layout\\activity_piece.xml"
+    },
+    {
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-39:\\layout\\activity_itinerary.xml",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-42:\\layout\\activity_itinerary.xml"
+    },
+    {
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-39:/layout/fragment_colle.xml",
+        "source": "com.example.beaux_arts.app-main-42:/layout/fragment_colle.xml"
+    },
+    {
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-39:\\layout\\fragment_chart.xml",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-42:\\layout\\fragment_chart.xml"
+    },
+    {
+        "merged": "com.example.beaux_arts.app-mergeDebugResources-39:/layout/activity_itinerary.xml",
+        "source": "com.example.beaux_arts.app-main-42:/layout/activity_itinerary.xml"
+    },
+    {
+        "merged": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-mergeDebugResources-39:\\layout\\card_layout.xml",
+        "source": "C:\\Users\\橦枭sys\\.gradle\\daemon\\7.3.3\\com.example.beaux_arts.app-main-42:\\layout\\card_layout.xml"
     }
 ]

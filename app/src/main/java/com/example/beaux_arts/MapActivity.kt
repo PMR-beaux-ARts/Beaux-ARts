@@ -87,7 +87,7 @@ class MapActivity : AppCompatActivity(),
     private val mRotate = 60f
     private val mTilt = 45f
     private val mGroupId = 1
-    private var myPoint = FMMapCoord(349075.21843737597,6518727.876407377)
+    private var myPoint = FMMapCoord(349201.1972920726,6518687.134458933)
 
 
     private val mButtons = arrayOfNulls<Button>(2)
@@ -227,37 +227,82 @@ class MapActivity : AppCompatActivity(),
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)
 
-        // Obtenir id de cette itineraires
-        val itiId = intent.getIntExtra("id",1)
-        val cursor1 = database.rawQuery("SELECT * FROM Itineraire WHERE id = ${itiId} ",null)
-        if(cursor1 != null &&cursor1.moveToFirst()) {
-            val collctions_json = JSONObject(cursor1.getString(cursor1.getColumnIndex("mescollections")))
-            Log.i("test","on obtient collections")
-            val keys = collctions_json.keys()
-            Log.i("test","keys of json${keys}")
-            while (keys.hasNext()) {
-                var key = keys.next().toString()
-                //chercher id dans le database
-                val collecId = collctions_json.getInt(key)
-                Log.i("test","collectionId ${collecId}")
-                val cursor2 = database.rawQuery("SELECT * FROM Collection WHERE id = ${collecId} ",null)
-                if(cursor2.moveToFirst()){
-                    do {
-                        var etage:Int = 1 // par defaut au F0 premier etage
-                        when(cursor2.getInt(cursor2.getColumnIndex("salle"))){
-                            in 1..9 -> etage = 1 //salle 0-9 dans F0
-                            in 10..18 -> etage = 2 //salle 10-18 dans F1
-                            else -> etage = 3 //salle 19-27 dans F2
-                        }
-                        val position_json = JSONObject(cursor2.getString(cursor2.getColumnIndex("position")))
-                        Log.i("test","on obtient positions")
-                        defaultVisitPoints.add(MapCoord(etage,FMMapCoord(position_json.getDouble("x"),position_json.getDouble("y"))))
-                    } while (cursor2.moveToNext())
+        // Obtenir id de cette itineraires, si id=0, c'est une piece
+        val itiId = intent.getIntExtra("id",0)
+        if(itiId!=0) {
+            val cursor1 = database.rawQuery("SELECT * FROM Itineraire WHERE id = ${itiId} ", null)
+            if (cursor1 != null && cursor1.moveToFirst()) {
+                val collctions_json =
+                    JSONObject(cursor1.getString(cursor1.getColumnIndex("mescollections")))
+                Log.i("test", "on obtient collections")
+                val keys = collctions_json.keys()
+                Log.i("test", "keys of json${keys}")
+                while (keys.hasNext()) {
+                    var key = keys.next().toString()
+                    //chercher id dans le database
+                    val collecId = collctions_json.getInt(key)
+                    Log.i("test", "collectionId ${collecId}")
+                    val cursor2 =
+                        database.rawQuery("SELECT * FROM Collection WHERE id = ${collecId} ", null)
+                    if (cursor2.moveToFirst()) {
+                        do {
+                            var etage: Int = 1 // par defaut au F0 premier etage
+                            when (cursor2.getInt(cursor2.getColumnIndex("salle"))) {
+                                in 1..9 -> etage = 1 //salle 0-9 dans F0
+                                in 10..18 -> etage = 2 //salle 10-18 dans F1
+                                else -> etage = 3 //salle 19-27 dans F2
+                            }
+                            val position_json =
+                                JSONObject(cursor2.getString(cursor2.getColumnIndex("position")))
+                            Log.i("test", "on obtient positions")
+                            defaultVisitPoints.add(
+                                MapCoord(
+                                    etage,
+                                    FMMapCoord(
+                                        position_json.getDouble("x"),
+                                        position_json.getDouble("y")
+                                    )
+                                )
+                            )
+                        } while (cursor2.moveToNext())
+                    }
+                    cursor2.close()
                 }
-                cursor2.close()
             }
+            cursor1.close()
         }
-        cursor1.close()
+        else{
+            //defaultVisitPoints.add(MapCoord(1,FMMapCoord(349202.78765743406,6518697.495674456)))
+            //defaultVisitPoints.add(MapCoord(1,FMMapCoord(349196.10620590183,6518687.596318541)))
+            //defaultVisitPoints.add(MapCoord(1,FMMapCoord(349204.8465219906,6518682.05897545)))
+            var etage: Int
+            val salle = intent.getIntExtra("salle",1)
+            when (salle) {
+                in 1..9 -> etage = 1 //salle 0-9 dans F0
+                in 10..18 -> etage = 2 //salle 10-18 dans F1
+                else -> etage = 3 //salle 19-27 dans F2
+            }
+//            Log.i("nav","$itiId")
+             //updatemylocation()
+              //defaultVisitPoints.add(MapCoord(1,FMMapCoord(349202.78765743406,6518697.495674456)))
+            defaultVisitPoints.add(MapCoord(1,FMMapCoord(349201.1972920726,6518687.134458933)))
+            defaultVisitPoints.set(0,MapCoord(1,myPoint))
+//            var coord_x = intent.getDoubleExtra("position_x",0.00)
+//            var coord_y = intent.getDoubleExtra("position_y",0.00)
+//            Log.i("nav","$coord_x,$coord_y")
+            defaultVisitPoints.add(
+                MapCoord(
+                    etage,
+                    FMMapCoord(
+                        intent.getDoubleExtra("position_x",0.00),intent.getDoubleExtra("position_y",0.00)
+                    )
+                )
+            )
+//            Log.i("nav","${defaultVisitPoints.size}")
+//            Log.i("nav","${defaultVisitPoints.get(0)}")
+        }
+
+
         database.close()
 
         beaconReferenceApplication = application as MainApp
@@ -334,6 +379,7 @@ class MapActivity : AppCompatActivity(),
 
         myPoint = transformtoFMMap(visiteur_x,visiteur_y)
         //myPoint = FMMapCoord(visiteur_x,visiteur_y)
+        //defaultVisitPoints.set(0,MapCoord(1,myPoint))
     }
 
     private fun transformtoFMMap(x:Double,y:Double):FMMapCoord{

@@ -3136,7 +3136,10 @@ int id textinput_suffix_text 0x7f090200
 int id time 0x7f090201
 int id title 0x7f090202
 int id titleDividerNoCustom 0x7f090203
+int id title_ColleFragment 0x7f090236
 int id title_InfoFragment 0x7f090204
+int id title_ItinFragment 0x7f090237
+int id title_ShopFragment 0x7f090238
 int id title_template 0x7f090205
 int id toggle 0x7f090206
 int id top 0x7f090207
